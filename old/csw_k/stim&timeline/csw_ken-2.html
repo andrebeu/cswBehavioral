@@ -1,0 +1,1129 @@
+
+<!DOCTYPE html>
+<html><head>
+    <script src="jspsych-master/jspsych.js"></script>
+    <link rel="stylesheet" href="jspsych-master/css/jspsych.css"></link>
+
+    <script src = "jspsych-master/plugins/jspsych-instructions.js"></script>
+    <script src = "jspsych-master/plugins/jspsych-html-slider-response.js"></script>
+
+    <style> img { width: 300px; } </style> 
+    </head><body></body>
+
+<script>
+
+			var s_0_BEGIN = {
+			type: 'instructions',
+			pages: ['Ben walked into the coffee shop angrily after having dropped his keys in a storm drain.']
+			} 
+          var q_1_BEGINWalktoback_BEGINWalktofront_60_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Nick, the first person in line.', 'He walked to the back of the line and stood impatiently, watching the first person in line, Nick, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.']
+          } 
+			var s_2_Walktoback = {
+			type: 'instructions',
+			pages: ['He walked to the back of the line and stood impatiently, watching the first person in line, Nick, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.']
+			} 
+			var s_3_Stepinfront = {
+			type: 'instructions',
+			pages: ['Nick was not having it that day, and he promptly stepped back in front of Ben.']
+			} 
+          var q_4_StepinfrontIgnore_StepinfrontIgnore_100_Alter_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben ignored him and proceeded to tell the barista that he would like a mocha.', 'Nick ignored him and proceeded to tell the barista that he would like a mocha.']
+          } 
+			var s_5_Ignore = {
+			type: 'instructions',
+			pages: ['Ben ignored him and proceeded to tell the barista that he would like a mocha.']
+			} 
+          var q_6_IgnoreXstare_IgnoreTurntobarista_66_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick stared back at Ben, as though daring him with his eyes to do something.Nick refusing to engage with Ben, turned to the barista and said, \"I was first in line!\"', 'Nick, refusing to engage with him, turned to the barista and said, \"I was first in line!\"']
+          } 
+			var s_7_Xstare = {
+			type: 'instructions',
+			pages: ['Nick stared back at Ben, as though daring him with his eyes to do something.Nick refusing to engage with Ben, turned to the barista and said, \"I was first in line!\"']
+			} 
+          var q_8_XstareDessertcrumble_XstareCreamsplash_50_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Nick\'s head. Everyone in line gasped. Nick, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.', 'Ben saw a small cup of cream on the counter, picked it up, and splashed it in Nick\'s face. Everyone in line gasped. Nick stood there gaping, cream dripping from his chin.']
+          } 
+			var s_9_Dessertcrumble = {
+			type: 'instructions',
+			pages: ['Ben saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Nick\'s head. Everyone in line gasped. Nick, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+			} 
+          var q_10_DessertcrumbleCallpoliceman_DessertcrumbleCallpoliceman_100_Alter_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['The barista called over to a policeman standing in line, and she ordered Ben to leave before anyone pressed charges.', 'The barista called over to a policeman standing in line, and she ordered Nick to leave before anyone pressed charges.']
+          } 
+			var s_11_Callpoliceman = {
+			type: 'instructions',
+			pages: ['The barista called over to a policeman standing in line, and she ordered Ben to leave before anyone pressed charges.']
+			} 
+          var q_12_CallpolicemanHatecoffee_CallpolicemanHatecoffee_100_Permute_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben stared at Nick one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Nick stared at Ben one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+          } 
+			var s_13_Hatecoffee = {
+			type: 'instructions',
+			pages: ['Ben stared at Nick one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+			} 
+          var q_14_HatecoffeeEND_HatecoffeeEND_100_Alter_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying \"I think some caffeine would\'ve helped that one.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying \"I think some caffeine would\'ve helped that one.\"']
+          } 
+			var s_15_END = {
+			type: 'instructions',
+			pages: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying \"I think some caffeine would\'ve helped that one.\"']
+			} 
+			var s_16_BEGIN = {
+			type: 'instructions',
+			pages: ['Silvia walked into the coffee shop angrily after having realized that she had left her phone on the bus.']
+			} 
+          var q_17_BEGINWalktofront_BEGINWalktoback_40_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['She walked to the back of the line and stood impatiently, watching the first person in line, Nick, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.', 'She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Nick, the first person in line.']
+          } 
+			var s_18_Walktofront = {
+			type: 'instructions',
+			pages: ['She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Nick, the first person in line.']
+			} 
+          var q_19_WalktofrontStepinfront_WalktofrontSayexcuseme_50_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick was not having it that day, and he promptly stepped back in front of Silvia.', 'Nick was astonished and said, \"Excuse me?!\'']
+          } 
+			var s_20_Stepinfront = {
+			type: 'instructions',
+			pages: ['Nick was not having it that day, and he promptly stepped back in front of Silvia.']
+			} 
+          var q_21_StepinfrontIgnore_StepinfrontSubjectstares_44_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Silvia turned to Nick and gave him a very mean look.', 'Silvia ignored him and proceeded to tell the barista that she would like a coffee.']
+          } 
+			var s_22_Ignore = {
+			type: 'instructions',
+			pages: ['Silvia ignored him and proceeded to tell the barista that she would like a coffee.']
+			} 
+          var q_23_IgnoreXstare_IgnoreXstare_100_Permute_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick stared back at Silvia, as though daring her with his eyes to do something.Nick refusing to engage with Silvia, turned to the barista and said, \"I was first in line!\"', 'Silvia stared back at Nick, as though daring him with her eyes to do something.Silvia refusing to engage with Nick, turned to the barista and said, \"I was first in line!\"']
+          } 
+			var s_24_Xstare = {
+			type: 'instructions',
+			pages: ['Nick stared back at Silvia, as though daring her with his eyes to do something.Nick refusing to engage with Silvia, turned to the barista and said, \"I was first in line!\"']
+			} 
+          var q_25_XstareDessertcrumble_XstareDessertcrumble_100_Permute_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Nick\'s head. Everyone in line gasped. Nick, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.', 'Nick saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Silvia\'s head. Everyone in line gasped. Silvia, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+          } 
+			var s_26_Dessertcrumble = {
+			type: 'instructions',
+			pages: ['Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Nick\'s head. Everyone in line gasped. Nick, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+			} 
+          var q_27_DessertcrumbleCallpoliceman_DessertcrumbleBaristaorders_10_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['The barista called over to a policeman standing in line, and she ordered Silvia to leave before anyone pressed charges.', 'The barista ran out from behind the counter and ordered Silvia to leave.']
+          } 
+			var s_28_Callpoliceman = {
+			type: 'instructions',
+			pages: ['The barista called over to a policeman standing in line, and she ordered Silvia to leave before anyone pressed charges.']
+			} 
+          var q_29_CallpolicemanHatecoffee_CallpolicemanLovejuice_70_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Silvia gave Nick one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"', 'Silvia stared at Nick one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+          } 
+			var s_30_Hatecoffee = {
+			type: 'instructions',
+			pages: ['Silvia stared at Nick one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+			} 
+          var q_31_HatecoffeeEND_HatecoffeeEND_100_Alter_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying \"There was no need to worry. The baristas are trained in kung fu.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying \"There was no need to worry. The baristas are trained in kung fu.\"']
+          } 
+			var s_32_END = {
+			type: 'instructions',
+			pages: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying \"There was no need to worry. The baristas are trained in kung fu.\"']
+			} 
+			var s_33_BEGIN = {
+			type: 'instructions',
+			pages: ['Silvia walked into the coffee shop angrily after having realized that she had left her phone on the bus.']
+			} 
+          var q_34_BEGINWalktoback_BEGINWalktofront_60_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['She walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.', 'She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Ben, the first person in line.']
+          } 
+			var s_35_Walktoback = {
+			type: 'instructions',
+			pages: ['She walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.']
+			} 
+          var q_36_WalktobackStepinfront_WalktobackStepinfront_100_Permute_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben was not having it that day, and he promptly stepped back in front of Silvia.', 'Silvia was not having it that day, and she promptly stepped back in front of Ben.']
+          } 
+			var s_37_Stepinfront = {
+			type: 'instructions',
+			pages: ['Ben was not having it that day, and he promptly stepped back in front of Silvia.']
+			} 
+          var q_38_StepinfrontSubjectstares_StepinfrontSubjectstares_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben turned to Silvia and gave her a very mean look.', 'Silvia turned to Ben and gave him a very mean look.']
+          } 
+			var s_39_Subjectstares = {
+			type: 'instructions',
+			pages: ['Silvia turned to Ben and gave him a very mean look.']
+			} 
+          var q_40_SubjectstaresTurntobarista_SubjectstaresXshove_66_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben, refusing to engage with her, turned to the barista and said, \"I was first in line!\"', 'In retaliation, Ben pushed Silvia.']
+          } 
+			var s_41_Turntobarista = {
+			type: 'instructions',
+			pages: ['Ben, refusing to engage with her, turned to the barista and said, \"I was first in line!\"']
+			} 
+          var q_42_TurntobaristaDessertcrumble_TurntobaristaDessertcrumble_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Silvia\'s head. Everyone in line gasped. Silvia, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.', 'Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Ben\'s head. Everyone in line gasped. Ben, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+          } 
+			var s_43_Dessertcrumble = {
+			type: 'instructions',
+			pages: ['Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Ben\'s head. Everyone in line gasped. Ben, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+			} 
+          var q_44_DessertcrumbleBaristaorders_DessertcrumbleBaristaorders_100_Alter_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['The barista ran out from behind the counter and ordered Ben to leave.', 'The barista ran out from behind the counter and ordered Silvia to leave.']
+          } 
+			var s_45_Baristaorders = {
+			type: 'instructions',
+			pages: ['The barista ran out from behind the counter and ordered Silvia to leave.']
+			} 
+          var q_46_BaristaordersHatecoffee_BaristaordersLovejuice_30_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Silvia stared at Ben one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Silvia gave Ben one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+          } 
+			var s_47_Hatecoffee = {
+			type: 'instructions',
+			pages: ['Silvia stared at Ben one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+			} 
+          var q_48_HatecoffeeEND_HatecoffeeEND_100_Alter_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying \"Im so sorry you had to experience a coffee crime.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying \"Im so sorry you had to experience a coffee crime.\"']
+          } 
+			var s_49_END = {
+			type: 'instructions',
+			pages: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying \"Im so sorry you had to experience a coffee crime.\"']
+			} 
+			var s_50_BEGIN = {
+			type: 'instructions',
+			pages: ['Olivia walked into the coffee shop angrily after having learned that her flight to the Bahamas was cancelled due to inclement weather.']
+			} 
+          var q_51_BEGINWalktoback_BEGINWalktofront_60_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['She walked to the back of the line and stood impatiently, watching the first person in line, Jesse, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.', 'She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Jesse, the first person in line.']
+          } 
+			var s_52_Walktoback = {
+			type: 'instructions',
+			pages: ['She walked to the back of the line and stood impatiently, watching the first person in line, Jesse, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.']
+			} 
+          var q_53_WalktobackStepinfront_WalktobackStepinfront_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Olivia was not having it that day, and she promptly stepped back in front of Jesse.', 'Jesse was not having it that day, and he promptly stepped back in front of Olivia.']
+          } 
+			var s_54_Stepinfront = {
+			type: 'instructions',
+			pages: ['Jesse was not having it that day, and he promptly stepped back in front of Olivia.']
+			} 
+          var q_55_StepinfrontShove_StepinfrontSubjectstares_16_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Olivia turned to Jesse and gave him a very mean look.', 'Olivia proceeded to give a slight shove to Jesse.']
+          } 
+			var s_56_Shove = {
+			type: 'instructions',
+			pages: ['Olivia proceeded to give a slight shove to Jesse.']
+			} 
+          var q_57_ShoveXshove_ShoveXshove_100_Permute_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['In retaliation, Jesse pushed Olivia.', 'In retaliation, Olivia pushed Jesse.']
+          } 
+			var s_58_Xshove = {
+			type: 'instructions',
+			pages: ['In retaliation, Jesse pushed Olivia.']
+			} 
+          var q_59_XshoveDessertcrumble_XshoveDessertcrumble_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Jesse saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Olivia\'s head. Everyone in line gasped. Olivia, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.', 'Olivia saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Jesse\'s head. Everyone in line gasped. Jesse, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+          } 
+			var s_60_Dessertcrumble = {
+			type: 'instructions',
+			pages: ['Olivia saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Jesse\'s head. Everyone in line gasped. Jesse, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+			} 
+          var q_61_DessertcrumbleBaristaorders_DessertcrumbleBaristaorders_100_Alter_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['The barista ran out from behind the counter and ordered Jesse to leave.', 'The barista ran out from behind the counter and ordered Olivia to leave.']
+          } 
+			var s_62_Baristaorders = {
+			type: 'instructions',
+			pages: ['The barista ran out from behind the counter and ordered Olivia to leave.']
+			} 
+          var q_63_BaristaordersLovejuice_BaristaordersLovejuice_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Jesse gave Olivia one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"', 'Olivia gave Jesse one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+          } 
+			var s_64_Lovejuice = {
+			type: 'instructions',
+			pages: ['Olivia gave Jesse one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+			} 
+          var q_65_LovejuiceEND_LovejuiceEND_100_Alter_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Olivia a bunch of napkins and gave her a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Jesse a bunch of napkins and gave him a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"']
+          } 
+			var s_66_END = {
+			type: 'instructions',
+			pages: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Jesse a bunch of napkins and gave him a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"']
+			} 
+			var s_67_BEGIN = {
+			type: 'instructions',
+			pages: ['Olivia walked into the coffee shop angrily after having learned that her flight to the Bahamas was cancelled due to inclement weather.']
+			} 
+          var q_68_BEGINWalktoback_BEGINWalktofront_60_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Vera, the first person in line.', 'She walked to the back of the line and stood impatiently, watching the first person in line, Vera, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut her.']
+          } 
+			var s_69_Walktoback = {
+			type: 'instructions',
+			pages: ['She walked to the back of the line and stood impatiently, watching the first person in line, Vera, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut her.']
+			} 
+          var q_70_WalktobackSayexcuseme_WalktobackSayexcuseme_100_Alter_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Olivia was astonished and said, \"Excuse me?!\'', 'Vera was astonished and said, \"Excuse me?!\'']
+          } 
+			var s_71_Sayexcuseme = {
+			type: 'instructions',
+			pages: ['Vera was astonished and said, \"Excuse me?!\'']
+			} 
+          var q_72_SayexcusemeShove_SayexcusemeSubjectstares_44_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Olivia proceeded to give a slight shove to Vera.', 'Olivia turned to Vera and gave her a very mean look.']
+          } 
+			var s_73_Shove = {
+			type: 'instructions',
+			pages: ['Olivia proceeded to give a slight shove to Vera.']
+			} 
+          var q_74_ShoveXshove_ShoveXstare_66_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['In retaliation, Vera pushed Olivia.', 'Vera stared back at Olivia, as though daring her with her eyes to do something.Vera refusing to engage with Olivia, turned to the barista and said, \"I was first in line!\"']
+          } 
+			var s_75_Xshove = {
+			type: 'instructions',
+			pages: ['In retaliation, Vera pushed Olivia.']
+			} 
+          var q_76_XshoveDessertcrumble_XshoveCreamsplash_35_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Olivia saw a small cup of cream on the counter, picked it up, and splashed it in Vera\'s face. Everyone in line gasped. Vera stood there gaping, cream dripping from her chin.', 'Olivia saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Vera\'s head. Everyone in line gasped. Vera, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+          } 
+			var s_77_Dessertcrumble = {
+			type: 'instructions',
+			pages: ['Olivia saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Vera\'s head. Everyone in line gasped. Vera, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+			} 
+          var q_78_DessertcrumbleBaristaorders_DessertcrumbleBaristaorders_100_Alter_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['The barista ran out from behind the counter and ordered Olivia to leave.', 'The barista ran out from behind the counter and ordered Vera to leave.']
+          } 
+			var s_79_Baristaorders = {
+			type: 'instructions',
+			pages: ['The barista ran out from behind the counter and ordered Olivia to leave.']
+			} 
+          var q_80_BaristaordersLovejuice_BaristaordersLovejuice_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Vera gave Olivia one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"', 'Olivia gave Vera one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+          } 
+			var s_81_Lovejuice = {
+			type: 'instructions',
+			pages: ['Olivia gave Vera one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+			} 
+          var q_82_LovejuiceEND_LovejuiceEND_100_Alter_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Olivia a bunch of napkins and gave her a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"']
+          } 
+			var s_83_END = {
+			type: 'instructions',
+			pages: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"']
+			} 
+			var s_84_BEGIN = {
+			type: 'instructions',
+			pages: ['Nick walked into the coffee shop angrily after having gotten a parking ticket.']
+			} 
+			var s_85_Walktofront = {
+			type: 'instructions',
+			pages: ['He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Jesse, the first person in line.']
+			} 
+          var q_86_WalktofrontSayexcuseme_WalktofrontSayexcuseme_100_Alter_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick was astonished and said, \"Excuse me?!\'', 'Jesse was astonished and said, \"Excuse me?!\'']
+          } 
+			var s_87_Sayexcuseme = {
+			type: 'instructions',
+			pages: ['Jesse was astonished and said, \"Excuse me?!\'']
+			} 
+          var q_88_SayexcusemeSubjectstares_SayexcusemeShove_55_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick turned to Jesse and gave him a very mean look.', 'Nick proceeded to give a slight shove to Jesse.']
+          } 
+			var s_89_Subjectstares = {
+			type: 'instructions',
+			pages: ['Nick turned to Jesse and gave him a very mean look.']
+			} 
+          var q_90_SubjectstaresTurntobarista_SubjectstaresTurntobarista_100_Alter_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick, refusing to engage with him, turned to the barista and said, \"I was first in line!\"', 'Jesse, refusing to engage with him, turned to the barista and said, \"I was first in line!\"']
+          } 
+			var s_91_Turntobarista = {
+			type: 'instructions',
+			pages: ['Jesse, refusing to engage with him, turned to the barista and said, \"I was first in line!\"']
+			} 
+          var q_92_TurntobaristaDessertcrumble_TurntobaristaCreamsplash_50_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick saw a small cup of cream on the counter, picked it up, and splashed it in Jesse\'s face. Everyone in line gasped. Jesse stood there gaping, cream dripping from his chin.', 'Nick saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Jesse\'s head. Everyone in line gasped. Jesse, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+          } 
+			var s_93_Dessertcrumble = {
+			type: 'instructions',
+			pages: ['Nick saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Jesse\'s head. Everyone in line gasped. Jesse, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+			} 
+          var q_94_DessertcrumbleCallpoliceman_DessertcrumbleCallpoliceman_100_Alter_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['The barista called over to a policeman standing in line, and she ordered Nick to leave before anyone pressed charges.', 'The barista called over to a policeman standing in line, and she ordered Jesse to leave before anyone pressed charges.']
+          } 
+			var s_95_Callpoliceman = {
+			type: 'instructions',
+			pages: ['The barista called over to a policeman standing in line, and she ordered Nick to leave before anyone pressed charges.']
+			} 
+          var q_96_CallpolicemanHatecoffee_CallpolicemanHatecoffee_100_Permute_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick stared at Jesse one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Jesse stared at Nick one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+          } 
+			var s_97_Hatecoffee = {
+			type: 'instructions',
+			pages: ['Nick stared at Jesse one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+			} 
+			var s_98_END = {
+			type: 'instructions',
+			pages: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Jesse a bunch of napkins and gave him a free drink out of sympathy, saying \"Some people will do anything for the coffee fix.\"']
+			} 
+			var s_99_BEGIN = {
+			type: 'instructions',
+			pages: ['Jesse walked into the coffee shop angrily after having gotten into a fight with his mom.']
+			} 
+          var q_100_BEGINWalktofront_BEGINWalktoback_40_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Ben, the first person in line.', 'He walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.']
+          } 
+			var s_101_Walktofront = {
+			type: 'instructions',
+			pages: ['He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Ben, the first person in line.']
+			} 
+          var q_102_WalktofrontSayexcuseme_WalktofrontSayexcuseme_100_Alter_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Jesse was astonished and said, \"Excuse me?!\'', 'Ben was astonished and said, \"Excuse me?!\'']
+          } 
+			var s_103_Sayexcuseme = {
+			type: 'instructions',
+			pages: ['Ben was astonished and said, \"Excuse me?!\'']
+			} 
+          var q_104_SayexcusemeShove_SayexcusemeSubjectstares_44_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Jesse turned to Ben and gave him a very mean look.', 'Jesse proceeded to give a slight shove to Ben.']
+          } 
+			var s_105_Shove = {
+			type: 'instructions',
+			pages: ['Jesse proceeded to give a slight shove to Ben.']
+			} 
+          var q_106_ShoveXstare_ShoveXstare_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Jesse stared back at Ben, as though daring him with his eyes to do something.Jesse refusing to engage with Ben, turned to the barista and said, \"I was first in line!\"', 'Ben stared back at Jesse, as though daring him with his eyes to do something.Ben refusing to engage with Jesse, turned to the barista and said, \"I was first in line!\"']
+          } 
+			var s_107_Xstare = {
+			type: 'instructions',
+			pages: ['Ben stared back at Jesse, as though daring him with his eyes to do something.Ben refusing to engage with Jesse, turned to the barista and said, \"I was first in line!\"']
+			} 
+          var q_108_XstareDessertcrumble_XstareDessertcrumble_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben saw a cookie sitting like ammo next to the cash register, snatched it, and crumbled it above Jesse\'s head. Everyone in line gasped. Jesse, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.', 'Jesse saw a cookie sitting like ammo next to the cash register, snatched it, and crumbled it above Ben\'s head. Everyone in line gasped. Ben, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+          } 
+			var s_109_Dessertcrumble = {
+			type: 'instructions',
+			pages: ['Jesse saw a cookie sitting like ammo next to the cash register, snatched it, and crumbled it above Ben\'s head. Everyone in line gasped. Ben, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+			} 
+			var s_110_Baristaorders = {
+			type: 'instructions',
+			pages: ['The barista ran out from behind the counter and ordered Jesse to leave.']
+			} 
+          var q_111_BaristaordersLovejuice_BaristaordersHatecoffee_70_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Jesse gave Ben one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"', 'Jesse stared at Ben one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+          } 
+			var s_112_Lovejuice = {
+			type: 'instructions',
+			pages: ['Jesse gave Ben one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+			} 
+          var q_113_LovejuiceEND_LovejuiceEND_100_Alter_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Jesse a bunch of napkins and gave him a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"']
+          } 
+			var s_114_END = {
+			type: 'instructions',
+			pages: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"']
+			} 
+			var s_115_BEGIN = {
+			type: 'instructions',
+			pages: ['Ben walked into the coffee shop angrily after having dropped his keys in a storm drain.']
+			} 
+          var q_116_BEGINWalktofront_BEGINWalktoback_40_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['He walked to the back of the line and stood impatiently, watching the first person in line, Olivia, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut her.', 'He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Olivia, the first person in line.']
+          } 
+			var s_117_Walktofront = {
+			type: 'instructions',
+			pages: ['He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Olivia, the first person in line.']
+			} 
+          var q_118_WalktofrontStepinfront_WalktofrontSayexcuseme_50_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Olivia was astonished and said, \"Excuse me?!\'', 'Olivia was not having it that day, and she promptly stepped back in front of Ben.']
+          } 
+			var s_119_Stepinfront = {
+			type: 'instructions',
+			pages: ['Olivia was not having it that day, and she promptly stepped back in front of Ben.']
+			} 
+          var q_120_StepinfrontSubjectstares_StepinfrontSubjectstares_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Olivia turned to Ben and gave him a very mean look.', 'Ben turned to Olivia and gave her a very mean look.']
+          } 
+			var s_121_Subjectstares = {
+			type: 'instructions',
+			pages: ['Ben turned to Olivia and gave her a very mean look.']
+			} 
+          var q_122_SubjectstaresTurntobarista_SubjectstaresXstare_85_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Olivia, refusing to engage with him, turned to the barista and said, \"I was first in line!\"', 'Olivia stared back at Ben, as though daring him with her eyes to do something.Olivia refusing to engage with Ben, turned to the barista and said, \"I was first in line!\"']
+          } 
+			var s_123_Turntobarista = {
+			type: 'instructions',
+			pages: ['Olivia, refusing to engage with him, turned to the barista and said, \"I was first in line!\"']
+			} 
+          var q_124_TurntobaristaCreamsplash_TurntobaristaCreamsplash_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Olivia saw a small cup of cream on the counter, picked it up, and splashed it in Ben\'s face. Everyone in line gasped. Ben stood there gaping, cream dripping from his chin.', 'Ben saw a small cup of cream on the counter, picked it up, and splashed it in Olivia\'s face. Everyone in line gasped. Olivia stood there gaping, cream dripping from her chin.']
+          } 
+			var s_125_Creamsplash = {
+			type: 'instructions',
+			pages: ['Ben saw a small cup of cream on the counter, picked it up, and splashed it in Olivia\'s face. Everyone in line gasped. Olivia stood there gaping, cream dripping from her chin.']
+			} 
+          var q_126_CreamsplashBaristaorders_CreamsplashBaristaorders_100_Alter_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['The barista ran out from behind the counter and ordered Ben to leave.', 'The barista ran out from behind the counter and ordered Olivia to leave.']
+          } 
+			var s_127_Baristaorders = {
+			type: 'instructions',
+			pages: ['The barista ran out from behind the counter and ordered Ben to leave.']
+			} 
+          var q_128_BaristaordersLovejuice_BaristaordersHatecoffee_70_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben stared at Olivia one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Ben gave Olivia one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+          } 
+			var s_129_Lovejuice = {
+			type: 'instructions',
+			pages: ['Ben gave Olivia one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+			} 
+          var q_130_LovejuiceEND_LovejuiceEND_100_Alter_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Olivia a bunch of napkins and gave her a free drink out of sympathy, saying \"I think some caffeine would\'ve helped that one.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying \"I think some caffeine would\'ve helped that one.\"']
+          } 
+			var s_131_END = {
+			type: 'instructions',
+			pages: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Olivia a bunch of napkins and gave her a free drink out of sympathy, saying \"I think some caffeine would\'ve helped that one.\"']
+			} 
+			var s_132_BEGIN = {
+			type: 'instructions',
+			pages: ['Nick walked into the coffee shop angrily after having gotten a parking ticket.']
+			} 
+          var q_133_BEGINWalktoback_BEGINWalktofront_60_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['He walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.', 'He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Ben, the first person in line.']
+          } 
+			var s_134_Walktoback = {
+			type: 'instructions',
+			pages: ['He walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.']
+			} 
+          var q_135_WalktobackStepinfront_WalktobackSayexcuseme_40_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben was not having it that day, and he promptly stepped back in front of Nick.', 'Ben was astonished and said, \"Excuse me?!\'']
+          } 
+			var s_136_Stepinfront = {
+			type: 'instructions',
+			pages: ['Ben was not having it that day, and he promptly stepped back in front of Nick.']
+			} 
+          var q_137_StepinfrontSubjectstares_StepinfrontSubjectstares_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben turned to Nick and gave him a very mean look.', 'Nick turned to Ben and gave him a very mean look.']
+          } 
+			var s_138_Subjectstares = {
+			type: 'instructions',
+			pages: ['Nick turned to Ben and gave him a very mean look.']
+			} 
+          var q_139_SubjectstaresTurntobarista_SubjectstaresTurntobarista_100_Alter_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick, refusing to engage with him, turned to the barista and said, \"I was first in line!\"', 'Ben, refusing to engage with him, turned to the barista and said, \"I was first in line!\"']
+          } 
+			var s_140_Turntobarista = {
+			type: 'instructions',
+			pages: ['Ben, refusing to engage with him, turned to the barista and said, \"I was first in line!\"']
+			} 
+          var q_141_TurntobaristaCreamsplash_TurntobaristaCreamsplash_100_Permute_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick saw a small cup of cream on the counter, picked it up, and splashed it in Ben\'s face. Everyone in line gasped. Ben stood there gaping, cream dripping from his chin.', 'Ben saw a small cup of cream on the counter, picked it up, and splashed it in Nick\'s face. Everyone in line gasped. Nick stood there gaping, cream dripping from his chin.']
+          } 
+			var s_142_Creamsplash = {
+			type: 'instructions',
+			pages: ['Nick saw a small cup of cream on the counter, picked it up, and splashed it in Ben\'s face. Everyone in line gasped. Ben stood there gaping, cream dripping from his chin.']
+			} 
+          var q_143_CreamsplashCallpoliceman_CreamsplashBaristaorders_90_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['The barista ran out from behind the counter and ordered Nick to leave.', 'The barista called over to a policeman standing in line, and he ordered Nick to leave before anyone pressed charges.']
+          } 
+			var s_144_Callpoliceman = {
+			type: 'instructions',
+			pages: ['The barista called over to a policeman standing in line, and he ordered Nick to leave before anyone pressed charges.']
+			} 
+          var q_145_CallpolicemanLovejuice_CallpolicemanLovejuice_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben gave Nick one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"', 'Nick gave Ben one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+          } 
+			var s_146_Lovejuice = {
+			type: 'instructions',
+			pages: ['Nick gave Ben one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+			} 
+          var q_147_LovejuiceEND_LovejuiceEND_100_Alter_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying \"Some people will do anything for the coffee fix.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying \"Some people will do anything for the coffee fix.\"']
+          } 
+			var s_148_END = {
+			type: 'instructions',
+			pages: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying \"Some people will do anything for the coffee fix.\"']
+			} 
+			var s_149_BEGIN = {
+			type: 'instructions',
+			pages: ['Ben walked into the coffee shop angrily after having dropped his keys in a storm drain.']
+			} 
+			var s_150_Walktofront = {
+			type: 'instructions',
+			pages: ['He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Vera, the first person in line.']
+			} 
+          var q_151_WalktofrontStepinfront_WalktofrontSayexcuseme_50_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Vera was not having it that day, and she promptly stepped back in front of Ben.', 'Vera was astonished and said, \"Excuse me?!\'']
+          } 
+			var s_152_Stepinfront = {
+			type: 'instructions',
+			pages: ['Vera was not having it that day, and she promptly stepped back in front of Ben.']
+			} 
+          var q_153_StepinfrontSubjectstares_StepinfrontSubjectstares_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Vera turned to Ben and gave him a very mean look.', 'Ben turned to Vera and gave her a very mean look.']
+          } 
+			var s_154_Subjectstares = {
+			type: 'instructions',
+			pages: ['Ben turned to Vera and gave her a very mean look.']
+			} 
+          var q_155_SubjectstaresXshove_SubjectstaresXshove_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['In retaliation, Ben pushed Vera.', 'In retaliation, Vera pushed Ben.']
+          } 
+			var s_156_Xshove = {
+			type: 'instructions',
+			pages: ['In retaliation, Vera pushed Ben.']
+			} 
+          var q_157_XshoveDessertcrumble_XshoveCreamsplash_35_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Vera\'s head. Everyone in line gasped. Vera, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.', 'Ben saw a small cup of cream on the counter, picked it up, and splashed it in Vera\'s face. Everyone in line gasped. Vera stood there gaping, cream dripping from her chin.']
+          } 
+			var s_158_Dessertcrumble = {
+			type: 'instructions',
+			pages: ['Ben saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Vera\'s head. Everyone in line gasped. Vera, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+			} 
+          var q_159_DessertcrumbleBaristaorders_DessertcrumbleBaristaorders_100_Alter_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['The barista ran out from behind the counter and ordered Ben to leave.', 'The barista ran out from behind the counter and ordered Vera to leave.']
+          } 
+			var s_160_Baristaorders = {
+			type: 'instructions',
+			pages: ['The barista ran out from behind the counter and ordered Ben to leave.']
+			} 
+          var q_161_BaristaordersLovejuice_BaristaordersHatecoffee_70_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben gave Vera one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"', 'Ben stared at Vera one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+          } 
+			var s_162_Lovejuice = {
+			type: 'instructions',
+			pages: ['Ben gave Vera one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+			} 
+			var s_163_END = {
+			type: 'instructions',
+			pages: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying \"I think some caffeine would\'ve helped that one.\"']
+			} 
+			var s_164_BEGIN = {
+			type: 'instructions',
+			pages: ['Vera walked into the coffee shop angrily after having found her calculus problem set ripped to shreds in her dog\'s cage.']
+			} 
+          var q_165_BEGINWalktoback_BEGINWalktofront_60_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['She walked to the back of the line and stood impatiently, watching the first person in line, Nick, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.', 'She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Nick, the first person in line.']
+          } 
+			var s_166_Walktoback = {
+			type: 'instructions',
+			pages: ['She walked to the back of the line and stood impatiently, watching the first person in line, Nick, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.']
+			} 
+          var q_167_WalktobackStepinfront_WalktobackStepinfront_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Vera was not having it that day, and she promptly stepped back in front of Nick.', 'Nick was not having it that day, and he promptly stepped back in front of Vera.']
+          } 
+			var s_168_Stepinfront = {
+			type: 'instructions',
+			pages: ['Nick was not having it that day, and he promptly stepped back in front of Vera.']
+			} 
+          var q_169_StepinfrontSubjectstares_StepinfrontSubjectstares_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick turned to Vera and gave her a very mean look.', 'Vera turned to Nick and gave him a very mean look.']
+          } 
+			var s_170_Subjectstares = {
+			type: 'instructions',
+			pages: ['Vera turned to Nick and gave him a very mean look.']
+			} 
+          var q_171_SubjectstaresXshove_SubjectstaresXstare_74_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick stared back at Vera, as though daring her with his eyes to do something.Nick refusing to engage with Vera, turned to the barista and said, \"I was first in line!\"', 'In retaliation, Nick pushed Vera.']
+          } 
+			var s_172_Xshove = {
+			type: 'instructions',
+			pages: ['In retaliation, Nick pushed Vera.']
+			} 
+          var q_173_XshoveDessertcrumble_XshoveDessertcrumble_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick saw a cookie sitting like ammo next to the cash register, snatched it, and crumbled it above Vera\'s head. Everyone in line gasped. Vera, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.', 'Vera saw a cookie sitting like ammo next to the cash register, snatched it, and crumbled it above Nick\'s head. Everyone in line gasped. Nick, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+          } 
+			var s_174_Dessertcrumble = {
+			type: 'instructions',
+			pages: ['Vera saw a cookie sitting like ammo next to the cash register, snatched it, and crumbled it above Nick\'s head. Everyone in line gasped. Nick, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+			} 
+          var q_175_DessertcrumbleBaristaorders_DessertcrumbleCallpoliceman_90_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['The barista called over to a policeman standing in line, and she ordered Vera to leave before anyone pressed charges.', 'The barista ran out from behind the counter and ordered Vera to leave.']
+          } 
+			var s_176_Baristaorders = {
+			type: 'instructions',
+			pages: ['The barista ran out from behind the counter and ordered Vera to leave.']
+			} 
+          var q_177_BaristaordersLovejuice_BaristaordersLovejuice_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick gave Vera one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"', 'Vera gave Nick one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+          } 
+			var s_178_Lovejuice = {
+			type: 'instructions',
+			pages: ['Vera gave Nick one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+			} 
+          var q_179_LovejuiceEND_LovejuiceEND_100_Alter_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying \"Its not everyday you meet a coffee criminal.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying \"Its not everyday you meet a coffee criminal.\"']
+          } 
+			var s_180_END = {
+			type: 'instructions',
+			pages: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying \"Its not everyday you meet a coffee criminal.\"']
+			} 
+			var s_181_BEGIN = {
+			type: 'instructions',
+			pages: ['Nick walked into the coffee shop angrily after having gotten a parking ticket.']
+			} 
+          var q_182_BEGINWalktoback_BEGINWalktofront_60_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['He walked to the back of the line and stood impatiently, watching the first person in line, Vera, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut her.', 'He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Vera, the first person in line.']
+          } 
+			var s_183_Walktoback = {
+			type: 'instructions',
+			pages: ['He walked to the back of the line and stood impatiently, watching the first person in line, Vera, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut her.']
+			} 
+          var q_184_WalktobackStepinfront_WalktobackSayexcuseme_40_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Vera was astonished and said, \"Excuse me?!\'', 'Vera was not having it that day, and she promptly stepped back in front of Nick.']
+          } 
+			var s_185_Stepinfront = {
+			type: 'instructions',
+			pages: ['Vera was not having it that day, and she promptly stepped back in front of Nick.']
+			} 
+          var q_186_StepinfrontSubjectstares_StepinfrontSubjectstares_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Vera turned to Nick and gave him a very mean look.', 'Nick turned to Vera and gave her a very mean look.']
+          } 
+			var s_187_Subjectstares = {
+			type: 'instructions',
+			pages: ['Nick turned to Vera and gave her a very mean look.']
+			} 
+          var q_188_SubjectstaresXstare_SubjectstaresTurntobarista_14_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Vera, refusing to engage with him, turned to the barista and said, \"I was first in line!\"', 'Vera stared back at Nick, as though daring him with her eyes to do something.Vera refusing to engage with Nick, turned to the barista and said, \"I was first in line!\"']
+          } 
+			var s_189_Xstare = {
+			type: 'instructions',
+			pages: ['Vera stared back at Nick, as though daring him with her eyes to do something.Vera refusing to engage with Nick, turned to the barista and said, \"I was first in line!\"']
+			} 
+          var q_190_XstareCreamsplash_XstareDessertcrumble_50_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick saw a small cup of cream on the counter, picked it up, and splashed it in Vera\'s face. Everyone in line gasped. Vera stood there gaping, cream dripping from her chin.', 'Nick saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Vera\'s head. Everyone in line gasped. Vera, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+          } 
+			var s_191_Creamsplash = {
+			type: 'instructions',
+			pages: ['Nick saw a small cup of cream on the counter, picked it up, and splashed it in Vera\'s face. Everyone in line gasped. Vera stood there gaping, cream dripping from her chin.']
+			} 
+          var q_192_CreamsplashCallpoliceman_CreamsplashBaristaorders_90_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['The barista called over to a policeman standing in line, and she ordered Nick to leave before anyone pressed charges.', 'The barista ran out from behind the counter and ordered Nick to leave.']
+          } 
+			var s_193_Callpoliceman = {
+			type: 'instructions',
+			pages: ['The barista called over to a policeman standing in line, and she ordered Nick to leave before anyone pressed charges.']
+			} 
+          var q_194_CallpolicemanHatecoffee_CallpolicemanLovejuice_70_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Nick stared at Vera one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Nick gave Vera one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+          } 
+			var s_195_Hatecoffee = {
+			type: 'instructions',
+			pages: ['Nick stared at Vera one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+			} 
+          var q_196_HatecoffeeEND_HatecoffeeEND_100_Alter_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying \"Its not everyday you meet a coffee criminal.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying \"Its not everyday you meet a coffee criminal.\"']
+          } 
+			var s_197_END = {
+			type: 'instructions',
+			pages: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying \"Its not everyday you meet a coffee criminal.\"']
+			} 
+			var s_198_BEGIN = {
+			type: 'instructions',
+			pages: ['Silvia walked into the coffee shop angrily after having realized that she had left her phone on the bus.']
+			} 
+          var q_199_BEGINWalktofront_BEGINWalktoback_40_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['She walked to the back of the line and stood impatiently, watching the first person in line, Olivia, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut her.', 'She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Olivia, the first person in line.']
+          } 
+			var s_200_Walktofront = {
+			type: 'instructions',
+			pages: ['She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Olivia, the first person in line.']
+			} 
+          var q_201_WalktofrontStepinfront_WalktofrontSayexcuseme_50_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Olivia was astonished and said, \"Excuse me?!\'', 'Olivia was not having it that day, and she promptly stepped back in front of Silvia.']
+          } 
+			var s_202_Stepinfront = {
+			type: 'instructions',
+			pages: ['Olivia was not having it that day, and she promptly stepped back in front of Silvia.']
+			} 
+          var q_203_StepinfrontIgnore_StepinfrontIgnore_100_Alter_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Silvia ignored her and proceeded to tell the barista that she would like a latte.', 'Olivia ignored her and proceeded to tell the barista that she would like a latte.']
+          } 
+			var s_204_Ignore = {
+			type: 'instructions',
+			pages: ['Silvia ignored her and proceeded to tell the barista that she would like a latte.']
+			} 
+			var s_205_Turntobarista = {
+			type: 'instructions',
+			pages: ['Olivia, refusing to engage with her, turned to the barista and said, \"I was first in line!\"']
+			} 
+          var q_206_TurntobaristaDessertcrumble_TurntobaristaDessertcrumble_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Olivia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Silvia\'s head. Everyone in line gasped. Silvia, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.', 'Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Olivia\'s head. Everyone in line gasped. Olivia, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+          } 
+			var s_207_Dessertcrumble = {
+			type: 'instructions',
+			pages: ['Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Olivia\'s head. Everyone in line gasped. Olivia, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+			} 
+          var q_208_DessertcrumbleBaristaorders_DessertcrumbleBaristaorders_100_Alter_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['The barista ran out from behind the counter and ordered Olivia to leave.', 'The barista ran out from behind the counter and ordered Silvia to leave.']
+          } 
+			var s_209_Baristaorders = {
+			type: 'instructions',
+			pages: ['The barista ran out from behind the counter and ordered Silvia to leave.']
+			} 
+          var q_210_BaristaordersLovejuice_BaristaordersHatecoffee_70_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Silvia stared at Olivia one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Silvia gave Olivia one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+          } 
+			var s_211_Lovejuice = {
+			type: 'instructions',
+			pages: ['Silvia gave Olivia one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+			} 
+          var q_212_LovejuiceEND_LovejuiceEND_100_Alter_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Olivia a bunch of napkins and gave her a free drink out of sympathy, saying \"Some people will do anything for the coffee fix.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying \"Some people will do anything for the coffee fix.\"']
+          } 
+			var s_213_END = {
+			type: 'instructions',
+			pages: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Olivia a bunch of napkins and gave her a free drink out of sympathy, saying \"Some people will do anything for the coffee fix.\"']
+			} 
+			var s_214_BEGIN = {
+			type: 'instructions',
+			pages: ['Silvia walked into the coffee shop angrily after having realized that she had left her phone on the bus.']
+			} 
+          var q_215_BEGINWalktoback_BEGINWalktofront_60_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Ben, the first person in line.', 'She walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.']
+          } 
+			var s_216_Walktoback = {
+			type: 'instructions',
+			pages: ['She walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.']
+			} 
+          var q_217_WalktobackStepinfront_WalktobackStepinfront_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Silvia was not having it that day, and she promptly stepped back in front of Ben.', 'Ben was not having it that day, and he promptly stepped back in front of Silvia.']
+          } 
+			var s_218_Stepinfront = {
+			type: 'instructions',
+			pages: ['Ben was not having it that day, and he promptly stepped back in front of Silvia.']
+			} 
+          var q_219_StepinfrontIgnore_StepinfrontSubjectstares_44_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Silvia ignored him and proceeded to tell the barista that she would like a latte.', 'Silvia turned to Ben and gave him a very mean look.']
+          } 
+			var s_220_Ignore = {
+			type: 'instructions',
+			pages: ['Silvia ignored him and proceeded to tell the barista that she would like a latte.']
+			} 
+			var s_221_Xstare = {
+			type: 'instructions',
+			pages: ['Ben stared back at Silvia, as though daring her with his eyes to do something.Ben refusing to engage with Silvia, turned to the barista and said, \"I was first in line!\"']
+			} 
+			var s_222_Dessertcrumble = {
+			type: 'instructions',
+			pages: ['Silvia saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Ben\'s head. Everyone in line gasped. Ben, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+			} 
+          var q_223_DessertcrumbleBaristaorders_DessertcrumbleCallpoliceman_90_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['The barista ran out from behind the counter and ordered Silvia to leave.', 'The barista called over to a policeman standing in line, and she ordered Silvia to leave before anyone pressed charges.']
+          } 
+			var s_224_Baristaorders = {
+			type: 'instructions',
+			pages: ['The barista ran out from behind the counter and ordered Silvia to leave.']
+			} 
+          var q_225_BaristaordersHatecoffee_BaristaordersHatecoffee_100_Permute_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben stared at Silvia one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Silvia stared at Ben one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+          } 
+			var s_226_Hatecoffee = {
+			type: 'instructions',
+			pages: ['Silvia stared at Ben one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+			} 
+          var q_227_HatecoffeeEND_HatecoffeeEND_100_Alter_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"']
+          } 
+			var s_228_END = {
+			type: 'instructions',
+			pages: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"']
+			} 
+			var s_229_BEGIN = {
+			type: 'instructions',
+			pages: ['Silvia walked into the coffee shop angrily after having realized that she had left her phone on the bus.']
+			} 
+          var q_230_BEGINWalktofront_BEGINWalktoback_40_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['She walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.', 'She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Ben, the first person in line.']
+          } 
+			var s_231_Walktofront = {
+			type: 'instructions',
+			pages: ['She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Ben, the first person in line.']
+			} 
+          var q_232_WalktofrontSayexcuseme_WalktofrontStepinfront_50_Default_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Ben was astonished and said, \"Excuse me?!\'', 'Ben was not having it that day, and he promptly stepped back in front of Silvia.']
+          } 
+			var s_233_Sayexcuseme = {
+			type: 'instructions',
+			pages: ['Ben was astonished and said, \"Excuse me?!\'']
+			} 
+			var s_234_Subjectstares = {
+			type: 'instructions',
+			pages: ['Silvia turned to Ben and gave him a very mean look.']
+			} 
+          var q_235_SubjectstaresTurntobarista_SubjectstaresTurntobarista_100_Alter_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Silvia, refusing to engage with him, turned to the barista and said, \"I was first in line!\"', 'Ben, refusing to engage with her, turned to the barista and said, \"I was first in line!\"']
+          } 
+			var s_236_Turntobarista = {
+			type: 'instructions',
+			pages: ['Ben, refusing to engage with her, turned to the barista and said, \"I was first in line!\"']
+			} 
+          var q_237_TurntobaristaDessertcrumble_TurntobaristaDessertcrumble_100_Permute_01 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Silvia saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Ben\'s head. Everyone in line gasped. Ben, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.', 'Ben saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Silvia\'s head. Everyone in line gasped. Silvia, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+          } 
+			var s_238_Dessertcrumble = {
+			type: 'instructions',
+			pages: ['Silvia saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Ben\'s head. Everyone in line gasped. Ben, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+			} 
+          var q_239_DessertcrumbleBaristaorders_DessertcrumbleCallpoliceman_90_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['The barista called over to a policeman standing in line, and he ordered Silvia to leave before anyone pressed charges.', 'The barista ran out from behind the counter and ordered Silvia to leave.']
+          } 
+			var s_240_Baristaorders = {
+			type: 'instructions',
+			pages: ['The barista ran out from behind the counter and ordered Silvia to leave.']
+			} 
+          var q_241_BaristaordersLovejuice_BaristaordersHatecoffee_70_Default_10 = {
+          type: 'html-slider-response',
+          stimulus: '<p> What happens next? <p>',
+          labels: ['Silvia stared at Ben one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Silvia gave Ben one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+          } 
+			var s_242_Lovejuice = {
+			type: 'instructions',
+			pages: ['Silvia gave Ben one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+			} 
+			var s_243_END = {
+			type: 'instructions',
+			pages: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying \"Some people will do anything for the coffee fix.\"']
+			} 
+function saveTextToFile(textstr, filename) {
+    var blobToSave = new Blob([textstr], {
+      type: 'text/plain'
+    });
+    var blobURL = "";
+    if (typeof window.webkitURL !== 'undefined') {
+      blobURL = window.webkitURL.createObjectURL(blobToSave);
+    } else {
+      blobURL = window.URL.createObjectURL(blobToSave);
+    }
+
+    var display_element = jsPsych.getDisplayElement();
+
+    display_element.insertAdjacentHTML('beforeend','<a id="jspsych-download-as-text-link" style="display:none;" download="'+filename+'" href="'+blobURL+'">click to download</a>');
+    document.getElementById('jspsych-download-as-text-link').click();
+  }
+  
+
+  jsPsych.init({
+    timeline: [s_0_BEGIN,q_1_BEGINWalktoback_BEGINWalktofront_60_Default_10,s_2_Walktoback,s_3_Stepinfront,q_4_StepinfrontIgnore_StepinfrontIgnore_100_Alter_01,s_5_Ignore,q_6_IgnoreXstare_IgnoreTurntobarista_66_Default_01,s_7_Xstare,q_8_XstareDessertcrumble_XstareCreamsplash_50_Default_01,s_9_Dessertcrumble,q_10_DessertcrumbleCallpoliceman_DessertcrumbleCallpoliceman_100_Alter_01,s_11_Callpoliceman,q_12_CallpolicemanHatecoffee_CallpolicemanHatecoffee_100_Permute_01,s_13_Hatecoffee,q_14_HatecoffeeEND_HatecoffeeEND_100_Alter_10,s_15_END,s_16_BEGIN,q_17_BEGINWalktofront_BEGINWalktoback_40_Default_10,s_18_Walktofront,q_19_WalktofrontStepinfront_WalktofrontSayexcuseme_50_Default_01,s_20_Stepinfront,q_21_StepinfrontIgnore_StepinfrontSubjectstares_44_Default_10,s_22_Ignore,q_23_IgnoreXstare_IgnoreXstare_100_Permute_01,s_24_Xstare,q_25_XstareDessertcrumble_XstareDessertcrumble_100_Permute_01,s_26_Dessertcrumble,q_27_DessertcrumbleCallpoliceman_DessertcrumbleBaristaorders_10_Default_01,s_28_Callpoliceman,q_29_CallpolicemanHatecoffee_CallpolicemanLovejuice_70_Default_10,s_30_Hatecoffee,q_31_HatecoffeeEND_HatecoffeeEND_100_Alter_10,s_32_END,s_33_BEGIN,q_34_BEGINWalktoback_BEGINWalktofront_60_Default_01,s_35_Walktoback,q_36_WalktobackStepinfront_WalktobackStepinfront_100_Permute_01,s_37_Stepinfront,q_38_StepinfrontSubjectstares_StepinfrontSubjectstares_100_Permute_10,s_39_Subjectstares,q_40_SubjectstaresTurntobarista_SubjectstaresXshove_66_Default_01,s_41_Turntobarista,q_42_TurntobaristaDessertcrumble_TurntobaristaDessertcrumble_100_Permute_10,s_43_Dessertcrumble,q_44_DessertcrumbleBaristaorders_DessertcrumbleBaristaorders_100_Alter_10,s_45_Baristaorders,q_46_BaristaordersHatecoffee_BaristaordersLovejuice_30_Default_01,s_47_Hatecoffee,q_48_HatecoffeeEND_HatecoffeeEND_100_Alter_10,s_49_END,s_50_BEGIN,q_51_BEGINWalktoback_BEGINWalktofront_60_Default_01,s_52_Walktoback,q_53_WalktobackStepinfront_WalktobackStepinfront_100_Permute_10,s_54_Stepinfront,q_55_StepinfrontShove_StepinfrontSubjectstares_16_Default_10,s_56_Shove,q_57_ShoveXshove_ShoveXshove_100_Permute_01,s_58_Xshove,q_59_XshoveDessertcrumble_XshoveDessertcrumble_100_Permute_10,s_60_Dessertcrumble,q_61_DessertcrumbleBaristaorders_DessertcrumbleBaristaorders_100_Alter_10,s_62_Baristaorders,q_63_BaristaordersLovejuice_BaristaordersLovejuice_100_Permute_10,s_64_Lovejuice,q_65_LovejuiceEND_LovejuiceEND_100_Alter_10,s_66_END,s_67_BEGIN,q_68_BEGINWalktoback_BEGINWalktofront_60_Default_10,s_69_Walktoback,q_70_WalktobackSayexcuseme_WalktobackSayexcuseme_100_Alter_10,s_71_Sayexcuseme,q_72_SayexcusemeShove_SayexcusemeSubjectstares_44_Default_01,s_73_Shove,q_74_ShoveXshove_ShoveXstare_66_Default_01,s_75_Xshove,q_76_XshoveDessertcrumble_XshoveCreamsplash_35_Default_10,s_77_Dessertcrumble,q_78_DessertcrumbleBaristaorders_DessertcrumbleBaristaorders_100_Alter_01,s_79_Baristaorders,q_80_BaristaordersLovejuice_BaristaordersLovejuice_100_Permute_10,s_81_Lovejuice,q_82_LovejuiceEND_LovejuiceEND_100_Alter_10,s_83_END,s_84_BEGIN,s_85_Walktofront,q_86_WalktofrontSayexcuseme_WalktofrontSayexcuseme_100_Alter_10,s_87_Sayexcuseme,q_88_SayexcusemeSubjectstares_SayexcusemeShove_55_Default_01,s_89_Subjectstares,q_90_SubjectstaresTurntobarista_SubjectstaresTurntobarista_100_Alter_10,s_91_Turntobarista,q_92_TurntobaristaDessertcrumble_TurntobaristaCreamsplash_50_Default_10,s_93_Dessertcrumble,q_94_DessertcrumbleCallpoliceman_DessertcrumbleCallpoliceman_100_Alter_01,s_95_Callpoliceman,q_96_CallpolicemanHatecoffee_CallpolicemanHatecoffee_100_Permute_01,s_97_Hatecoffee,s_98_END,s_99_BEGIN,q_100_BEGINWalktofront_BEGINWalktoback_40_Default_01,s_101_Walktofront,q_102_WalktofrontSayexcuseme_WalktofrontSayexcuseme_100_Alter_10,s_103_Sayexcuseme,q_104_SayexcusemeShove_SayexcusemeSubjectstares_44_Default_10,s_105_Shove,q_106_ShoveXstare_ShoveXstare_100_Permute_10,s_107_Xstare,q_108_XstareDessertcrumble_XstareDessertcrumble_100_Permute_10,s_109_Dessertcrumble,s_110_Baristaorders,q_111_BaristaordersLovejuice_BaristaordersHatecoffee_70_Default_01,s_112_Lovejuice,q_113_LovejuiceEND_LovejuiceEND_100_Alter_01,s_114_END,s_115_BEGIN,q_116_BEGINWalktofront_BEGINWalktoback_40_Default_10,s_117_Walktofront,q_118_WalktofrontStepinfront_WalktofrontSayexcuseme_50_Default_10,s_119_Stepinfront,q_120_StepinfrontSubjectstares_StepinfrontSubjectstares_100_Permute_10,s_121_Subjectstares,q_122_SubjectstaresTurntobarista_SubjectstaresXstare_85_Default_01,s_123_Turntobarista,q_124_TurntobaristaCreamsplash_TurntobaristaCreamsplash_100_Permute_10,s_125_Creamsplash,q_126_CreamsplashBaristaorders_CreamsplashBaristaorders_100_Alter_01,s_127_Baristaorders,q_128_BaristaordersLovejuice_BaristaordersHatecoffee_70_Default_10,s_129_Lovejuice,q_130_LovejuiceEND_LovejuiceEND_100_Alter_01,s_131_END,s_132_BEGIN,q_133_BEGINWalktoback_BEGINWalktofront_60_Default_01,s_134_Walktoback,q_135_WalktobackStepinfront_WalktobackSayexcuseme_40_Default_01,s_136_Stepinfront,q_137_StepinfrontSubjectstares_StepinfrontSubjectstares_100_Permute_10,s_138_Subjectstares,q_139_SubjectstaresTurntobarista_SubjectstaresTurntobarista_100_Alter_10,s_140_Turntobarista,q_141_TurntobaristaCreamsplash_TurntobaristaCreamsplash_100_Permute_01,s_142_Creamsplash,q_143_CreamsplashCallpoliceman_CreamsplashBaristaorders_90_Default_10,s_144_Callpoliceman,q_145_CallpolicemanLovejuice_CallpolicemanLovejuice_100_Permute_10,s_146_Lovejuice,q_147_LovejuiceEND_LovejuiceEND_100_Alter_10,s_148_END,s_149_BEGIN,s_150_Walktofront,q_151_WalktofrontStepinfront_WalktofrontSayexcuseme_50_Default_01,s_152_Stepinfront,q_153_StepinfrontSubjectstares_StepinfrontSubjectstares_100_Permute_10,s_154_Subjectstares,q_155_SubjectstaresXshove_SubjectstaresXshove_100_Permute_10,s_156_Xshove,q_157_XshoveDessertcrumble_XshoveCreamsplash_35_Default_01,s_158_Dessertcrumble,q_159_DessertcrumbleBaristaorders_DessertcrumbleBaristaorders_100_Alter_01,s_160_Baristaorders,q_161_BaristaordersLovejuice_BaristaordersHatecoffee_70_Default_01,s_162_Lovejuice,s_163_END,s_164_BEGIN,q_165_BEGINWalktoback_BEGINWalktofront_60_Default_01,s_166_Walktoback,q_167_WalktobackStepinfront_WalktobackStepinfront_100_Permute_10,s_168_Stepinfront,q_169_StepinfrontSubjectstares_StepinfrontSubjectstares_100_Permute_10,s_170_Subjectstares,q_171_SubjectstaresXshove_SubjectstaresXstare_74_Default_10,s_172_Xshove,q_173_XshoveDessertcrumble_XshoveDessertcrumble_100_Permute_10,s_174_Dessertcrumble,q_175_DessertcrumbleBaristaorders_DessertcrumbleCallpoliceman_90_Default_10,s_176_Baristaorders,q_177_BaristaordersLovejuice_BaristaordersLovejuice_100_Permute_10,s_178_Lovejuice,q_179_LovejuiceEND_LovejuiceEND_100_Alter_01,s_180_END,s_181_BEGIN,q_182_BEGINWalktoback_BEGINWalktofront_60_Default_01,s_183_Walktoback,q_184_WalktobackStepinfront_WalktobackSayexcuseme_40_Default_10,s_185_Stepinfront,q_186_StepinfrontSubjectstares_StepinfrontSubjectstares_100_Permute_10,s_187_Subjectstares,q_188_SubjectstaresXstare_SubjectstaresTurntobarista_14_Default_10,s_189_Xstare,q_190_XstareCreamsplash_XstareDessertcrumble_50_Default_01,s_191_Creamsplash,q_192_CreamsplashCallpoliceman_CreamsplashBaristaorders_90_Default_01,s_193_Callpoliceman,q_194_CallpolicemanHatecoffee_CallpolicemanLovejuice_70_Default_01,s_195_Hatecoffee,q_196_HatecoffeeEND_HatecoffeeEND_100_Alter_01,s_197_END,s_198_BEGIN,q_199_BEGINWalktofront_BEGINWalktoback_40_Default_10,s_200_Walktofront,q_201_WalktofrontStepinfront_WalktofrontSayexcuseme_50_Default_10,s_202_Stepinfront,q_203_StepinfrontIgnore_StepinfrontIgnore_100_Alter_01,s_204_Ignore,s_205_Turntobarista,q_206_TurntobaristaDessertcrumble_TurntobaristaDessertcrumble_100_Permute_10,s_207_Dessertcrumble,q_208_DessertcrumbleBaristaorders_DessertcrumbleBaristaorders_100_Alter_10,s_209_Baristaorders,q_210_BaristaordersLovejuice_BaristaordersHatecoffee_70_Default_10,s_211_Lovejuice,q_212_LovejuiceEND_LovejuiceEND_100_Alter_01,s_213_END,s_214_BEGIN,q_215_BEGINWalktoback_BEGINWalktofront_60_Default_10,s_216_Walktoback,q_217_WalktobackStepinfront_WalktobackStepinfront_100_Permute_10,s_218_Stepinfront,q_219_StepinfrontIgnore_StepinfrontSubjectstares_44_Default_01,s_220_Ignore,s_221_Xstare,s_222_Dessertcrumble,q_223_DessertcrumbleBaristaorders_DessertcrumbleCallpoliceman_90_Default_01,s_224_Baristaorders,q_225_BaristaordersHatecoffee_BaristaordersHatecoffee_100_Permute_10,s_226_Hatecoffee,q_227_HatecoffeeEND_HatecoffeeEND_100_Alter_01,s_228_END,s_229_BEGIN,q_230_BEGINWalktofront_BEGINWalktoback_40_Default_10,s_231_Walktofront,q_232_WalktofrontSayexcuseme_WalktofrontStepinfront_50_Default_01,s_233_Sayexcuseme,s_234_Subjectstares,q_235_SubjectstaresTurntobarista_SubjectstaresTurntobarista_100_Alter_10,s_236_Turntobarista,q_237_TurntobaristaDessertcrumble_TurntobaristaDessertcrumble_100_Permute_01,s_238_Dessertcrumble,q_239_DessertcrumbleBaristaorders_DessertcrumbleCallpoliceman_90_Default_10,s_240_Baristaorders,q_241_BaristaordersLovejuice_BaristaordersHatecoffee_70_Default_10,s_242_Lovejuice,s_243_END,],
+    on_finish: function() {
+      jsPsych.data.displayData();
+      var data_string;
+      data_string = jsPsych.data.get().csv()
+      saveTextToFile(data_string, 'DATACSW-2.csv')
+    },
+    default_iti: 250
+  });
+
+</script>

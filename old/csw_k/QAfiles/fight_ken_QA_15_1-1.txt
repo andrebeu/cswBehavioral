@@ -1,0 +1,990 @@
+{"Barista": "Silvia", "Dessert_crumbled": "muffin", "Drink_ordered": "mocha", "Policeman": "Olivia", "Subject": "Ben", "Victim": "Nick"}
+{"Olivia": {"Name": "Olivia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "learned that her flight to the Bahamas was cancelled due to inclement weather", "Barista_saying": "\u201cIm so sorry you had to experience a coffee crime.\u201d", "Violent": "Yes", "Thirsty": "No"}, "Jesse": {"Name": "Jesse", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten into a fight with his mom", "Barista_saying": "\u201cIts not everyday you meet a coffee criminal.\u201d", "Violent": "Yes", "Thirsty": "Yes"}, "Nick": {"Name": "Nick", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten a parking ticket", "Barista_saying": "\u201cThe nectar of the gods makes people do crazy things.\u201d", "Violent": "No", "Thirsty": "No"}, "Vera": {"Name": "Vera", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "found her calculus problem set ripped to shreds in her dog\u2019s cage", "Barista_saying": "\u201cSome people will do anything for the coffee fix.\u201d", "Violent": "No", "Thirsty": "Yes"}, "Silvia": {"Name": "Silvia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "realized that she had left her phone on the bus", "Barista_saying": "\u201cI think some caffeine would\u2019ve helped that one.\u201d", "Violent": "No", "Thirsty": "No"}, "Ben": {"Name": "Ben", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "dropped his keys in a storm drain", "Barista_saying": "\u201cThere was no need to worry. The baristas are trained in kung fu.\u201d", "Violent": "Yes", "Thirsty": "No"}, "coffee": {"Name": "coffee"}, "mocha": {"Name": "mocha"}, "latte": {"Name": "latte"}, "cake": {"Name": "cake"}, "cookie": {"Name": "cookie"}, "lemonsquare": {"Name": "lemonsquare"}, "muffin": {"Name": "muffin"}}
+
+Ben walked into the coffee shop angrily after having dropped his keys in a storm drain.
+Default
+0.4	Walk_to_front	He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Nick, the first person in line.
+Truth
+0.6	Walk_to_back	He walked to the back of the line and stood impatiently, watching the first person in line, Nick, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.
+
+He walked to the back of the line and stood impatiently, watching the first person in line, Nick, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.
+Permute_2_fillers: Ben->Nick (Subject->Victim) Nick->Ben (Victim->Subject) 
+0	Step_in_front	Ben was not having it that day, and he promptly stepped back in front of Nick.
+Default
+0.6	Say_excuse_me	Nick was astonished and said, “Excuse me?!’
+Truth
+0.4	Step_in_front	Nick was not having it that day, and he promptly stepped back in front of Ben.
+
+Nick was not having it that day, and he promptly stepped back in front of Ben.
+Alter_1_fillers: Ben->Nick (Subject->Victim) 
+0	Ignore	Nick ignored him and proceeded to tell the barista that he would like a mocha.
+Default
+0.5	Subject_stares	Ben turned to Nick and gave him a very mean look.
+Truth
+0.4	Ignore	Ben ignored him and proceeded to tell the barista that he would like a mocha.
+
+Ben ignored him and proceeded to tell the barista that he would like a mocha.
+Permute_2_fillers: Ben->Nick (Subject->Victim) Nick->Ben (Victim->Subject) 
+0	X_stare	Ben stared back at Nick, as though daring him with his eyes to do something.Ben refusing to engage with Nick, turned to the barista and said, ‘I was first in line!”
+Default
+0.3	Turn_to_barista	Nick, refusing to engage with him, turned to the barista and said, ‘I was first in line!”
+Truth
+0.6	X_stare	Nick stared back at Ben, as though daring him with his eyes to do something.Nick refusing to engage with Ben, turned to the barista and said, ‘I was first in line!”
+
+Nick stared back at Ben, as though daring him with his eyes to do something.Nick refusing to engage with Ben, turned to the barista and said, ‘I was first in line!”
+Permute_2_fillers: Ben->Nick (Subject->Victim) Nick->Ben (Victim->Subject) 
+0	Dessert_crumble	Nick saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Ben’s head. Everyone in line gasped. Ben, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+Default
+0.5	Cream_splash	Ben saw a small cup of cream on the counter, picked it up, and splashed it in Nick’s face. Everyone in line gasped. Nick stood there gaping, cream dripping from his chin.
+Truth
+0.5	Dessert_crumble	Ben saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Nick’s head. Everyone in line gasped. Nick, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+
+Ben saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Nick’s head. Everyone in line gasped. Nick, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+Alter_1_fillers: Ben->Nick (Subject->Victim) 
+0	Call_policeman	The barista called over to a policeman standing in line, and she ordered Nick to leave before anyone pressed charges.
+Default
+0.9	Barista_orders	The barista ran out from behind the counter and ordered Ben to leave.
+Truth
+0.1	Call_policeman	The barista called over to a policeman standing in line, and she ordered Ben to leave before anyone pressed charges.
+
+The barista called over to a policeman standing in line, and she ordered Ben to leave before anyone pressed charges.
+Permute_2_fillers: Ben->Nick (Subject->Victim) Nick->Ben (Victim->Subject) 
+0	Hate_coffee	Nick stared at Ben one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Default
+0.3	Love_juice	Ben gave Nick one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Truth
+0.7	Hate_coffee	Ben stared at Nick one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+
+Ben stared at Nick one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Alter_1_fillers: Nick->Ben (Victim->Subject) 
+0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying “I think some caffeine would’ve helped that one.”
+Truth
+1.0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying “I think some caffeine would’ve helped that one.”
+
+Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying “I think some caffeine would’ve helped that one.”
+
+
+{"Barista": "Ben", "Dessert_crumbled": "muffin", "Drink_ordered": "coffee", "Policeman": "Olivia", "Subject": "Silvia", "Victim": "Nick"}
+{"Olivia": {"Name": "Olivia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "learned that her flight to the Bahamas was cancelled due to inclement weather", "Barista_saying": "\u201cIm so sorry you had to experience a coffee crime.\u201d", "Violent": "Yes", "Thirsty": "No"}, "Jesse": {"Name": "Jesse", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten into a fight with his mom", "Barista_saying": "\u201cIts not everyday you meet a coffee criminal.\u201d", "Violent": "Yes", "Thirsty": "Yes"}, "Nick": {"Name": "Nick", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten a parking ticket", "Barista_saying": "\u201cThe nectar of the gods makes people do crazy things.\u201d", "Violent": "No", "Thirsty": "No"}, "Vera": {"Name": "Vera", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "found her calculus problem set ripped to shreds in her dog\u2019s cage", "Barista_saying": "\u201cSome people will do anything for the coffee fix.\u201d", "Violent": "No", "Thirsty": "Yes"}, "Silvia": {"Name": "Silvia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "realized that she had left her phone on the bus", "Barista_saying": "\u201cI think some caffeine would\u2019ve helped that one.\u201d", "Violent": "No", "Thirsty": "No"}, "Ben": {"Name": "Ben", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "dropped his keys in a storm drain", "Barista_saying": "\u201cThere was no need to worry. The baristas are trained in kung fu.\u201d", "Violent": "Yes", "Thirsty": "No"}, "coffee": {"Name": "coffee"}, "mocha": {"Name": "mocha"}, "latte": {"Name": "latte"}, "cake": {"Name": "cake"}, "cookie": {"Name": "cookie"}, "lemonsquare": {"Name": "lemonsquare"}, "muffin": {"Name": "muffin"}}
+
+Silvia walked into the coffee shop angrily after having realized that she had left her phone on the bus.
+Default
+0.6	Walk_to_back	She walked to the back of the line and stood impatiently, watching the first person in line, Nick, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.
+Truth
+0.4	Walk_to_front	She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Nick, the first person in line.
+
+She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Nick, the first person in line.
+Permute_2_fillers: Nick->Silvia (Victim->Subject) Silvia->Nick (Subject->Victim) 
+0	Step_in_front	Silvia was not having it that day, and she promptly stepped back in front of Nick.
+Default
+0.5	Say_excuse_me	Nick was astonished and said, “Excuse me?!’
+Truth
+0.5	Step_in_front	Nick was not having it that day, and he promptly stepped back in front of Silvia.
+
+Nick was not having it that day, and he promptly stepped back in front of Silvia.
+Alter_1_fillers: Silvia->Nick (Subject->Victim) 
+0	Ignore	Nick ignored her and proceeded to tell the barista that he would like a coffee.
+Default
+0.5	Subject_stares	Silvia turned to Nick and gave him a very mean look.
+Truth
+0.4	Ignore	Silvia ignored him and proceeded to tell the barista that she would like a coffee.
+
+Silvia ignored him and proceeded to tell the barista that she would like a coffee.
+Permute_2_fillers: Nick->Silvia (Victim->Subject) Silvia->Nick (Subject->Victim) 
+0	X_stare	Silvia stared back at Nick, as though daring him with her eyes to do something.Silvia refusing to engage with Nick, turned to the barista and said, ‘I was first in line!”
+Default
+0.3	Turn_to_barista	Nick, refusing to engage with her, turned to the barista and said, ‘I was first in line!”
+Truth
+0.6	X_stare	Nick stared back at Silvia, as though daring her with his eyes to do something.Nick refusing to engage with Silvia, turned to the barista and said, ‘I was first in line!”
+
+Nick stared back at Silvia, as though daring her with his eyes to do something.Nick refusing to engage with Silvia, turned to the barista and said, ‘I was first in line!”
+Permute_2_fillers: Nick->Silvia (Victim->Subject) Silvia->Nick (Subject->Victim) 
+0	Dessert_crumble	Nick saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Silvia’s head. Everyone in line gasped. Silvia, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+Default
+0.5	Cream_splash	Silvia saw a small cup of cream on the counter, picked it up, and splashed it in Nick’s face. Everyone in line gasped. Nick stood there gaping, cream dripping from his chin.
+Truth
+0.5	Dessert_crumble	Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Nick’s head. Everyone in line gasped. Nick, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+
+Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Nick’s head. Everyone in line gasped. Nick, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+Alter_1_fillers: Silvia->Nick (Subject->Victim) 
+0	Call_policeman	The barista called over to a policeman standing in line, and she ordered Nick to leave before anyone pressed charges.
+Default
+0.9	Barista_orders	The barista ran out from behind the counter and ordered Silvia to leave.
+Truth
+0.1	Call_policeman	The barista called over to a policeman standing in line, and she ordered Silvia to leave before anyone pressed charges.
+
+The barista called over to a policeman standing in line, and she ordered Silvia to leave before anyone pressed charges.
+Permute_2_fillers: Nick->Silvia (Victim->Subject) Silvia->Nick (Subject->Victim) 
+0	Hate_coffee	Nick stared at Silvia one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Default
+0.3	Love_juice	Silvia gave Nick one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Truth
+0.7	Hate_coffee	Silvia stared at Nick one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+
+Silvia stared at Nick one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Alter_1_fillers: Nick->Silvia (Victim->Subject) 
+0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying “There was no need to worry. The baristas are trained in kung fu.”
+Truth
+1.0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying “There was no need to worry. The baristas are trained in kung fu.”
+
+Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying “There was no need to worry. The baristas are trained in kung fu.”
+
+
+{"Barista": "Olivia", "Dessert_crumbled": "muffin", "Drink_ordered": "mocha", "Policeman": "Jesse", "Subject": "Silvia", "Victim": "Ben"}
+{"Olivia": {"Name": "Olivia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "learned that her flight to the Bahamas was cancelled due to inclement weather", "Barista_saying": "\u201cIm so sorry you had to experience a coffee crime.\u201d", "Violent": "Yes", "Thirsty": "No"}, "Jesse": {"Name": "Jesse", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten into a fight with his mom", "Barista_saying": "\u201cIts not everyday you meet a coffee criminal.\u201d", "Violent": "Yes", "Thirsty": "Yes"}, "Nick": {"Name": "Nick", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten a parking ticket", "Barista_saying": "\u201cThe nectar of the gods makes people do crazy things.\u201d", "Violent": "No", "Thirsty": "No"}, "Vera": {"Name": "Vera", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "found her calculus problem set ripped to shreds in her dog\u2019s cage", "Barista_saying": "\u201cSome people will do anything for the coffee fix.\u201d", "Violent": "No", "Thirsty": "Yes"}, "Silvia": {"Name": "Silvia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "realized that she had left her phone on the bus", "Barista_saying": "\u201cI think some caffeine would\u2019ve helped that one.\u201d", "Violent": "No", "Thirsty": "No"}, "Ben": {"Name": "Ben", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "dropped his keys in a storm drain", "Barista_saying": "\u201cThere was no need to worry. The baristas are trained in kung fu.\u201d", "Violent": "Yes", "Thirsty": "No"}, "coffee": {"Name": "coffee"}, "mocha": {"Name": "mocha"}, "latte": {"Name": "latte"}, "cake": {"Name": "cake"}, "cookie": {"Name": "cookie"}, "lemonsquare": {"Name": "lemonsquare"}, "muffin": {"Name": "muffin"}}
+
+Silvia walked into the coffee shop angrily after having realized that she had left her phone on the bus.
+Default
+0.4	Walk_to_front	She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Ben, the first person in line.
+Truth
+0.6	Walk_to_back	She walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.
+
+She walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.
+Permute_2_fillers: Ben->Silvia (Victim->Subject) Silvia->Ben (Subject->Victim) 
+0	Step_in_front	Silvia was not having it that day, and she promptly stepped back in front of Ben.
+Default
+0.6	Say_excuse_me	Ben was astonished and said, “Excuse me?!’
+Truth
+0.4	Step_in_front	Ben was not having it that day, and he promptly stepped back in front of Silvia.
+
+Ben was not having it that day, and he promptly stepped back in front of Silvia.
+Permute_2_fillers: Ben->Silvia (Victim->Subject) Silvia->Ben (Subject->Victim) 
+0	Subject_stares	Ben turned to Silvia and gave her a very mean look.
+Default
+0.4	Ignore	Silvia ignored him and proceeded to tell the barista that she would like a mocha.
+Truth
+0.5	Subject_stares	Silvia turned to Ben and gave him a very mean look.
+
+Silvia turned to Ben and gave him a very mean look.
+Alter_1_fillers: Ben->Silvia (Victim->Subject) 
+0	Turn_to_barista	Silvia, refusing to engage with him, turned to the barista and said, ‘I was first in line!”
+Default
+0.3	X_shove	In retaliation, Ben pushed Silvia.
+Truth
+0.6	Turn_to_barista	Ben, refusing to engage with her, turned to the barista and said, ‘I was first in line!”
+
+Ben, refusing to engage with her, turned to the barista and said, ‘I was first in line!”
+Permute_2_fillers: Ben->Silvia (Victim->Subject) Silvia->Ben (Subject->Victim) 
+0	Dessert_crumble	Ben saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Silvia’s head. Everyone in line gasped. Silvia, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+Default
+0.5	Cream_splash	Silvia saw a small cup of cream on the counter, picked it up, and splashed it in Ben’s face. Everyone in line gasped. Ben stood there gaping, cream dripping from his chin.
+Truth
+0.5	Dessert_crumble	Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Ben’s head. Everyone in line gasped. Ben, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+
+Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Ben’s head. Everyone in line gasped. Ben, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+Alter_1_fillers: Silvia->Ben (Subject->Victim) 
+0	Barista_orders	The barista ran out from behind the counter and ordered Ben to leave.
+Default
+0.1	Call_policeman	The barista called over to a policeman standing in line, and he ordered Silvia to leave before anyone pressed charges.
+Truth
+0.9	Barista_orders	The barista ran out from behind the counter and ordered Silvia to leave.
+
+The barista ran out from behind the counter and ordered Silvia to leave.
+Permute_2_fillers: Ben->Silvia (Victim->Subject) Silvia->Ben (Subject->Victim) 
+0	Hate_coffee	Ben stared at Silvia one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Default
+0.7	Love_juice	Silvia gave Ben one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Truth
+0.3	Hate_coffee	Silvia stared at Ben one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+
+Silvia stared at Ben one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Alter_1_fillers: Ben->Silvia (Victim->Subject) 
+0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying “Im so sorry you had to experience a coffee crime.”
+Truth
+1.0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying “Im so sorry you had to experience a coffee crime.”
+
+Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying “Im so sorry you had to experience a coffee crime.”
+
+
+{"Barista": "Nick", "Dessert_crumbled": "cake", "Drink_ordered": "mocha", "Policeman": "Silvia", "Subject": "Olivia", "Victim": "Jesse"}
+{"Olivia": {"Name": "Olivia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "learned that her flight to the Bahamas was cancelled due to inclement weather", "Barista_saying": "\u201cIm so sorry you had to experience a coffee crime.\u201d", "Violent": "Yes", "Thirsty": "No"}, "Jesse": {"Name": "Jesse", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten into a fight with his mom", "Barista_saying": "\u201cIts not everyday you meet a coffee criminal.\u201d", "Violent": "Yes", "Thirsty": "Yes"}, "Nick": {"Name": "Nick", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten a parking ticket", "Barista_saying": "\u201cThe nectar of the gods makes people do crazy things.\u201d", "Violent": "No", "Thirsty": "No"}, "Vera": {"Name": "Vera", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "found her calculus problem set ripped to shreds in her dog\u2019s cage", "Barista_saying": "\u201cSome people will do anything for the coffee fix.\u201d", "Violent": "No", "Thirsty": "Yes"}, "Silvia": {"Name": "Silvia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "realized that she had left her phone on the bus", "Barista_saying": "\u201cI think some caffeine would\u2019ve helped that one.\u201d", "Violent": "No", "Thirsty": "No"}, "Ben": {"Name": "Ben", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "dropped his keys in a storm drain", "Barista_saying": "\u201cThere was no need to worry. The baristas are trained in kung fu.\u201d", "Violent": "Yes", "Thirsty": "No"}, "coffee": {"Name": "coffee"}, "mocha": {"Name": "mocha"}, "latte": {"Name": "latte"}, "cake": {"Name": "cake"}, "cookie": {"Name": "cookie"}, "lemonsquare": {"Name": "lemonsquare"}, "muffin": {"Name": "muffin"}}
+
+Olivia walked into the coffee shop angrily after having learned that her flight to the Bahamas was cancelled due to inclement weather.
+Default
+0.4	Walk_to_front	She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Jesse, the first person in line.
+Truth
+0.6	Walk_to_back	She walked to the back of the line and stood impatiently, watching the first person in line, Jesse, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.
+
+She walked to the back of the line and stood impatiently, watching the first person in line, Jesse, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.
+Permute_2_fillers: Olivia->Jesse (Subject->Victim) Jesse->Olivia (Victim->Subject) 
+0	Step_in_front	Olivia was not having it that day, and she promptly stepped back in front of Jesse.
+Default
+0.6	Say_excuse_me	Jesse was astonished and said, “Excuse me?!’
+Truth
+0.4	Step_in_front	Jesse was not having it that day, and he promptly stepped back in front of Olivia.
+
+Jesse was not having it that day, and he promptly stepped back in front of Olivia.
+Permute_2_fillers: Olivia->Jesse (Subject->Victim) Jesse->Olivia (Victim->Subject) 
+0	Shove	Jesse proceeded to give a slight shove to Olivia.
+Default
+0.5	Subject_stares	Olivia turned to Jesse and gave him a very mean look.
+Truth
+0.1	Shove	Olivia proceeded to give a slight shove to Jesse.
+
+Olivia proceeded to give a slight shove to Jesse.
+Permute_2_fillers: Olivia->Jesse (Subject->Victim) Jesse->Olivia (Victim->Subject) 
+0	X_shove	In retaliation, Olivia pushed Jesse.
+Default
+0.3	X_stare	Jesse stared back at Olivia, as though daring her with his eyes to do something.Jesse refusing to engage with Olivia, turned to the barista and said, ‘I was first in line!”
+Truth
+0.6	X_shove	In retaliation, Jesse pushed Olivia.
+
+In retaliation, Jesse pushed Olivia.
+Permute_2_fillers: Olivia->Jesse (Subject->Victim) Jesse->Olivia (Victim->Subject) 
+0	Dessert_crumble	Jesse saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Olivia’s head. Everyone in line gasped. Olivia, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+Default
+0.65	Cream_splash	Olivia saw a small cup of cream on the counter, picked it up, and splashed it in Jesse’s face. Everyone in line gasped. Jesse stood there gaping, cream dripping from his chin.
+Truth
+0.35	Dessert_crumble	Olivia saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Jesse’s head. Everyone in line gasped. Jesse, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+
+Olivia saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Jesse’s head. Everyone in line gasped. Jesse, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+Alter_1_fillers: Olivia->Jesse (Subject->Victim) 
+0	Barista_orders	The barista ran out from behind the counter and ordered Jesse to leave.
+Default
+0.1	Call_policeman	The barista called over to a policeman standing in line, and she ordered Olivia to leave before anyone pressed charges.
+Truth
+0.9	Barista_orders	The barista ran out from behind the counter and ordered Olivia to leave.
+
+The barista ran out from behind the counter and ordered Olivia to leave.
+Permute_2_fillers: Olivia->Jesse (Subject->Victim) Jesse->Olivia (Victim->Subject) 
+0	Love_juice	Jesse gave Olivia one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Default
+0.3	Hate_coffee	Olivia stared at Jesse one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Truth
+0.7	Love_juice	Olivia gave Jesse one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+
+Olivia gave Jesse one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Alter_1_fillers: Jesse->Olivia (Victim->Subject) 
+0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Olivia a bunch of napkins and gave her a free drink out of sympathy, saying “The nectar of the gods makes people do crazy things.”
+Truth
+1.0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Jesse a bunch of napkins and gave him a free drink out of sympathy, saying “The nectar of the gods makes people do crazy things.”
+
+Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Jesse a bunch of napkins and gave him a free drink out of sympathy, saying “The nectar of the gods makes people do crazy things.”
+
+
+{"Barista": "Nick", "Dessert_crumbled": "lemonsquare", "Drink_ordered": "mocha", "Policeman": "Jesse", "Subject": "Olivia", "Victim": "Vera"}
+{"Olivia": {"Name": "Olivia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "learned that her flight to the Bahamas was cancelled due to inclement weather", "Barista_saying": "\u201cIm so sorry you had to experience a coffee crime.\u201d", "Violent": "Yes", "Thirsty": "No"}, "Jesse": {"Name": "Jesse", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten into a fight with his mom", "Barista_saying": "\u201cIts not everyday you meet a coffee criminal.\u201d", "Violent": "Yes", "Thirsty": "Yes"}, "Nick": {"Name": "Nick", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten a parking ticket", "Barista_saying": "\u201cThe nectar of the gods makes people do crazy things.\u201d", "Violent": "No", "Thirsty": "No"}, "Vera": {"Name": "Vera", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "found her calculus problem set ripped to shreds in her dog\u2019s cage", "Barista_saying": "\u201cSome people will do anything for the coffee fix.\u201d", "Violent": "No", "Thirsty": "Yes"}, "Silvia": {"Name": "Silvia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "realized that she had left her phone on the bus", "Barista_saying": "\u201cI think some caffeine would\u2019ve helped that one.\u201d", "Violent": "No", "Thirsty": "No"}, "Ben": {"Name": "Ben", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "dropped his keys in a storm drain", "Barista_saying": "\u201cThere was no need to worry. The baristas are trained in kung fu.\u201d", "Violent": "Yes", "Thirsty": "No"}, "coffee": {"Name": "coffee"}, "mocha": {"Name": "mocha"}, "latte": {"Name": "latte"}, "cake": {"Name": "cake"}, "cookie": {"Name": "cookie"}, "lemonsquare": {"Name": "lemonsquare"}, "muffin": {"Name": "muffin"}}
+
+Olivia walked into the coffee shop angrily after having learned that her flight to the Bahamas was cancelled due to inclement weather.
+Default
+0.4	Walk_to_front	She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Vera, the first person in line.
+Truth
+0.6	Walk_to_back	She walked to the back of the line and stood impatiently, watching the first person in line, Vera, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut her.
+
+She walked to the back of the line and stood impatiently, watching the first person in line, Vera, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut her.
+Alter_1_fillers: Vera->Olivia (Victim->Subject) 
+0	Say_excuse_me	Olivia was astonished and said, “Excuse me?!’
+Default
+0.4	Step_in_front	Vera was not having it that day, and she promptly stepped back in front of Olivia.
+Truth
+0.6	Say_excuse_me	Vera was astonished and said, “Excuse me?!’
+
+Vera was astonished and said, “Excuse me?!’
+Permute_2_fillers: Olivia->Vera (Subject->Victim) Vera->Olivia (Victim->Subject) 
+0	Shove	Vera proceeded to give a slight shove to Olivia.
+Default
+0.5	Subject_stares	Olivia turned to Vera and gave her a very mean look.
+Truth
+0.4	Shove	Olivia proceeded to give a slight shove to Vera.
+
+Olivia proceeded to give a slight shove to Vera.
+Permute_2_fillers: Olivia->Vera (Subject->Victim) Vera->Olivia (Victim->Subject) 
+0	X_shove	In retaliation, Olivia pushed Vera.
+Default
+0.3	X_stare	Vera stared back at Olivia, as though daring her with her eyes to do something.Vera refusing to engage with Olivia, turned to the barista and said, ‘I was first in line!”
+Truth
+0.6	X_shove	In retaliation, Vera pushed Olivia.
+
+In retaliation, Vera pushed Olivia.
+Permute_2_fillers: Olivia->Vera (Subject->Victim) Vera->Olivia (Victim->Subject) 
+0	Dessert_crumble	Vera saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Olivia’s head. Everyone in line gasped. Olivia, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+Default
+0.65	Cream_splash	Olivia saw a small cup of cream on the counter, picked it up, and splashed it in Vera’s face. Everyone in line gasped. Vera stood there gaping, cream dripping from her chin.
+Truth
+0.35	Dessert_crumble	Olivia saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Vera’s head. Everyone in line gasped. Vera, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+
+Olivia saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Vera’s head. Everyone in line gasped. Vera, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+Alter_1_fillers: Olivia->Vera (Subject->Victim) 
+0	Barista_orders	The barista ran out from behind the counter and ordered Vera to leave.
+Default
+0.1	Call_policeman	The barista called over to a policeman standing in line, and he ordered Olivia to leave before anyone pressed charges.
+Truth
+0.9	Barista_orders	The barista ran out from behind the counter and ordered Olivia to leave.
+
+The barista ran out from behind the counter and ordered Olivia to leave.
+Permute_2_fillers: Olivia->Vera (Subject->Victim) Vera->Olivia (Victim->Subject) 
+0	Love_juice	Vera gave Olivia one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Default
+0.3	Hate_coffee	Olivia stared at Vera one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Truth
+0.7	Love_juice	Olivia gave Vera one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+
+Olivia gave Vera one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Alter_1_fillers: Vera->Olivia (Victim->Subject) 
+0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Olivia a bunch of napkins and gave her a free drink out of sympathy, saying “The nectar of the gods makes people do crazy things.”
+Truth
+1.0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying “The nectar of the gods makes people do crazy things.”
+
+Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying “The nectar of the gods makes people do crazy things.”
+
+
+{"Barista": "Vera", "Dessert_crumbled": "lemonsquare", "Drink_ordered": "mocha", "Policeman": "Olivia", "Subject": "Nick", "Victim": "Jesse"}
+{"Olivia": {"Name": "Olivia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "learned that her flight to the Bahamas was cancelled due to inclement weather", "Barista_saying": "\u201cIm so sorry you had to experience a coffee crime.\u201d", "Violent": "Yes", "Thirsty": "No"}, "Jesse": {"Name": "Jesse", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten into a fight with his mom", "Barista_saying": "\u201cIts not everyday you meet a coffee criminal.\u201d", "Violent": "Yes", "Thirsty": "Yes"}, "Nick": {"Name": "Nick", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten a parking ticket", "Barista_saying": "\u201cThe nectar of the gods makes people do crazy things.\u201d", "Violent": "No", "Thirsty": "No"}, "Vera": {"Name": "Vera", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "found her calculus problem set ripped to shreds in her dog\u2019s cage", "Barista_saying": "\u201cSome people will do anything for the coffee fix.\u201d", "Violent": "No", "Thirsty": "Yes"}, "Silvia": {"Name": "Silvia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "realized that she had left her phone on the bus", "Barista_saying": "\u201cI think some caffeine would\u2019ve helped that one.\u201d", "Violent": "No", "Thirsty": "No"}, "Ben": {"Name": "Ben", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "dropped his keys in a storm drain", "Barista_saying": "\u201cThere was no need to worry. The baristas are trained in kung fu.\u201d", "Violent": "Yes", "Thirsty": "No"}, "coffee": {"Name": "coffee"}, "mocha": {"Name": "mocha"}, "latte": {"Name": "latte"}, "cake": {"Name": "cake"}, "cookie": {"Name": "cookie"}, "lemonsquare": {"Name": "lemonsquare"}, "muffin": {"Name": "muffin"}}
+
+Nick walked into the coffee shop angrily after having gotten a parking ticket.
+Default
+0.6	Walk_to_back	He walked to the back of the line and stood impatiently, watching the first person in line, Jesse, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.
+Truth
+0.4	Walk_to_front	He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Jesse, the first person in line.
+
+He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Jesse, the first person in line.
+Alter_1_fillers: Jesse->Nick (Victim->Subject) 
+0	Say_excuse_me	Nick was astonished and said, “Excuse me?!’
+Default
+0.5	Step_in_front	Jesse was not having it that day, and he promptly stepped back in front of Nick.
+Truth
+0.5	Say_excuse_me	Jesse was astonished and said, “Excuse me?!’
+
+Jesse was astonished and said, “Excuse me?!’
+Permute_2_fillers: Nick->Jesse (Subject->Victim) Jesse->Nick (Victim->Subject) 
+0	Subject_stares	Jesse turned to Nick and gave him a very mean look.
+Default
+0.4	Shove	Nick proceeded to give a slight shove to Jesse.
+Truth
+0.5	Subject_stares	Nick turned to Jesse and gave him a very mean look.
+
+Nick turned to Jesse and gave him a very mean look.
+Alter_1_fillers: Jesse->Nick (Victim->Subject) 
+0	Turn_to_barista	Nick, refusing to engage with him, turned to the barista and said, ‘I was first in line!”
+Default
+0.3	X_shove	In retaliation, Jesse pushed Nick.
+Truth
+0.6	Turn_to_barista	Jesse, refusing to engage with him, turned to the barista and said, ‘I was first in line!”
+
+Jesse, refusing to engage with him, turned to the barista and said, ‘I was first in line!”
+Permute_2_fillers: Nick->Jesse (Subject->Victim) Jesse->Nick (Victim->Subject) 
+0	Dessert_crumble	Jesse saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Nick’s head. Everyone in line gasped. Nick, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+Default
+0.5	Cream_splash	Nick saw a small cup of cream on the counter, picked it up, and splashed it in Jesse’s face. Everyone in line gasped. Jesse stood there gaping, cream dripping from his chin.
+Truth
+0.5	Dessert_crumble	Nick saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Jesse’s head. Everyone in line gasped. Jesse, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+
+Nick saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Jesse’s head. Everyone in line gasped. Jesse, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+Alter_1_fillers: Nick->Jesse (Subject->Victim) 
+0	Call_policeman	The barista called over to a policeman standing in line, and she ordered Jesse to leave before anyone pressed charges.
+Default
+0.9	Barista_orders	The barista ran out from behind the counter and ordered Nick to leave.
+Truth
+0.1	Call_policeman	The barista called over to a policeman standing in line, and she ordered Nick to leave before anyone pressed charges.
+
+The barista called over to a policeman standing in line, and she ordered Nick to leave before anyone pressed charges.
+Permute_2_fillers: Nick->Jesse (Subject->Victim) Jesse->Nick (Victim->Subject) 
+0	Hate_coffee	Jesse stared at Nick one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Default
+0.3	Love_juice	Nick gave Jesse one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Truth
+0.7	Hate_coffee	Nick stared at Jesse one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+
+Nick stared at Jesse one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Alter_1_fillers: Jesse->Nick (Victim->Subject) 
+0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying “Some people will do anything for the coffee fix.”
+Truth
+1.0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Jesse a bunch of napkins and gave him a free drink out of sympathy, saying “Some people will do anything for the coffee fix.”
+
+Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Jesse a bunch of napkins and gave him a free drink out of sympathy, saying “Some people will do anything for the coffee fix.”
+
+
+{"Barista": "Nick", "Dessert_crumbled": "cookie", "Drink_ordered": "coffee", "Policeman": "Vera", "Subject": "Jesse", "Victim": "Ben"}
+{"Olivia": {"Name": "Olivia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "learned that her flight to the Bahamas was cancelled due to inclement weather", "Barista_saying": "\u201cIm so sorry you had to experience a coffee crime.\u201d", "Violent": "Yes", "Thirsty": "No"}, "Jesse": {"Name": "Jesse", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten into a fight with his mom", "Barista_saying": "\u201cIts not everyday you meet a coffee criminal.\u201d", "Violent": "Yes", "Thirsty": "Yes"}, "Nick": {"Name": "Nick", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten a parking ticket", "Barista_saying": "\u201cThe nectar of the gods makes people do crazy things.\u201d", "Violent": "No", "Thirsty": "No"}, "Vera": {"Name": "Vera", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "found her calculus problem set ripped to shreds in her dog\u2019s cage", "Barista_saying": "\u201cSome people will do anything for the coffee fix.\u201d", "Violent": "No", "Thirsty": "Yes"}, "Silvia": {"Name": "Silvia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "realized that she had left her phone on the bus", "Barista_saying": "\u201cI think some caffeine would\u2019ve helped that one.\u201d", "Violent": "No", "Thirsty": "No"}, "Ben": {"Name": "Ben", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "dropped his keys in a storm drain", "Barista_saying": "\u201cThere was no need to worry. The baristas are trained in kung fu.\u201d", "Violent": "Yes", "Thirsty": "No"}, "coffee": {"Name": "coffee"}, "mocha": {"Name": "mocha"}, "latte": {"Name": "latte"}, "cake": {"Name": "cake"}, "cookie": {"Name": "cookie"}, "lemonsquare": {"Name": "lemonsquare"}, "muffin": {"Name": "muffin"}}
+
+Jesse walked into the coffee shop angrily after having gotten into a fight with his mom.
+Default
+0.6	Walk_to_back	He walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.
+Truth
+0.4	Walk_to_front	He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Ben, the first person in line.
+
+He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Ben, the first person in line.
+Alter_1_fillers: Ben->Jesse (Victim->Subject) 
+0	Say_excuse_me	Jesse was astonished and said, “Excuse me?!’
+Default
+0.5	Step_in_front	Ben was not having it that day, and he promptly stepped back in front of Jesse.
+Truth
+0.5	Say_excuse_me	Ben was astonished and said, “Excuse me?!’
+
+Ben was astonished and said, “Excuse me?!’
+Permute_2_fillers: Ben->Jesse (Victim->Subject) Jesse->Ben (Subject->Victim) 
+0	Shove	Ben proceeded to give a slight shove to Jesse.
+Default
+0.5	Subject_stares	Jesse turned to Ben and gave him a very mean look.
+Truth
+0.4	Shove	Jesse proceeded to give a slight shove to Ben.
+
+Jesse proceeded to give a slight shove to Ben.
+Permute_2_fillers: Ben->Jesse (Victim->Subject) Jesse->Ben (Subject->Victim) 
+0	X_stare	Jesse stared back at Ben, as though daring him with his eyes to do something.Jesse refusing to engage with Ben, turned to the barista and said, ‘I was first in line!”
+Default
+0.6	X_shove	In retaliation, Ben pushed Jesse.
+Truth
+0.3	X_stare	Ben stared back at Jesse, as though daring him with his eyes to do something.Ben refusing to engage with Jesse, turned to the barista and said, ‘I was first in line!”
+
+Ben stared back at Jesse, as though daring him with his eyes to do something.Ben refusing to engage with Jesse, turned to the barista and said, ‘I was first in line!”
+Permute_2_fillers: Ben->Jesse (Victim->Subject) Jesse->Ben (Subject->Victim) 
+0	Dessert_crumble	Ben saw a cookie sitting like ammo next to the cash register, snatched it, and crumbled it above Jesse’s head. Everyone in line gasped. Jesse, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+Default
+0.5	Cream_splash	Jesse saw a small cup of cream on the counter, picked it up, and splashed it in Ben’s face. Everyone in line gasped. Ben stood there gaping, cream dripping from his chin.
+Truth
+0.5	Dessert_crumble	Jesse saw a cookie sitting like ammo next to the cash register, snatched it, and crumbled it above Ben’s head. Everyone in line gasped. Ben, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+
+Jesse saw a cookie sitting like ammo next to the cash register, snatched it, and crumbled it above Ben’s head. Everyone in line gasped. Ben, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+Alter_1_fillers: Jesse->Ben (Subject->Victim) 
+0	Barista_orders	The barista ran out from behind the counter and ordered Ben to leave.
+Default
+0.1	Call_policeman	The barista called over to a policeman standing in line, and she ordered Jesse to leave before anyone pressed charges.
+Truth
+0.9	Barista_orders	The barista ran out from behind the counter and ordered Jesse to leave.
+
+The barista ran out from behind the counter and ordered Jesse to leave.
+Permute_2_fillers: Ben->Jesse (Victim->Subject) Jesse->Ben (Subject->Victim) 
+0	Love_juice	Ben gave Jesse one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Default
+0.3	Hate_coffee	Jesse stared at Ben one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Truth
+0.7	Love_juice	Jesse gave Ben one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+
+Jesse gave Ben one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Alter_1_fillers: Ben->Jesse (Victim->Subject) 
+0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Jesse a bunch of napkins and gave him a free drink out of sympathy, saying “The nectar of the gods makes people do crazy things.”
+Truth
+1.0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying “The nectar of the gods makes people do crazy things.”
+
+Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying “The nectar of the gods makes people do crazy things.”
+
+
+{"Barista": "Silvia", "Dessert_crumbled": "cookie", "Drink_ordered": "latte", "Policeman": "Vera", "Subject": "Ben", "Victim": "Olivia"}
+{"Olivia": {"Name": "Olivia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "learned that her flight to the Bahamas was cancelled due to inclement weather", "Barista_saying": "\u201cIm so sorry you had to experience a coffee crime.\u201d", "Violent": "Yes", "Thirsty": "No"}, "Jesse": {"Name": "Jesse", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten into a fight with his mom", "Barista_saying": "\u201cIts not everyday you meet a coffee criminal.\u201d", "Violent": "Yes", "Thirsty": "Yes"}, "Nick": {"Name": "Nick", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten a parking ticket", "Barista_saying": "\u201cThe nectar of the gods makes people do crazy things.\u201d", "Violent": "No", "Thirsty": "No"}, "Vera": {"Name": "Vera", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "found her calculus problem set ripped to shreds in her dog\u2019s cage", "Barista_saying": "\u201cSome people will do anything for the coffee fix.\u201d", "Violent": "No", "Thirsty": "Yes"}, "Silvia": {"Name": "Silvia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "realized that she had left her phone on the bus", "Barista_saying": "\u201cI think some caffeine would\u2019ve helped that one.\u201d", "Violent": "No", "Thirsty": "No"}, "Ben": {"Name": "Ben", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "dropped his keys in a storm drain", "Barista_saying": "\u201cThere was no need to worry. The baristas are trained in kung fu.\u201d", "Violent": "Yes", "Thirsty": "No"}, "coffee": {"Name": "coffee"}, "mocha": {"Name": "mocha"}, "latte": {"Name": "latte"}, "cake": {"Name": "cake"}, "cookie": {"Name": "cookie"}, "lemonsquare": {"Name": "lemonsquare"}, "muffin": {"Name": "muffin"}}
+
+Ben walked into the coffee shop angrily after having dropped his keys in a storm drain.
+Default
+0.6	Walk_to_back	He walked to the back of the line and stood impatiently, watching the first person in line, Olivia, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut her.
+Truth
+0.4	Walk_to_front	He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Olivia, the first person in line.
+
+He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Olivia, the first person in line.
+Permute_2_fillers: Olivia->Ben (Victim->Subject) Ben->Olivia (Subject->Victim) 
+0	Step_in_front	Ben was not having it that day, and he promptly stepped back in front of Olivia.
+Default
+0.5	Say_excuse_me	Olivia was astonished and said, “Excuse me?!’
+Truth
+0.5	Step_in_front	Olivia was not having it that day, and she promptly stepped back in front of Ben.
+
+Olivia was not having it that day, and she promptly stepped back in front of Ben.
+Permute_2_fillers: Olivia->Ben (Victim->Subject) Ben->Olivia (Subject->Victim) 
+0	Subject_stares	Olivia turned to Ben and gave him a very mean look.
+Default
+0.4	Ignore	Ben ignored her and proceeded to tell the barista that he would like a latte.
+Truth
+0.5	Subject_stares	Ben turned to Olivia and gave her a very mean look.
+
+Ben turned to Olivia and gave her a very mean look.
+Alter_1_fillers: Olivia->Ben (Victim->Subject) 
+0	Turn_to_barista	Ben, refusing to engage with her, turned to the barista and said, ‘I was first in line!”
+Default
+0.1	X_stare	Olivia stared back at Ben, as though daring him with her eyes to do something.Olivia refusing to engage with Ben, turned to the barista and said, ‘I was first in line!”
+Truth
+0.6	Turn_to_barista	Olivia, refusing to engage with him, turned to the barista and said, ‘I was first in line!”
+
+Olivia, refusing to engage with him, turned to the barista and said, ‘I was first in line!”
+Permute_2_fillers: Olivia->Ben (Victim->Subject) Ben->Olivia (Subject->Victim) 
+0	Cream_splash	Olivia saw a small cup of cream on the counter, picked it up, and splashed it in Ben’s face. Everyone in line gasped. Ben stood there gaping, cream dripping from his chin.
+Default
+0.5	Dessert_crumble	Ben saw a cookie sitting like ammo next to the cash register, snatched it, and crumbled it above Olivia’s head. Everyone in line gasped. Olivia, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+Truth
+0.5	Cream_splash	Ben saw a small cup of cream on the counter, picked it up, and splashed it in Olivia’s face. Everyone in line gasped. Olivia stood there gaping, cream dripping from her chin.
+
+Ben saw a small cup of cream on the counter, picked it up, and splashed it in Olivia’s face. Everyone in line gasped. Olivia stood there gaping, cream dripping from her chin.
+Alter_1_fillers: Ben->Olivia (Subject->Victim) 
+0	Barista_orders	The barista ran out from behind the counter and ordered Olivia to leave.
+Default
+0.9	Call_policeman	The barista called over to a policeman standing in line, and she ordered Ben to leave before anyone pressed charges.
+Truth
+0.1	Barista_orders	The barista ran out from behind the counter and ordered Ben to leave.
+
+The barista ran out from behind the counter and ordered Ben to leave.
+Permute_2_fillers: Olivia->Ben (Victim->Subject) Ben->Olivia (Subject->Victim) 
+0	Love_juice	Olivia gave Ben one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Default
+0.3	Hate_coffee	Ben stared at Olivia one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Truth
+0.7	Love_juice	Ben gave Olivia one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+
+Ben gave Olivia one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Alter_1_fillers: Olivia->Ben (Victim->Subject) 
+0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying “I think some caffeine would’ve helped that one.”
+Truth
+1.0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Olivia a bunch of napkins and gave her a free drink out of sympathy, saying “I think some caffeine would’ve helped that one.”
+
+Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Olivia a bunch of napkins and gave her a free drink out of sympathy, saying “I think some caffeine would’ve helped that one.”
+
+
+{"Barista": "Vera", "Dessert_crumbled": "cake", "Drink_ordered": "mocha", "Policeman": "Jesse", "Subject": "Nick", "Victim": "Ben"}
+{"Olivia": {"Name": "Olivia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "learned that her flight to the Bahamas was cancelled due to inclement weather", "Barista_saying": "\u201cIm so sorry you had to experience a coffee crime.\u201d", "Violent": "Yes", "Thirsty": "No"}, "Jesse": {"Name": "Jesse", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten into a fight with his mom", "Barista_saying": "\u201cIts not everyday you meet a coffee criminal.\u201d", "Violent": "Yes", "Thirsty": "Yes"}, "Nick": {"Name": "Nick", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten a parking ticket", "Barista_saying": "\u201cThe nectar of the gods makes people do crazy things.\u201d", "Violent": "No", "Thirsty": "No"}, "Vera": {"Name": "Vera", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "found her calculus problem set ripped to shreds in her dog\u2019s cage", "Barista_saying": "\u201cSome people will do anything for the coffee fix.\u201d", "Violent": "No", "Thirsty": "Yes"}, "Silvia": {"Name": "Silvia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "realized that she had left her phone on the bus", "Barista_saying": "\u201cI think some caffeine would\u2019ve helped that one.\u201d", "Violent": "No", "Thirsty": "No"}, "Ben": {"Name": "Ben", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "dropped his keys in a storm drain", "Barista_saying": "\u201cThere was no need to worry. The baristas are trained in kung fu.\u201d", "Violent": "Yes", "Thirsty": "No"}, "coffee": {"Name": "coffee"}, "mocha": {"Name": "mocha"}, "latte": {"Name": "latte"}, "cake": {"Name": "cake"}, "cookie": {"Name": "cookie"}, "lemonsquare": {"Name": "lemonsquare"}, "muffin": {"Name": "muffin"}}
+
+Nick walked into the coffee shop angrily after having gotten a parking ticket.
+Default
+0.4	Walk_to_front	He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Ben, the first person in line.
+Truth
+0.6	Walk_to_back	He walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.
+
+He walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.
+Permute_2_fillers: Ben->Nick (Victim->Subject) Nick->Ben (Subject->Victim) 
+0	Step_in_front	Nick was not having it that day, and he promptly stepped back in front of Ben.
+Default
+0.6	Say_excuse_me	Ben was astonished and said, “Excuse me?!’
+Truth
+0.4	Step_in_front	Ben was not having it that day, and he promptly stepped back in front of Nick.
+
+Ben was not having it that day, and he promptly stepped back in front of Nick.
+Permute_2_fillers: Ben->Nick (Victim->Subject) Nick->Ben (Subject->Victim) 
+0	Subject_stares	Ben turned to Nick and gave him a very mean look.
+Default
+0.4	Ignore	Nick ignored him and proceeded to tell the barista that he would like a mocha.
+Truth
+0.5	Subject_stares	Nick turned to Ben and gave him a very mean look.
+
+Nick turned to Ben and gave him a very mean look.
+Alter_1_fillers: Ben->Nick (Victim->Subject) 
+0	Turn_to_barista	Nick, refusing to engage with him, turned to the barista and said, ‘I was first in line!”
+Default
+0.3	X_shove	In retaliation, Ben pushed Nick.
+Truth
+0.6	Turn_to_barista	Ben, refusing to engage with him, turned to the barista and said, ‘I was first in line!”
+
+Ben, refusing to engage with him, turned to the barista and said, ‘I was first in line!”
+Permute_2_fillers: Ben->Nick (Victim->Subject) Nick->Ben (Subject->Victim) 
+0	Cream_splash	Ben saw a small cup of cream on the counter, picked it up, and splashed it in Nick’s face. Everyone in line gasped. Nick stood there gaping, cream dripping from his chin.
+Default
+0.5	Dessert_crumble	Nick saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Ben’s head. Everyone in line gasped. Ben, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+Truth
+0.5	Cream_splash	Nick saw a small cup of cream on the counter, picked it up, and splashed it in Ben’s face. Everyone in line gasped. Ben stood there gaping, cream dripping from his chin.
+
+Nick saw a small cup of cream on the counter, picked it up, and splashed it in Ben’s face. Everyone in line gasped. Ben stood there gaping, cream dripping from his chin.
+Alter_1_fillers: Nick->Ben (Subject->Victim) 
+0	Call_policeman	The barista called over to a policeman standing in line, and he ordered Ben to leave before anyone pressed charges.
+Default
+0.1	Barista_orders	The barista ran out from behind the counter and ordered Nick to leave.
+Truth
+0.9	Call_policeman	The barista called over to a policeman standing in line, and he ordered Nick to leave before anyone pressed charges.
+
+The barista called over to a policeman standing in line, and he ordered Nick to leave before anyone pressed charges.
+Permute_2_fillers: Ben->Nick (Victim->Subject) Nick->Ben (Subject->Victim) 
+0	Love_juice	Ben gave Nick one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Default
+0.7	Hate_coffee	Nick stared at Ben one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Truth
+0.3	Love_juice	Nick gave Ben one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+
+Nick gave Ben one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Alter_1_fillers: Ben->Nick (Victim->Subject) 
+0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying “Some people will do anything for the coffee fix.”
+Truth
+1.0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying “Some people will do anything for the coffee fix.”
+
+Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying “Some people will do anything for the coffee fix.”
+
+
+{"Barista": "Silvia", "Dessert_crumbled": "lemonsquare", "Drink_ordered": "mocha", "Policeman": "Olivia", "Subject": "Ben", "Victim": "Vera"}
+{"Olivia": {"Name": "Olivia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "learned that her flight to the Bahamas was cancelled due to inclement weather", "Barista_saying": "\u201cIm so sorry you had to experience a coffee crime.\u201d", "Violent": "Yes", "Thirsty": "No"}, "Jesse": {"Name": "Jesse", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten into a fight with his mom", "Barista_saying": "\u201cIts not everyday you meet a coffee criminal.\u201d", "Violent": "Yes", "Thirsty": "Yes"}, "Nick": {"Name": "Nick", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten a parking ticket", "Barista_saying": "\u201cThe nectar of the gods makes people do crazy things.\u201d", "Violent": "No", "Thirsty": "No"}, "Vera": {"Name": "Vera", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "found her calculus problem set ripped to shreds in her dog\u2019s cage", "Barista_saying": "\u201cSome people will do anything for the coffee fix.\u201d", "Violent": "No", "Thirsty": "Yes"}, "Silvia": {"Name": "Silvia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "realized that she had left her phone on the bus", "Barista_saying": "\u201cI think some caffeine would\u2019ve helped that one.\u201d", "Violent": "No", "Thirsty": "No"}, "Ben": {"Name": "Ben", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "dropped his keys in a storm drain", "Barista_saying": "\u201cThere was no need to worry. The baristas are trained in kung fu.\u201d", "Violent": "Yes", "Thirsty": "No"}, "coffee": {"Name": "coffee"}, "mocha": {"Name": "mocha"}, "latte": {"Name": "latte"}, "cake": {"Name": "cake"}, "cookie": {"Name": "cookie"}, "lemonsquare": {"Name": "lemonsquare"}, "muffin": {"Name": "muffin"}}
+
+Ben walked into the coffee shop angrily after having dropped his keys in a storm drain.
+Default
+0.6	Walk_to_back	He walked to the back of the line and stood impatiently, watching the first person in line, Vera, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut her.
+Truth
+0.4	Walk_to_front	He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Vera, the first person in line.
+
+He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Vera, the first person in line.
+Permute_2_fillers: Ben->Vera (Subject->Victim) Vera->Ben (Victim->Subject) 
+0	Step_in_front	Ben was not having it that day, and he promptly stepped back in front of Vera.
+Default
+0.5	Say_excuse_me	Vera was astonished and said, “Excuse me?!’
+Truth
+0.5	Step_in_front	Vera was not having it that day, and she promptly stepped back in front of Ben.
+
+Vera was not having it that day, and she promptly stepped back in front of Ben.
+Permute_2_fillers: Ben->Vera (Subject->Victim) Vera->Ben (Victim->Subject) 
+0	Subject_stares	Vera turned to Ben and gave him a very mean look.
+Default
+0.4	Ignore	Ben ignored her and proceeded to tell the barista that he would like a mocha.
+Truth
+0.5	Subject_stares	Ben turned to Vera and gave her a very mean look.
+
+Ben turned to Vera and gave her a very mean look.
+Permute_2_fillers: Ben->Vera (Subject->Victim) Vera->Ben (Victim->Subject) 
+0	X_shove	In retaliation, Ben pushed Vera.
+Default
+0.6	Turn_to_barista	Vera, refusing to engage with him, turned to the barista and said, ‘I was first in line!”
+Truth
+0.3	X_shove	In retaliation, Vera pushed Ben.
+
+In retaliation, Vera pushed Ben.
+Permute_2_fillers: Ben->Vera (Subject->Victim) Vera->Ben (Victim->Subject) 
+0	Dessert_crumble	Vera saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Ben’s head. Everyone in line gasped. Ben, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+Default
+0.65	Cream_splash	Ben saw a small cup of cream on the counter, picked it up, and splashed it in Vera’s face. Everyone in line gasped. Vera stood there gaping, cream dripping from her chin.
+Truth
+0.35	Dessert_crumble	Ben saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Vera’s head. Everyone in line gasped. Vera, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+
+Ben saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Vera’s head. Everyone in line gasped. Vera, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+Alter_1_fillers: Ben->Vera (Subject->Victim) 
+0	Barista_orders	The barista ran out from behind the counter and ordered Vera to leave.
+Default
+0.1	Call_policeman	The barista called over to a policeman standing in line, and she ordered Ben to leave before anyone pressed charges.
+Truth
+0.9	Barista_orders	The barista ran out from behind the counter and ordered Ben to leave.
+
+The barista ran out from behind the counter and ordered Ben to leave.
+Permute_2_fillers: Ben->Vera (Subject->Victim) Vera->Ben (Victim->Subject) 
+0	Love_juice	Vera gave Ben one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Default
+0.3	Hate_coffee	Ben stared at Vera one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Truth
+0.7	Love_juice	Ben gave Vera one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+
+Ben gave Vera one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Alter_1_fillers: Vera->Ben (Victim->Subject) 
+0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying “I think some caffeine would’ve helped that one.”
+Truth
+1.0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying “I think some caffeine would’ve helped that one.”
+
+Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying “I think some caffeine would’ve helped that one.”
+
+
+{"Barista": "Jesse", "Dessert_crumbled": "cookie", "Drink_ordered": "coffee", "Policeman": "Olivia", "Subject": "Vera", "Victim": "Nick"}
+{"Olivia": {"Name": "Olivia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "learned that her flight to the Bahamas was cancelled due to inclement weather", "Barista_saying": "\u201cIm so sorry you had to experience a coffee crime.\u201d", "Violent": "Yes", "Thirsty": "No"}, "Jesse": {"Name": "Jesse", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten into a fight with his mom", "Barista_saying": "\u201cIts not everyday you meet a coffee criminal.\u201d", "Violent": "Yes", "Thirsty": "Yes"}, "Nick": {"Name": "Nick", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten a parking ticket", "Barista_saying": "\u201cThe nectar of the gods makes people do crazy things.\u201d", "Violent": "No", "Thirsty": "No"}, "Vera": {"Name": "Vera", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "found her calculus problem set ripped to shreds in her dog\u2019s cage", "Barista_saying": "\u201cSome people will do anything for the coffee fix.\u201d", "Violent": "No", "Thirsty": "Yes"}, "Silvia": {"Name": "Silvia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "realized that she had left her phone on the bus", "Barista_saying": "\u201cI think some caffeine would\u2019ve helped that one.\u201d", "Violent": "No", "Thirsty": "No"}, "Ben": {"Name": "Ben", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "dropped his keys in a storm drain", "Barista_saying": "\u201cThere was no need to worry. The baristas are trained in kung fu.\u201d", "Violent": "Yes", "Thirsty": "No"}, "coffee": {"Name": "coffee"}, "mocha": {"Name": "mocha"}, "latte": {"Name": "latte"}, "cake": {"Name": "cake"}, "cookie": {"Name": "cookie"}, "lemonsquare": {"Name": "lemonsquare"}, "muffin": {"Name": "muffin"}}
+
+Vera walked into the coffee shop angrily after having found her calculus problem set ripped to shreds in her dog’s cage.
+Default
+0.4	Walk_to_front	She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Nick, the first person in line.
+Truth
+0.6	Walk_to_back	She walked to the back of the line and stood impatiently, watching the first person in line, Nick, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.
+
+She walked to the back of the line and stood impatiently, watching the first person in line, Nick, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.
+Permute_2_fillers: Nick->Vera (Victim->Subject) Vera->Nick (Subject->Victim) 
+0	Step_in_front	Vera was not having it that day, and she promptly stepped back in front of Nick.
+Default
+0.6	Say_excuse_me	Nick was astonished and said, “Excuse me?!’
+Truth
+0.4	Step_in_front	Nick was not having it that day, and he promptly stepped back in front of Vera.
+
+Nick was not having it that day, and he promptly stepped back in front of Vera.
+Permute_2_fillers: Nick->Vera (Victim->Subject) Vera->Nick (Subject->Victim) 
+0	Subject_stares	Nick turned to Vera and gave her a very mean look.
+Default
+0.4	Ignore	Vera ignored him and proceeded to tell the barista that she would like a coffee.
+Truth
+0.5	Subject_stares	Vera turned to Nick and gave him a very mean look.
+
+Vera turned to Nick and gave him a very mean look.
+Permute_2_fillers: Nick->Vera (Victim->Subject) Vera->Nick (Subject->Victim) 
+0	X_shove	In retaliation, Vera pushed Nick.
+Default
+0.1	X_stare	Nick stared back at Vera, as though daring her with his eyes to do something.Nick refusing to engage with Vera, turned to the barista and said, ‘I was first in line!”
+Truth
+0.3	X_shove	In retaliation, Nick pushed Vera.
+
+In retaliation, Nick pushed Vera.
+Permute_2_fillers: Nick->Vera (Victim->Subject) Vera->Nick (Subject->Victim) 
+0	Dessert_crumble	Nick saw a cookie sitting like ammo next to the cash register, snatched it, and crumbled it above Vera’s head. Everyone in line gasped. Vera, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+Default
+0.65	Cream_splash	Vera saw a small cup of cream on the counter, picked it up, and splashed it in Nick’s face. Everyone in line gasped. Nick stood there gaping, cream dripping from his chin.
+Truth
+0.35	Dessert_crumble	Vera saw a cookie sitting like ammo next to the cash register, snatched it, and crumbled it above Nick’s head. Everyone in line gasped. Nick, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+
+Vera saw a cookie sitting like ammo next to the cash register, snatched it, and crumbled it above Nick’s head. Everyone in line gasped. Nick, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+Alter_1_fillers: Vera->Nick (Subject->Victim) 
+0	Barista_orders	The barista ran out from behind the counter and ordered Nick to leave.
+Default
+0.1	Call_policeman	The barista called over to a policeman standing in line, and she ordered Vera to leave before anyone pressed charges.
+Truth
+0.9	Barista_orders	The barista ran out from behind the counter and ordered Vera to leave.
+
+The barista ran out from behind the counter and ordered Vera to leave.
+Permute_2_fillers: Nick->Vera (Victim->Subject) Vera->Nick (Subject->Victim) 
+0	Love_juice	Nick gave Vera one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Default
+0.3	Hate_coffee	Vera stared at Nick one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Truth
+0.7	Love_juice	Vera gave Nick one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+
+Vera gave Nick one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Alter_1_fillers: Nick->Vera (Victim->Subject) 
+0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying “Its not everyday you meet a coffee criminal.”
+Truth
+1.0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying “Its not everyday you meet a coffee criminal.”
+
+Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying “Its not everyday you meet a coffee criminal.”
+
+
+{"Barista": "Jesse", "Dessert_crumbled": "muffin", "Drink_ordered": "coffee", "Policeman": "Silvia", "Subject": "Nick", "Victim": "Vera"}
+{"Olivia": {"Name": "Olivia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "learned that her flight to the Bahamas was cancelled due to inclement weather", "Barista_saying": "\u201cIm so sorry you had to experience a coffee crime.\u201d", "Violent": "Yes", "Thirsty": "No"}, "Jesse": {"Name": "Jesse", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten into a fight with his mom", "Barista_saying": "\u201cIts not everyday you meet a coffee criminal.\u201d", "Violent": "Yes", "Thirsty": "Yes"}, "Nick": {"Name": "Nick", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten a parking ticket", "Barista_saying": "\u201cThe nectar of the gods makes people do crazy things.\u201d", "Violent": "No", "Thirsty": "No"}, "Vera": {"Name": "Vera", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "found her calculus problem set ripped to shreds in her dog\u2019s cage", "Barista_saying": "\u201cSome people will do anything for the coffee fix.\u201d", "Violent": "No", "Thirsty": "Yes"}, "Silvia": {"Name": "Silvia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "realized that she had left her phone on the bus", "Barista_saying": "\u201cI think some caffeine would\u2019ve helped that one.\u201d", "Violent": "No", "Thirsty": "No"}, "Ben": {"Name": "Ben", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "dropped his keys in a storm drain", "Barista_saying": "\u201cThere was no need to worry. The baristas are trained in kung fu.\u201d", "Violent": "Yes", "Thirsty": "No"}, "coffee": {"Name": "coffee"}, "mocha": {"Name": "mocha"}, "latte": {"Name": "latte"}, "cake": {"Name": "cake"}, "cookie": {"Name": "cookie"}, "lemonsquare": {"Name": "lemonsquare"}, "muffin": {"Name": "muffin"}}
+
+Nick walked into the coffee shop angrily after having gotten a parking ticket.
+Default
+0.4	Walk_to_front	He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Vera, the first person in line.
+Truth
+0.6	Walk_to_back	He walked to the back of the line and stood impatiently, watching the first person in line, Vera, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut her.
+
+He walked to the back of the line and stood impatiently, watching the first person in line, Vera, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut her.
+Permute_2_fillers: Nick->Vera (Subject->Victim) Vera->Nick (Victim->Subject) 
+0	Step_in_front	Nick was not having it that day, and he promptly stepped back in front of Vera.
+Default
+0.6	Say_excuse_me	Vera was astonished and said, “Excuse me?!’
+Truth
+0.4	Step_in_front	Vera was not having it that day, and she promptly stepped back in front of Nick.
+
+Vera was not having it that day, and she promptly stepped back in front of Nick.
+Permute_2_fillers: Nick->Vera (Subject->Victim) Vera->Nick (Victim->Subject) 
+0	Subject_stares	Vera turned to Nick and gave him a very mean look.
+Default
+0.1	Shove	Nick proceeded to give a slight shove to Vera.
+Truth
+0.5	Subject_stares	Nick turned to Vera and gave her a very mean look.
+
+Nick turned to Vera and gave her a very mean look.
+Permute_2_fillers: Nick->Vera (Subject->Victim) Vera->Nick (Victim->Subject) 
+0	X_stare	Nick stared back at Vera, as though daring her with his eyes to do something.Nick refusing to engage with Vera, turned to the barista and said, ‘I was first in line!”
+Default
+0.6	Turn_to_barista	Vera, refusing to engage with him, turned to the barista and said, ‘I was first in line!”
+Truth
+0.1	X_stare	Vera stared back at Nick, as though daring him with her eyes to do something.Vera refusing to engage with Nick, turned to the barista and said, ‘I was first in line!”
+
+Vera stared back at Nick, as though daring him with her eyes to do something.Vera refusing to engage with Nick, turned to the barista and said, ‘I was first in line!”
+Permute_2_fillers: Nick->Vera (Subject->Victim) Vera->Nick (Victim->Subject) 
+0	Cream_splash	Vera saw a small cup of cream on the counter, picked it up, and splashed it in Nick’s face. Everyone in line gasped. Nick stood there gaping, cream dripping from his chin.
+Default
+0.5	Dessert_crumble	Nick saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Vera’s head. Everyone in line gasped. Vera, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+Truth
+0.5	Cream_splash	Nick saw a small cup of cream on the counter, picked it up, and splashed it in Vera’s face. Everyone in line gasped. Vera stood there gaping, cream dripping from her chin.
+
+Nick saw a small cup of cream on the counter, picked it up, and splashed it in Vera’s face. Everyone in line gasped. Vera stood there gaping, cream dripping from her chin.
+Alter_1_fillers: Nick->Vera (Subject->Victim) 
+0	Call_policeman	The barista called over to a policeman standing in line, and she ordered Vera to leave before anyone pressed charges.
+Default
+0.1	Barista_orders	The barista ran out from behind the counter and ordered Nick to leave.
+Truth
+0.9	Call_policeman	The barista called over to a policeman standing in line, and she ordered Nick to leave before anyone pressed charges.
+
+The barista called over to a policeman standing in line, and she ordered Nick to leave before anyone pressed charges.
+Permute_2_fillers: Nick->Vera (Subject->Victim) Vera->Nick (Victim->Subject) 
+0	Hate_coffee	Vera stared at Nick one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Default
+0.3	Love_juice	Nick gave Vera one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Truth
+0.7	Hate_coffee	Nick stared at Vera one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+
+Nick stared at Vera one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Alter_1_fillers: Vera->Nick (Victim->Subject) 
+0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying “Its not everyday you meet a coffee criminal.”
+Truth
+1.0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying “Its not everyday you meet a coffee criminal.”
+
+Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying “Its not everyday you meet a coffee criminal.”
+
+
+{"Barista": "Vera", "Dessert_crumbled": "muffin", "Drink_ordered": "latte", "Policeman": "Jesse", "Subject": "Silvia", "Victim": "Olivia"}
+{"Olivia": {"Name": "Olivia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "learned that her flight to the Bahamas was cancelled due to inclement weather", "Barista_saying": "\u201cIm so sorry you had to experience a coffee crime.\u201d", "Violent": "Yes", "Thirsty": "No"}, "Jesse": {"Name": "Jesse", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten into a fight with his mom", "Barista_saying": "\u201cIts not everyday you meet a coffee criminal.\u201d", "Violent": "Yes", "Thirsty": "Yes"}, "Nick": {"Name": "Nick", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten a parking ticket", "Barista_saying": "\u201cThe nectar of the gods makes people do crazy things.\u201d", "Violent": "No", "Thirsty": "No"}, "Vera": {"Name": "Vera", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "found her calculus problem set ripped to shreds in her dog\u2019s cage", "Barista_saying": "\u201cSome people will do anything for the coffee fix.\u201d", "Violent": "No", "Thirsty": "Yes"}, "Silvia": {"Name": "Silvia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "realized that she had left her phone on the bus", "Barista_saying": "\u201cI think some caffeine would\u2019ve helped that one.\u201d", "Violent": "No", "Thirsty": "No"}, "Ben": {"Name": "Ben", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "dropped his keys in a storm drain", "Barista_saying": "\u201cThere was no need to worry. The baristas are trained in kung fu.\u201d", "Violent": "Yes", "Thirsty": "No"}, "coffee": {"Name": "coffee"}, "mocha": {"Name": "mocha"}, "latte": {"Name": "latte"}, "cake": {"Name": "cake"}, "cookie": {"Name": "cookie"}, "lemonsquare": {"Name": "lemonsquare"}, "muffin": {"Name": "muffin"}}
+
+Silvia walked into the coffee shop angrily after having realized that she had left her phone on the bus.
+Default
+0.6	Walk_to_back	She walked to the back of the line and stood impatiently, watching the first person in line, Olivia, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut her.
+Truth
+0.4	Walk_to_front	She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Olivia, the first person in line.
+
+She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Olivia, the first person in line.
+Permute_2_fillers: Olivia->Silvia (Victim->Subject) Silvia->Olivia (Subject->Victim) 
+0	Step_in_front	Silvia was not having it that day, and she promptly stepped back in front of Olivia.
+Default
+0.5	Say_excuse_me	Olivia was astonished and said, “Excuse me?!’
+Truth
+0.5	Step_in_front	Olivia was not having it that day, and she promptly stepped back in front of Silvia.
+
+Olivia was not having it that day, and she promptly stepped back in front of Silvia.
+Alter_1_fillers: Silvia->Olivia (Subject->Victim) 
+0	Ignore	Olivia ignored her and proceeded to tell the barista that she would like a latte.
+Default
+0.5	Subject_stares	Silvia turned to Olivia and gave her a very mean look.
+Truth
+0.4	Ignore	Silvia ignored her and proceeded to tell the barista that she would like a latte.
+
+Silvia ignored her and proceeded to tell the barista that she would like a latte.
+Alter_1_fillers: Olivia->Silvia (Victim->Subject) 
+0	Turn_to_barista	Silvia, refusing to engage with her, turned to the barista and said, ‘I was first in line!”
+Default
+0.6	X_stare	Olivia stared back at Silvia, as though daring her with her eyes to do something.Olivia refusing to engage with Silvia, turned to the barista and said, ‘I was first in line!”
+Truth
+0.3	Turn_to_barista	Olivia, refusing to engage with her, turned to the barista and said, ‘I was first in line!”
+
+Olivia, refusing to engage with her, turned to the barista and said, ‘I was first in line!”
+Permute_2_fillers: Olivia->Silvia (Victim->Subject) Silvia->Olivia (Subject->Victim) 
+0	Dessert_crumble	Olivia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Silvia’s head. Everyone in line gasped. Silvia, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+Default
+0.5	Cream_splash	Silvia saw a small cup of cream on the counter, picked it up, and splashed it in Olivia’s face. Everyone in line gasped. Olivia stood there gaping, cream dripping from her chin.
+Truth
+0.5	Dessert_crumble	Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Olivia’s head. Everyone in line gasped. Olivia, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+
+Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Olivia’s head. Everyone in line gasped. Olivia, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+Alter_1_fillers: Silvia->Olivia (Subject->Victim) 
+0	Barista_orders	The barista ran out from behind the counter and ordered Olivia to leave.
+Default
+0.1	Call_policeman	The barista called over to a policeman standing in line, and he ordered Silvia to leave before anyone pressed charges.
+Truth
+0.9	Barista_orders	The barista ran out from behind the counter and ordered Silvia to leave.
+
+The barista ran out from behind the counter and ordered Silvia to leave.
+Permute_2_fillers: Olivia->Silvia (Victim->Subject) Silvia->Olivia (Subject->Victim) 
+0	Love_juice	Olivia gave Silvia one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Default
+0.3	Hate_coffee	Silvia stared at Olivia one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Truth
+0.7	Love_juice	Silvia gave Olivia one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+
+Silvia gave Olivia one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Alter_1_fillers: Olivia->Silvia (Victim->Subject) 
+0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying “Some people will do anything for the coffee fix.”
+Truth
+1.0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Olivia a bunch of napkins and gave her a free drink out of sympathy, saying “Some people will do anything for the coffee fix.”
+
+Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Olivia a bunch of napkins and gave her a free drink out of sympathy, saying “Some people will do anything for the coffee fix.”
+
+
+{"Barista": "Nick", "Dessert_crumbled": "cake", "Drink_ordered": "latte", "Policeman": "Olivia", "Subject": "Silvia", "Victim": "Ben"}
+{"Olivia": {"Name": "Olivia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "learned that her flight to the Bahamas was cancelled due to inclement weather", "Barista_saying": "\u201cIm so sorry you had to experience a coffee crime.\u201d", "Violent": "Yes", "Thirsty": "No"}, "Jesse": {"Name": "Jesse", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten into a fight with his mom", "Barista_saying": "\u201cIts not everyday you meet a coffee criminal.\u201d", "Violent": "Yes", "Thirsty": "Yes"}, "Nick": {"Name": "Nick", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten a parking ticket", "Barista_saying": "\u201cThe nectar of the gods makes people do crazy things.\u201d", "Violent": "No", "Thirsty": "No"}, "Vera": {"Name": "Vera", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "found her calculus problem set ripped to shreds in her dog\u2019s cage", "Barista_saying": "\u201cSome people will do anything for the coffee fix.\u201d", "Violent": "No", "Thirsty": "Yes"}, "Silvia": {"Name": "Silvia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "realized that she had left her phone on the bus", "Barista_saying": "\u201cI think some caffeine would\u2019ve helped that one.\u201d", "Violent": "No", "Thirsty": "No"}, "Ben": {"Name": "Ben", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "dropped his keys in a storm drain", "Barista_saying": "\u201cThere was no need to worry. The baristas are trained in kung fu.\u201d", "Violent": "Yes", "Thirsty": "No"}, "coffee": {"Name": "coffee"}, "mocha": {"Name": "mocha"}, "latte": {"Name": "latte"}, "cake": {"Name": "cake"}, "cookie": {"Name": "cookie"}, "lemonsquare": {"Name": "lemonsquare"}, "muffin": {"Name": "muffin"}}
+
+Silvia walked into the coffee shop angrily after having realized that she had left her phone on the bus.
+Default
+0.4	Walk_to_front	She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Ben, the first person in line.
+Truth
+0.6	Walk_to_back	She walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.
+
+She walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.
+Permute_2_fillers: Ben->Silvia (Victim->Subject) Silvia->Ben (Subject->Victim) 
+0	Step_in_front	Silvia was not having it that day, and she promptly stepped back in front of Ben.
+Default
+0.6	Say_excuse_me	Ben was astonished and said, “Excuse me?!’
+Truth
+0.4	Step_in_front	Ben was not having it that day, and he promptly stepped back in front of Silvia.
+
+Ben was not having it that day, and he promptly stepped back in front of Silvia.
+Alter_1_fillers: Silvia->Ben (Subject->Victim) 
+0	Ignore	Ben ignored her and proceeded to tell the barista that he would like a latte.
+Default
+0.5	Subject_stares	Silvia turned to Ben and gave him a very mean look.
+Truth
+0.4	Ignore	Silvia ignored him and proceeded to tell the barista that she would like a latte.
+
+Silvia ignored him and proceeded to tell the barista that she would like a latte.
+Permute_2_fillers: Ben->Silvia (Victim->Subject) Silvia->Ben (Subject->Victim) 
+0	X_stare	Silvia stared back at Ben, as though daring him with her eyes to do something.Silvia refusing to engage with Ben, turned to the barista and said, ‘I was first in line!”
+Default
+0.3	Turn_to_barista	Ben, refusing to engage with her, turned to the barista and said, ‘I was first in line!”
+Truth
+0.6	X_stare	Ben stared back at Silvia, as though daring her with his eyes to do something.Ben refusing to engage with Silvia, turned to the barista and said, ‘I was first in line!”
+
+Ben stared back at Silvia, as though daring her with his eyes to do something.Ben refusing to engage with Silvia, turned to the barista and said, ‘I was first in line!”
+Permute_2_fillers: Ben->Silvia (Victim->Subject) Silvia->Ben (Subject->Victim) 
+0	Dessert_crumble	Ben saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Silvia’s head. Everyone in line gasped. Silvia, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+Default
+0.5	Cream_splash	Silvia saw a small cup of cream on the counter, picked it up, and splashed it in Ben’s face. Everyone in line gasped. Ben stood there gaping, cream dripping from his chin.
+Truth
+0.5	Dessert_crumble	Silvia saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Ben’s head. Everyone in line gasped. Ben, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+
+Silvia saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Ben’s head. Everyone in line gasped. Ben, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+Alter_1_fillers: Silvia->Ben (Subject->Victim) 
+0	Barista_orders	The barista ran out from behind the counter and ordered Ben to leave.
+Default
+0.1	Call_policeman	The barista called over to a policeman standing in line, and she ordered Silvia to leave before anyone pressed charges.
+Truth
+0.9	Barista_orders	The barista ran out from behind the counter and ordered Silvia to leave.
+
+The barista ran out from behind the counter and ordered Silvia to leave.
+Permute_2_fillers: Ben->Silvia (Victim->Subject) Silvia->Ben (Subject->Victim) 
+0	Hate_coffee	Ben stared at Silvia one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Default
+0.7	Love_juice	Silvia gave Ben one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Truth
+0.3	Hate_coffee	Silvia stared at Ben one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+
+Silvia stared at Ben one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Alter_1_fillers: Ben->Silvia (Victim->Subject) 
+0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying “The nectar of the gods makes people do crazy things.”
+Truth
+1.0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying “The nectar of the gods makes people do crazy things.”
+
+Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying “The nectar of the gods makes people do crazy things.”
+
+
+{"Barista": "Vera", "Dessert_crumbled": "cake", "Drink_ordered": "coffee", "Policeman": "Jesse", "Subject": "Silvia", "Victim": "Ben"}
+{"Olivia": {"Name": "Olivia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "learned that her flight to the Bahamas was cancelled due to inclement weather", "Barista_saying": "\u201cIm so sorry you had to experience a coffee crime.\u201d", "Violent": "Yes", "Thirsty": "No"}, "Jesse": {"Name": "Jesse", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten into a fight with his mom", "Barista_saying": "\u201cIts not everyday you meet a coffee criminal.\u201d", "Violent": "Yes", "Thirsty": "Yes"}, "Nick": {"Name": "Nick", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "gotten a parking ticket", "Barista_saying": "\u201cThe nectar of the gods makes people do crazy things.\u201d", "Violent": "No", "Thirsty": "No"}, "Vera": {"Name": "Vera", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "found her calculus problem set ripped to shreds in her dog\u2019s cage", "Barista_saying": "\u201cSome people will do anything for the coffee fix.\u201d", "Violent": "No", "Thirsty": "Yes"}, "Silvia": {"Name": "Silvia", "Pronoun": "she", "Pronoun_possessive": "her", "Pronoun_object": "her", "Reason_mad": "realized that she had left her phone on the bus", "Barista_saying": "\u201cI think some caffeine would\u2019ve helped that one.\u201d", "Violent": "No", "Thirsty": "No"}, "Ben": {"Name": "Ben", "Pronoun": "he", "Pronoun_possessive": "his", "Pronoun_object": "him", "Reason_mad": "dropped his keys in a storm drain", "Barista_saying": "\u201cThere was no need to worry. The baristas are trained in kung fu.\u201d", "Violent": "Yes", "Thirsty": "No"}, "coffee": {"Name": "coffee"}, "mocha": {"Name": "mocha"}, "latte": {"Name": "latte"}, "cake": {"Name": "cake"}, "cookie": {"Name": "cookie"}, "lemonsquare": {"Name": "lemonsquare"}, "muffin": {"Name": "muffin"}}
+
+Silvia walked into the coffee shop angrily after having realized that she had left her phone on the bus.
+Default
+0.6	Walk_to_back	She walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.
+Truth
+0.4	Walk_to_front	She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Ben, the first person in line.
+
+She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Ben, the first person in line.
+Alter_1_fillers: Ben->Silvia (Victim->Subject) 
+0	Say_excuse_me	Silvia was astonished and said, “Excuse me?!’
+Default
+0.5	Step_in_front	Ben was not having it that day, and he promptly stepped back in front of Silvia.
+Truth
+0.5	Say_excuse_me	Ben was astonished and said, “Excuse me?!’
+
+Ben was astonished and said, “Excuse me?!’
+Permute_2_fillers: Ben->Silvia (Victim->Subject) Silvia->Ben (Subject->Victim) 
+0	Subject_stares	Ben turned to Silvia and gave her a very mean look.
+Default
+0.4	Shove	Silvia proceeded to give a slight shove to Ben.
+Truth
+0.5	Subject_stares	Silvia turned to Ben and gave him a very mean look.
+
+Silvia turned to Ben and gave him a very mean look.
+Alter_1_fillers: Ben->Silvia (Victim->Subject) 
+0	Turn_to_barista	Silvia, refusing to engage with him, turned to the barista and said, ‘I was first in line!”
+Default
+0.3	X_shove	In retaliation, Ben pushed Silvia.
+Truth
+0.6	Turn_to_barista	Ben, refusing to engage with her, turned to the barista and said, ‘I was first in line!”
+
+Ben, refusing to engage with her, turned to the barista and said, ‘I was first in line!”
+Permute_2_fillers: Ben->Silvia (Victim->Subject) Silvia->Ben (Subject->Victim) 
+0	Dessert_crumble	Ben saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Silvia’s head. Everyone in line gasped. Silvia, in shock, didn’t move as crumbs tumbled down her ears and shoulders.
+Default
+0.5	Cream_splash	Silvia saw a small cup of cream on the counter, picked it up, and splashed it in Ben’s face. Everyone in line gasped. Ben stood there gaping, cream dripping from his chin.
+Truth
+0.5	Dessert_crumble	Silvia saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Ben’s head. Everyone in line gasped. Ben, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+
+Silvia saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Ben’s head. Everyone in line gasped. Ben, in shock, didn’t move as crumbs tumbled down his ears and shoulders.
+Alter_1_fillers: Silvia->Ben (Subject->Victim) 
+0	Barista_orders	The barista ran out from behind the counter and ordered Ben to leave.
+Default
+0.1	Call_policeman	The barista called over to a policeman standing in line, and he ordered Silvia to leave before anyone pressed charges.
+Truth
+0.9	Barista_orders	The barista ran out from behind the counter and ordered Silvia to leave.
+
+The barista ran out from behind the counter and ordered Silvia to leave.
+Permute_2_fillers: Ben->Silvia (Victim->Subject) Silvia->Ben (Subject->Victim) 
+0	Love_juice	Ben gave Silvia one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Default
+0.3	Hate_coffee	Silvia stared at Ben one last time, then stormed out of the coffee shop, yelling, “I hate coffee!”
+Truth
+0.7	Love_juice	Silvia gave Ben one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+
+Silvia gave Ben one last stare, turned, and ran out yelling, “Juice is better, anyway!”
+Alter_1_fillers: Ben->Silvia (Victim->Subject) 
+0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying “Some people will do anything for the coffee fix.”
+Truth
+1.0	END	Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying “Some people will do anything for the coffee fix.”
+
+Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying “Some people will do anything for the coffee fix.”
+
+

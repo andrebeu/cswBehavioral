@@ -1,0 +1,74 @@
+
+
+--params--
+
+qpr 1.0
+filler qpr 0.25
+cond False
+burnin 0
+
+
+--conditional node statistics--
+
+
+BEGIN
+-avg over rfcs: {'NODE11': 0.43, 'NODE12': 0.57}
+-nominal: {'uncond': {NodeObj.NODE11: 0.5, NodeObj.NODE12: 0.5}}
+-empirical: uncond	{'NODE11': 0.49, 'NODE12': 0.51}
+
+NODE11
+-avg over rfcs: {'NODE22': 1.0}
+-nominal: {'uncond': {NodeObj.NODE21: 0.0, NodeObj.NODE22: 1.0}}
+-empirical: uncond	{'NODE22': 1.0}
+
+NODE12
+-avg over rfcs: {'NODE21': 1.0}
+-nominal: {'uncond': {NodeObj.NODE21: 1.0, NodeObj.NODE22: 0.0}}
+-empirical: uncond	{'NODE21': 1.0}
+
+NODE21
+-avg over rfcs: {'END': 1.0}
+-nominal: {'uncond': {NodeObj.END: 1.0}}
+-empirical: uncond	{'END': 1.0}
+
+NODE22
+-avg over rfcs: {'END': 1.0}
+-nominal: {'uncond': {NodeObj.END: 1.0}}
+-empirical: uncond	{'END': 1.0}
+
+
+--overall node statistics--
+
+-node visits: 
+{'BEGIN': 1.0
+'END': 1.0
+'NODE11': 0.42
+'NODE12': 0.58
+'NODE21': 0.58
+'NODE22': 0.42}
+
+
+--unfilled sents from all nodes--
+
+One [location.time], [subject.name] walked into the [location.name]
+Today, [subject.name] waited in line patiently.
+[subject.name] was impatient, and decided to cut the line.
+[subject.name] then sat by the window, and read a book for hours.
+After ordering, [subject.name] stole a salt shaker and left.
+That is all that is remembered.
+
+
+--story samples--
+
+One fine morning, Stephen walked into the deep ocean cafe
+Stephen was impatient, and decided to cut the line.
+Stephen then sat by the window, and read a book for hours.
+That is all that is remembered.
+One fine morning, Andrea walked into the deep ocean cafe
+Today, Andrea waited in line patiently.
+After ordering, Andrea stole a salt shaker and left.
+That is all that is remembered.
+
+
+--question samples--
+

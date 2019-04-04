@@ -1,0 +1,48 @@
+{"Dessert_bought": "cake", "Drink_bought": "tea", "Emcee": "Olivia", "Friend": "Sarah", "Poet": "Julian", "Subject": "Mariko"}
+{"Olivia": {"Name": "Olivia", "Mood": "sad", "Hungry": "Yes", "Greeting": "Howdy", "Pronoun": "she", "Poem": "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons."}, "Will": {"Name": "Will", "Mood": "happy", "Hungry": "Yes", "Greeting": "Great to see you", "Pronoun": "he", "Poem": "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air."}, "Mariko": {"Name": "Mariko", "Mood": "nervous", "Hungry": "No", "Greeting": "I am glad you could make it", "Pronoun": "she", "Poem": "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong."}, "Pradeep": {"Name": "Pradeep", "Mood": "happy", "Hungry": "No", "Greeting": "Hey", "Pronoun": "he", "Poem": "Twas brillig, and the slithy toves did gyre and gimble in the wabe: all mimsy were the borogoves, and the mome raths outgrab."}, "Sarah": {"Name": "Sarah", "Mood": "nervous", "Hungry": "Yes", "Greeting": "Oh hi there", "Pronoun": "she", "Poem": "You may write me down in history with your bitter, twisted lies, you may trod me in the very dirt but still, like dust, I will rise."}, "Julian": {"Name": "Julian", "Mood": "sad", "Hungry": "No", "Greeting": "It has been too long", "Pronoun": "he", "Poem": "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils."}, "coffee": {"Name": "coffee", "Price": "3"}, "tea": {"Name": "tea", "Price": "2"}, "latte": {"Name": "latte", "Price": "5"}, "cake": {"Name": "cake", "Location": "display case"}, "sorbet": {"Name": "sorbet", "Location": "freezer"}, "mousse": {"Name": "mousse", "Location": "refrigerator"}}
+
+Mariko walked into the coffee shop on poetry night.
+Default
+0.4	Order_drink	She walked to the counter and decided on a tea.
+Truth
+0.6	Sit_down	She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.
+
+She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.
+Default
+0.5	Poet_performs	Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.
+Truth
+0.5	Emcee_intro	Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.
+
+Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.
+Alter_1_fillers: Julian->Sarah (Poet->Friend) 
+0	Poet_performs	Sarah stepped up to the microphone and read the poem that she had written: "You may write me down in history with your bitter, twisted lies, you may trod me in the very dirt but still, like dust, I will rise." The crowd snapped their fingers politely.
+Truth
+1.0	Poet_performs	Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.
+
+Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.
+Alter_1_fillers: Sarah->Julian (Friend->Poet) 
+0	Subject_performs	Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Julian said that he loved the poem.
+Permute_2_fillers: Sarah->Mariko (Friend->Subject) Mariko->Sarah (Subject->Friend) 
+0	Subject_performs	Sarah then took at turn at the microphone. "You may write me down in history with your bitter, twisted lies, you may trod me in the very dirt but still, like dust, I will rise." When she sat back down, Mariko said that she loved the poem.
+Subject.Mood == "nervous"
+0.8	Subject_declines	Mariko had also written a poem, but decided that she was not in the mood to share it today.
+Truth
+0.2	Subject_performs	Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.
+
+Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.
+Alter_1_fillers: Sarah->Olivia (Friend->Emcee) 
+0	Say_goodbye	After all the poets had performed, Mariko and Olivia said their goodbyes and walked toward the door.
+Permute_2_fillers: Sarah->Mariko (Friend->Subject) Mariko->Julian (Subject->Poet) 
+0	Say_goodbye	After all the poets had performed, Julian and Mariko said their goodbyes and walked toward the door.
+Truth
+1.0	Say_goodbye	After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.
+
+After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.
+Alter_1_fillers: Mariko->Julian (Subject->Poet) 
+0	END	Julian made a mental note to come back again next week.
+Truth
+0.9	END	Mariko made a mental note to come back again next week.
+
+Mariko made a mental note to come back again next week.
+
+

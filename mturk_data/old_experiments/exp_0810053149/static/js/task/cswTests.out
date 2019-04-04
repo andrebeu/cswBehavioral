@@ -1,0 +1,244 @@
+
+
+--params--
+
+qpr 0.4
+filler qpr 0.3
+cond True
+burnin 8
+
+
+--conditional node statistics--
+
+
+BEGIN
+-avg over rfcs: {'SWELL': 0.51, 'TOLD': 0.49}
+-nominal: {'location.latent.true': {NodeObj.SWELL: 0.5, NodeObj.TOLD: 0.5}, 'location.latent.false': {NodeObj.SWELL: 0.5, NodeObj.TOLD: 0.5}}
+-empirical: location.latent.true	{'SWELL': 0.44, 'TOLD': 0.56}
+-empirical: location.latent.false	{'SWELL': 0.51, 'TOLD': 0.49}
+
+SWELL
+-avg over rfcs: {'AFTER': 0.41, 'SAW': 0.59}
+-nominal: {'location.latent.true': {NodeObj.AFTER: 0.9, NodeObj.SAW: 0.1}, 'location.latent.false': {NodeObj.AFTER: 0.1, NodeObj.SAW: 0.9}}
+-empirical: location.latent.true	{'AFTER': 0.86, 'SAW': 0.14}
+-empirical: location.latent.false	{'AFTER': 0.09, 'SAW': 0.91}
+
+TOLD
+-avg over rfcs: {'AFTER': 0.51, 'SAW': 0.49}
+-nominal: {'location.latent.true': {NodeObj.AFTER: 0.1, NodeObj.SAW: 0.9}, 'location.latent.false': {NodeObj.AFTER: 0.9, NodeObj.SAW: 0.1}}
+-empirical: location.latent.true	{'AFTER': 0.08, 'SAW': 0.92}
+-empirical: location.latent.false	{'AFTER': 0.92, 'SAW': 0.08}
+
+AFTER
+-avg over rfcs: {'RADIO': 0.56, 'TELE': 0.44}
+-nominal: {'location.latent.true': {NodeObj.RADIO: 0.9, NodeObj.TELE: 0.1}, 'location.latent.false': {NodeObj.RADIO: 0.1, NodeObj.TELE: 0.9}}
+-empirical: location.latent.true	{'RADIO': 0.83, 'TELE': 0.17}
+-empirical: location.latent.false	{'RADIO': 0.1, 'TELE': 0.9}
+
+SAW
+-avg over rfcs: {'RADIO': 0.5, 'TELE': 0.5}
+-nominal: {'location.latent.true': {NodeObj.RADIO: 0.1, NodeObj.TELE: 0.9}, 'location.latent.false': {NodeObj.RADIO: 0.9, NodeObj.TELE: 0.1}}
+-empirical: location.latent.true	{'RADIO': 0.14, 'TELE': 0.86}
+-empirical: location.latent.false	{'RADIO': 0.92, 'TELE': 0.08}
+
+RADIO
+-avg over rfcs: {'MEMORY': 0.43, 'RECALL': 0.57}
+-nominal: {'location.latent.true': {NodeObj.RECALL: 0.9, NodeObj.MEMORY: 0.1}, 'location.latent.false': {NodeObj.RECALL: 0.1, NodeObj.MEMORY: 0.9}}
+-empirical: location.latent.true	{'MEMORY': 0.08, 'RECALL': 0.92}
+-empirical: location.latent.false	{'MEMORY': 0.9, 'RECALL': 0.1}
+
+TELE
+-avg over rfcs: {'MEMORY': 0.46, 'RECALL': 0.54}
+-nominal: {'location.latent.true': {NodeObj.RECALL: 0.1, NodeObj.MEMORY: 0.9}, 'location.latent.false': {NodeObj.RECALL: 0.9, NodeObj.MEMORY: 0.1}}
+-empirical: location.latent.true	{'MEMORY': 0.86, 'RECALL': 0.14}
+-empirical: location.latent.false	{'MEMORY': 0.06, 'RECALL': 0.94}
+
+RECALL
+-avg over rfcs: {'NARRATIVE': 0.5, 'STORY': 0.5}
+-nominal: {'location.latent.true': {NodeObj.STORY: 0.9, NodeObj.NARRATIVE: 0.1}, 'location.latent.false': {NodeObj.STORY: 0.1, NodeObj.NARRATIVE: 0.9}}
+-empirical: location.latent.true	{'NARRATIVE': 0.12, 'STORY': 0.88}
+-empirical: location.latent.false	{'NARRATIVE': 0.93, 'STORY': 0.07}
+
+MEMORY
+-avg over rfcs: {'NARRATIVE': 0.47, 'STORY': 0.53}
+-nominal: {'location.latent.true': {NodeObj.STORY: 0.1, NodeObj.NARRATIVE: 0.9}, 'location.latent.false': {NodeObj.STORY: 0.9, NodeObj.NARRATIVE: 0.1}}
+-empirical: location.latent.true	{'NARRATIVE': 0.89, 'STORY': 0.11}
+-empirical: location.latent.false	{'NARRATIVE': 0.11, 'STORY': 0.89}
+
+STORY
+-avg over rfcs: {'TRANSCEND': 0.53, 'TRANSPORT': 0.47}
+-nominal: {'location.latent.true': {NodeObj.TRANSPORT: 0.9, NodeObj.TRANSCEND: 0.1}, 'location.latent.false': {NodeObj.TRANSPORT: 0.1, NodeObj.TRANSCEND: 0.9}}
+-empirical: location.latent.true	{'TRANSCEND': 0.07, 'TRANSPORT': 0.93}
+-empirical: location.latent.false	{'TRANSCEND': 0.94, 'TRANSPORT': 0.06}
+
+NARRATIVE
+-avg over rfcs: {'TRANSCEND': 0.45, 'TRANSPORT': 0.55}
+-nominal: {'location.latent.true': {NodeObj.TRANSPORT: 0.1, NodeObj.TRANSCEND: 0.9}, 'location.latent.false': {NodeObj.TRANSPORT: 0.9, NodeObj.TRANSCEND: 0.1}}
+-empirical: location.latent.true	{'TRANSCEND': 0.89, 'TRANSPORT': 0.11}
+-empirical: location.latent.false	{'TRANSCEND': 0.1, 'TRANSPORT': 0.9}
+
+TRANSCEND
+-avg over rfcs: {'END': 1.0}
+-nominal: {'location.latent.true': {NodeObj.END: 1.0}, 'location.latent.false': {NodeObj.END: 1.0}}
+-empirical: location.latent.true	{'END': 1.0}
+-empirical: location.latent.false	{'END': 1.0}
+
+TRANSPORT
+-avg over rfcs: {'END': 1.0}
+-nominal: {'location.latent.true': {NodeObj.END: 1.0}, 'location.latent.false': {NodeObj.END: 1.0}}
+-empirical: location.latent.true	{'END': 1.0}
+-empirical: location.latent.false	{'END': 1.0}
+
+
+--overall node statistics--
+
+-node visits: 
+{'AFTER': 0.54
+'BEGIN': 1.0
+'MEMORY': 0.49
+'NARRATIVE': 0.46
+'RADIO': 0.51
+'RECALL': 0.51
+'SAW': 0.46
+'STORY': 0.54
+'SWELL': 0.52
+'TELE': 0.49
+'TOLD': 0.48
+'TRANSCEND': 0.46
+'TRANSPORT': 0.54}
+
+
+--unfilled sents from all nodes--
+
+One [location.time] <br> [subject.name] walked into the <b>[location.name]</b>
+[subject.name] <b>knew!</b> the '[drink.name]'<br> was quite swell here.
+[subject.name] was <b>told</b> they had<br>[basement.name] in the basement.
+After ordering, [subject.name] <b>realized</b> <br>'[realize.this]'
+Before ordering, [subject.name] <b>saw</b> <br> '[see.this]'
+Suddenly, the <b>radio</b> began <br>'[broadcast.this]'
+<b>Eventually</b> it happened, <br> [eventuality.this]
+and [subject.name] recalled <b>[subject.pospronoun] self</b><br>saying in a low voice:
+which brought memories of [subject.name]'s <br><b>shaman-guru</b> yelling:
+'Our <b>self-personal-metastory</b> <br>is [saying1.this]'
+'Our <b>introspective-dream-narrative</b> <br>couldn't be [saying2.this]'
+That must have been <br>when [subject.name] <b>transcended</b>.
+That was when they saw <br>[subject.name] <b>evaporate</b>. <br>
+~ FIN ~
+
+
+--story samples--
+
+One strange evening <br> Bill walked into the <b>brew house</b>
+Bill <b>knew!</b> the 'silk potion'<br> was quite swell here.
+Before ordering, Bill <b>saw</b> <br> 'a real life zombie?'
+Suddenly, the <b>radio</b> began <br>'the established science of unicorns ...'
+which brought memories of Bill's <br><b>shaman-guru</b> yelling:
+'Our <b>introspective-dream-narrative</b> <br>couldn't be our own.'
+That was when they saw <br>Bill <b>evaporate</b>. <br>
+One strange evening <br> Alice walked into the <b>brew house</b>
+Alice <b>knew!</b> the 'muddy water'<br> was quite swell here.
+Before ordering, Alice <b>saw</b> <br> 'Einstein drinking coffee?'
+Suddenly, the <b>radio</b> began <br>'and receive at your finger tip ...'
+which brought memories of Alice's <br><b>shaman-guru</b> yelling:
+'Our <b>self-personal-metastory</b> <br>is that which is never Real and True!'
+That must have been <br>when Alice <b>transcended</b>.
+
+
+--question samples--
+
+["Before ordering, Alice <b>saw</b>  'Einstein drinking coffee?'
+"Before ordering, Bill <b>saw</b>  'that the mirrors are labyrinths?'"]
+
+["After ordering, Bill <b>realized</b> 'Maybe in the library!'
+"After ordering, Alice <b>realized</b> 'Maybe in the library!'"]
+
+['That was when they saw Bill <b>evaporate</b>. 
+'That was when they saw Alice <b>evaporate</b>. ']
+
+['That must have been when Bill <b>transcended</b>.
+'That must have been when Alice <b>transcended</b>.']
+
+["Before ordering, Bill <b>saw</b>  'that the mirrors are labyrinths?'
+"Before ordering, Alice <b>saw</b>  'Einstein drinking coffee?'"]
+
+["After ordering, Bill <b>realized</b> 'Old Reilly stole that stallion!'
+"After ordering, Alice <b>realized</b> 'The cat is not what it seems!'"]
+
+["Before ordering, Bill <b>saw</b>  'Einstein drinking coffee?'
+"Before ordering, Alice <b>saw</b>  'Einstein drinking coffee?'"]
+
+["After ordering, Bill <b>realized</b> 'Maybe in the library!'
+"After ordering, Alice <b>realized</b> 'Old Reilly stole that stallion!'"]
+
+["which brought memories of Alice's <b>shaman-guru</b> yelling:
+"which brought memories of Bill's <b>shaman-guru</b> yelling:"]
+
+["which brought memories of Bill's <b>shaman-guru</b> yelling:
+"which brought memories of Alice's <b>shaman-guru</b> yelling:"]
+
+['That must have been when Alice <b>transcended</b>.
+'That must have been when Bill <b>transcended</b>.']
+
+['and Bill recalled <b>his self</b>saying in a low voice:
+'and Alice recalled <b>her self</b>saying in a low voice:']
+
+['That was when they saw Alice <b>evaporate</b>. 
+'That was when they saw Bill <b>evaporate</b>. ']
+
+["After ordering, Bill <b>realized</b> 'Old Reilly stole that stallion!'
+"After ordering, Alice <b>realized</b> 'The cat is not what it seems!'"]
+
+['That was when they saw Bill <b>evaporate</b>. 
+'That was when they saw Alice <b>evaporate</b>. ']
+
+['That was when they saw Alice <b>evaporate</b>. 
+'That was when they saw Bill <b>evaporate</b>. ']
+
+['and Alice recalled <b>her self</b>saying in a low voice:
+'and Bill recalled <b>his self</b>saying in a low voice:']
+
+['That must have been when Alice <b>transcended</b>.
+'That must have been when Bill <b>transcended</b>.']
+
+['That was when they saw Bill <b>evaporate</b>. 
+'That was when they saw Alice <b>evaporate</b>. ']
+
+['That was when they saw Alice <b>evaporate</b>. 
+'That was when they saw Bill <b>evaporate</b>. ']
+
+["which brought memories of Bill's <b>shaman-guru</b> yelling:
+"which brought memories of Alice's <b>shaman-guru</b> yelling:"]
+
+["which brought memories of Alice's <b>shaman-guru</b> yelling:
+"which brought memories of Bill's <b>shaman-guru</b> yelling:"]
+
+['That must have been when Bill <b>transcended</b>.
+'That must have been when Alice <b>transcended</b>.']
+
+["Before ordering, Alice <b>saw</b>  'that the mirrors are labyrinths?'
+"Before ordering, Bill <b>saw</b>  'that the mirrors are labyrinths?'"]
+
+['That was when they saw Bill <b>evaporate</b>. 
+'That was when they saw Alice <b>evaporate</b>. ']
+
+["Before ordering, Alice <b>saw</b>  'Einstein drinking coffee?'
+"Before ordering, Bill <b>saw</b>  'Einstein drinking coffee?'"]
+
+['and Bill recalled <b>his self</b>saying in a low voice:
+'and Alice recalled <b>her self</b>saying in a low voice:']
+
+['That was when they saw Bill <b>evaporate</b>. 
+'That was when they saw Alice <b>evaporate</b>. ']
+
+['That was when they saw Bill <b>evaporate</b>. 
+'That was when they saw Alice <b>evaporate</b>. ']
+
+['and Bill recalled <b>his self</b>saying in a low voice:
+'and Alice recalled <b>her self</b>saying in a low voice:']
+
+['That was when they saw Alice <b>evaporate</b>. 
+'That was when they saw Bill <b>evaporate</b>. ']
+
+["which brought memories of Alice's <b>shaman-guru</b> yelling:
+"which brought memories of Bill's <b>shaman-guru</b> yelling:"]
+

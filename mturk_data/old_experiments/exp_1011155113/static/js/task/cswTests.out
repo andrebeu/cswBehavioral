@@ -1,0 +1,374 @@
+
+
+--params--
+
+qpr 1.0
+filler qpr 0.25
+cond False
+burnin 0
+
+
+--conditional node statistics--
+
+
+BEGIN
+-avg over rfcs: {'NODE11': 0.52, 'NODE12': 0.48}
+-nominal: {'uncond': {NodeObj.NODE11: 0.5, NodeObj.NODE12: 0.5}}
+-empirical: uncond	{'NODE11': 0.5, 'NODE12': 0.5}
+
+NODE11
+-avg over rfcs: {'NODE21': 1.0}
+-nominal: {'uncond': {NodeObj.NODE21: 1.0, NodeObj.NODE22: 0.0}}
+-empirical: uncond	{'NODE21': 1.0}
+
+NODE12
+-avg over rfcs: {'NODE22': 1.0}
+-nominal: {'uncond': {NodeObj.NODE21: 0.0, NodeObj.NODE22: 1.0}}
+-empirical: uncond	{'NODE22': 1.0}
+
+NODE21
+-avg over rfcs: {'END': 1.0}
+-nominal: {'uncond': {NodeObj.END: 1.0}}
+-empirical: uncond	{'END': 1.0}
+
+NODE22
+-avg over rfcs: {'END': 1.0}
+-nominal: {'uncond': {NodeObj.END: 1.0}}
+-empirical: uncond	{'END': 1.0}
+
+
+--overall node statistics--
+
+-node visits: 
+{'BEGIN': 1.0
+'END': 1.0
+'NODE11': 0.5
+'NODE12': 0.5
+'NODE21': 0.5
+'NODE22': 0.5}
+
+
+--unfilled sents from all nodes--
+
+One [location.time], [subject.name] walked into the [location.name]
+Today, [subject.name] waited in line patiently.
+[subject.name] was impatient, and decided to cut the line.
+[subject.name] then sat by the window, and read a book for hours.
+After ordering, [subject.name] stole a salt shaker and left.
+That is all that is remembered.
+
+
+--story samples--
+
+One strange evening, Jacob walked into the jungle brew house 
+Today, Jacob waited in line patiently.
+Jacob then sat by the window, and read a book for hours.
+That is all that is remembered.
+One strange evening, Natalie walked into the jungle brew house 
+Natalie was impatient, and decided to cut the line.
+After ordering, Natalie stole a salt shaker and left.
+That is all that is remembered.
+
+
+--question samples--
+
+['After ordering, Deborah stole a salt shaker and left.
+'Deborah then sat by the window, and read a book for hours.']
+
+['Edward then sat by the window, and read a book for hours.
+'After ordering, Edward stole a salt shaker and left.']
+
+['After ordering, Matthew stole a salt shaker and left.
+'Matthew then sat by the window, and read a book for hours.']
+
+['David then sat by the window, and read a book for hours.
+'After ordering, David stole a salt shaker and left.']
+
+['Rose then sat by the window, and read a book for hours.
+'After ordering, Rose stole a salt shaker and left.']
+
+['After ordering, Roger stole a salt shaker and left.
+'Roger then sat by the window, and read a book for hours.']
+
+['Debra then sat by the window, and read a book for hours.
+'After ordering, Debra stole a salt shaker and left.']
+
+['Raymond then sat by the window, and read a book for hours.
+'After ordering, Raymond stole a salt shaker and left.']
+
+['Joseph then sat by the window, and read a book for hours.
+'Kimberly then sat by the window, and read a book for hours.']
+
+['After ordering, Mary stole a salt shaker and left.
+'Mary then sat by the window, and read a book for hours.']
+
+['Susan then sat by the window, and read a book for hours.
+'After ordering, Susan stole a salt shaker and left.']
+
+['Joseph then sat by the window, and read a book for hours.
+'After ordering, Joseph stole a salt shaker and left.']
+
+['Cheryl then sat by the window, and read a book for hours.
+'After ordering, Cheryl stole a salt shaker and left.']
+
+['Julia then sat by the window, and read a book for hours.
+'After ordering, Julia stole a salt shaker and left.']
+
+['Kelly then sat by the window, and read a book for hours.
+'After ordering, Kelly stole a salt shaker and left.']
+
+['After ordering, Steven stole a salt shaker and left.
+'Steven then sat by the window, and read a book for hours.']
+
+['After ordering, Maria stole a salt shaker and left.
+'Maria then sat by the window, and read a book for hours.']
+
+['Natalie then sat by the window, and read a book for hours.
+'After ordering, Natalie stole a salt shaker and left.']
+
+['Joe then sat by the window, and read a book for hours.
+'After ordering, Joe stole a salt shaker and left.']
+
+['Benjamin then sat by the window, and read a book for hours.
+'After ordering, Benjamin stole a salt shaker and left.']
+
+['Wayne then sat by the window, and read a book for hours.
+'Raymond then sat by the window, and read a book for hours.']
+
+['Amy then sat by the window, and read a book for hours.
+'Mark then sat by the window, and read a book for hours.']
+
+['Heather then sat by the window, and read a book for hours.
+'After ordering, Heather stole a salt shaker and left.']
+
+['Sara then sat by the window, and read a book for hours.
+'Andrew then sat by the window, and read a book for hours.']
+
+['Abigail then sat by the window, and read a book for hours.
+'After ordering, Abigail stole a salt shaker and left.']
+
+['Alexander then sat by the window, and read a book for hours.
+'After ordering, Alexander stole a salt shaker and left.']
+
+['Edward then sat by the window, and read a book for hours.
+'After ordering, Edward stole a salt shaker and left.']
+
+['After ordering, Roger stole a salt shaker and left.
+'After ordering, Gloria stole a salt shaker and left.']
+
+['After ordering, Hannah stole a salt shaker and left.
+'Hannah then sat by the window, and read a book for hours.']
+
+['Justin then sat by the window, and read a book for hours.
+'After ordering, Justin stole a salt shaker and left.']
+
+['After ordering, Kimberly stole a salt shaker and left.
+'After ordering, Sandra stole a salt shaker and left.']
+
+['Sharon then sat by the window, and read a book for hours.
+'Gregory then sat by the window, and read a book for hours.']
+
+['Deborah then sat by the window, and read a book for hours.
+'Elizabeth then sat by the window, and read a book for hours.']
+
+['After ordering, Heather stole a salt shaker and left.
+'After ordering, Albert stole a salt shaker and left.']
+
+['Brittany then sat by the window, and read a book for hours.
+'After ordering, Brittany stole a salt shaker and left.']
+
+['After ordering, Anthony stole a salt shaker and left.
+'Anthony then sat by the window, and read a book for hours.']
+
+['After ordering, Kelly stole a salt shaker and left.
+'Kelly then sat by the window, and read a book for hours.']
+
+['Jennifer then sat by the window, and read a book for hours.
+'Diana then sat by the window, and read a book for hours.']
+
+['After ordering, Charles stole a salt shaker and left.
+'After ordering, Jennifer stole a salt shaker and left.']
+
+['After ordering, Jose stole a salt shaker and left.
+'Jose then sat by the window, and read a book for hours.']
+
+['Paul then sat by the window, and read a book for hours.
+'After ordering, Paul stole a salt shaker and left.']
+
+['After ordering, Nathan stole a salt shaker and left.
+'Nathan then sat by the window, and read a book for hours.']
+
+['Samuel then sat by the window, and read a book for hours.
+'After ordering, Samuel stole a salt shaker and left.']
+
+['After ordering, Victoria stole a salt shaker and left.
+'Victoria then sat by the window, and read a book for hours.']
+
+['Karen then sat by the window, and read a book for hours.
+'After ordering, Karen stole a salt shaker and left.']
+
+['After ordering, Carolyn stole a salt shaker and left.
+'After ordering, Kathleen stole a salt shaker and left.']
+
+['Eric then sat by the window, and read a book for hours.
+'After ordering, Eric stole a salt shaker and left.']
+
+['Christian then sat by the window, and read a book for hours.
+'After ordering, Christian stole a salt shaker and left.']
+
+['After ordering, Beverly stole a salt shaker and left.
+'Beverly then sat by the window, and read a book for hours.']
+
+['After ordering, Janet stole a salt shaker and left.
+'Janet then sat by the window, and read a book for hours.']
+
+['Ryan then sat by the window, and read a book for hours.
+'After ordering, Ryan stole a salt shaker and left.']
+
+['After ordering, Jack stole a salt shaker and left.
+'Jack then sat by the window, and read a book for hours.']
+
+['Benjamin then sat by the window, and read a book for hours.
+'After ordering, Benjamin stole a salt shaker and left.']
+
+['Melissa then sat by the window, and read a book for hours.
+'After ordering, Melissa stole a salt shaker and left.']
+
+['Brian then sat by the window, and read a book for hours.
+'After ordering, Brian stole a salt shaker and left.']
+
+['Madison then sat by the window, and read a book for hours.
+'After ordering, Madison stole a salt shaker and left.']
+
+['After ordering, Austin stole a salt shaker and left.
+'After ordering, Jason stole a salt shaker and left.']
+
+['After ordering, Emily stole a salt shaker and left.
+'After ordering, Ashley stole a salt shaker and left.']
+
+['Kathryn then sat by the window, and read a book for hours.
+'After ordering, Kathryn stole a salt shaker and left.']
+
+['Diana then sat by the window, and read a book for hours.
+'After ordering, Diana stole a salt shaker and left.']
+
+['After ordering, Ralph stole a salt shaker and left.
+'After ordering, Russell stole a salt shaker and left.']
+
+['Carol then sat by the window, and read a book for hours.
+'After ordering, Carol stole a salt shaker and left.']
+
+['After ordering, Michael stole a salt shaker and left.
+'After ordering, Steven stole a salt shaker and left.']
+
+['Donald then sat by the window, and read a book for hours.
+'Scott then sat by the window, and read a book for hours.']
+
+['Maria then sat by the window, and read a book for hours.
+'Shirley then sat by the window, and read a book for hours.']
+
+['After ordering, Bruce stole a salt shaker and left.
+'After ordering, Kenneth stole a salt shaker and left.']
+
+['After ordering, Stephanie stole a salt shaker and left.
+'Stephanie then sat by the window, and read a book for hours.']
+
+['Zachary then sat by the window, and read a book for hours.
+'After ordering, Zachary stole a salt shaker and left.']
+
+['After ordering, Arthur stole a salt shaker and left.
+'Arthur then sat by the window, and read a book for hours.']
+
+['Billy then sat by the window, and read a book for hours.
+'Carol then sat by the window, and read a book for hours.']
+
+['After ordering, Lisa stole a salt shaker and left.
+'Lisa then sat by the window, and read a book for hours.']
+
+['Richard then sat by the window, and read a book for hours.
+'Sharon then sat by the window, and read a book for hours.']
+
+['Christopher then sat by the window, and read a book for hours.
+'After ordering, Christopher stole a salt shaker and left.']
+
+['Pamela then sat by the window, and read a book for hours.
+'After ordering, Pamela stole a salt shaker and left.']
+
+['Charles then sat by the window, and read a book for hours.
+'Jennifer then sat by the window, and read a book for hours.']
+
+['After ordering, Ethan stole a salt shaker and left.
+'After ordering, Thomas stole a salt shaker and left.']
+
+['Keith then sat by the window, and read a book for hours.
+'After ordering, Keith stole a salt shaker and left.']
+
+['After ordering, Kevin stole a salt shaker and left.
+'After ordering, Bruce stole a salt shaker and left.']
+
+['Christian then sat by the window, and read a book for hours.
+'After ordering, Christian stole a salt shaker and left.']
+
+['Dylan then sat by the window, and read a book for hours.
+'After ordering, Dylan stole a salt shaker and left.']
+
+['Dennis then sat by the window, and read a book for hours.
+'Janice then sat by the window, and read a book for hours.']
+
+['Roy then sat by the window, and read a book for hours.
+'After ordering, Roy stole a salt shaker and left.']
+
+['After ordering, Alice stole a salt shaker and left.
+'Alice then sat by the window, and read a book for hours.']
+
+['Amy then sat by the window, and read a book for hours.
+'After ordering, Amy stole a salt shaker and left.']
+
+['Frank then sat by the window, and read a book for hours.
+'After ordering, Frank stole a salt shaker and left.']
+
+['After ordering, Ralph stole a salt shaker and left.
+'Ralph then sat by the window, and read a book for hours.']
+
+['After ordering, Christian stole a salt shaker and left.
+'Christian then sat by the window, and read a book for hours.']
+
+['Kathleen then sat by the window, and read a book for hours.
+'Ryan then sat by the window, and read a book for hours.']
+
+['Anna then sat by the window, and read a book for hours.
+'After ordering, Anna stole a salt shaker and left.']
+
+['Nicole then sat by the window, and read a book for hours.
+'Ronald then sat by the window, and read a book for hours.']
+
+['George then sat by the window, and read a book for hours.
+'Richard then sat by the window, and read a book for hours.']
+
+['Juan then sat by the window, and read a book for hours.
+'After ordering, Juan stole a salt shaker and left.']
+
+['Eric then sat by the window, and read a book for hours.
+'Dorothy then sat by the window, and read a book for hours.']
+
+['After ordering, Billy stole a salt shaker and left.
+'After ordering, Jose stole a salt shaker and left.']
+
+['After ordering, Jordan stole a salt shaker and left.
+'Jordan then sat by the window, and read a book for hours.']
+
+['Michelle then sat by the window, and read a book for hours.
+'After ordering, Michelle stole a salt shaker and left.']
+
+['After ordering, Gloria stole a salt shaker and left.
+'After ordering, Ralph stole a salt shaker and left.']
+
+['Kimberly then sat by the window, and read a book for hours.
+'Christine then sat by the window, and read a book for hours.']
+
+['Sara then sat by the window, and read a book for hours.
+'After ordering, Sara stole a salt shaker and left.']
+
+['Edward then sat by the window, and read a book for hours.
+'After ordering, Edward stole a salt shaker and left.']
+

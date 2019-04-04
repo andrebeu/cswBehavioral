@@ -1,0 +1,107 @@
+Entities
+-----
+Person: Name, Pronoun, Pronoun_possessive, Pronoun_object, Reason_mad, Barista_saying, Violent
+Olivia, she, her, her, learned that her flight to the Bahamas was cancelled due to inclement weather, “Im so sorry you had to experience a coffee crime.”, Yes
+Jesse, he, his, him, gotten into a fight with his mom, “Its not everyday you meet a coffee criminal.”, Yes
+Silvia, she, her, her, realized that she had left her phone on the bus, “I think some caffeine would’ve helped that one.”, No
+Ben, he, his, him, dropped his keys in a storm drain, “There was no need to worry. The baristas are trained in kung fu.”, No
+
+Drink: Name
+coffee
+mocha
+latte
+
+Dessert: Name
+cake
+cookie
+lemonsquare
+muffin
+
+Roles
+-----
+Subject: Person
+Victim: Person
+Barista: Person
+Policeman: Person
+Drink_ordered: Drink
+Dessert_crumbled: Dessert
+
+States
+-----
+BEGIN
+[Subject.Name] angrily walked into the coffee shop.
+Default: 0.6 Cut_line, 0.4 Step_foot
+
+Cut_line 
+Without hesitating [Subject.Pronoun] cut [Victim.Name], the first person in line.
+Victim.Violent == "Yes": 0.8 Cut_back, 0.2 Say_excuse_me
+Victim.Violent == "No": 0.2 Cut_back, 0.8 Say_excuse_me
+
+Step_foot 
+Clumsily, [Subject.Pronoun] stepped on [Victim.Name]'s foot.
+Default: 1.0 Say_excuse_me
+
+Cut_back
+[Victim.Name] promptly stepped back in front of [Subject.Name].
+Subject.Violent == "Yes": 0.8 Shove, 0.2 Ignore, 0.0 Subject_stares
+Subject.Violent == "No": 0.2 Shove, 0.8 Ignore, 0.0 Subject_stares
+
+Say_excuse_me
+[Victim.Name] was really annoyed and said, "Excuse me?!" 
+Subject.Violent == "Yes": 0.8 Shove, 0.0 Ignore, 0.2 Subject_stares
+Subject.Violent == "No": 0.2 Shove, 0.0 Ignore, 0.8 Subject_stares
+
+Ignore
+[Subject.Name] ignored [Victim.Pronoun_object] and proceeded to order a [Drink_ordered.Name].
+Victim.Violent == "Yes": 0.8 X_shove, 0.0 Yell, 0.2 X_stare
+Victim.Violent == "No": 0.2 X_shove, 0.0 Yell, 0.8 X_stare
+
+Shove
+[Subject.Name] proceeded to give a slight shove to [Victim.Name].
+Victim.Violent == "Yes": 0.8 X_shove, 0.2 Yell, 0.0 X_stare
+Victim.Violent == "No": 0.2 X_shove, 0.8 Yell, 0.0 X_stare
+
+Subject_stares
+[Subject.Name] turned to [Victim.Name] and gave [Victim.Pronoun_object] a very mean look.
+Victim.Violent == "Yes": 0.0 X_shove, 0.8 Yell, 0.2 X_stare
+Victim.Violent == "No": 0.0 X_shove, 0.2 Yell, 0.8 X_stare
+
+Yell
+[Victim.Name] yelled into [Subject.Name]'s face, "Hey! Relax."
+Default: 1.0 Cream_splash
+
+X_stare
+[Victim.Name] stared with rage into [Subject.Name]'s eyes.
+Default: 1.0 Dessert_crumble
+
+X_shove
+In retaliation, [Victim.Name] pushed [Subject.Name].
+Subject.Violent == "Yes": 1.0 Dessert_crumble
+Subject.Violent == "No": 1.0 Cream_splash
+
+Cream_splash
+[Subject.Name] picked up a cup of cream and splashed it in [Victim.Name]'s face. 
+Default: 0.8 Call_policeman, 0.2 Barista_orders
+
+Dessert_crumble
+[Subject.Name] snatched a [Dessert_crumbled.Name] and crumbled it above [Victim.Name]'s head. 
+Default: 0.2 Call_policeman, 0.8 Barista_orders
+
+Call_policeman
+[Policeman.Name], the police officer, ordered [Subject.Name] to leave before anyone pressed charges.
+Default: 0.2 Love_juice, 0.8 Hate_coffee
+
+Barista_orders
+The barista ran out from behind the counter and ordered [Subject.Name] to leave.
+Default: 0.8 Love_juice, 0.2 Hate_coffee
+
+Love_juice
+[Subject.Name] turned and ran out yelling "Juice is better, anyway!"
+Default: 1.0 END
+
+Hate_coffee
+[Subject.Name] stormed out of the coffee shop yelling "I hate coffee!"
+Default: 1.0 END
+
+END
+The barista handed [Victim.Name] a bunch of napkins and gave [Victim.Pronoun_object] a free drink out of sympathy.

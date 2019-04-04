@@ -1,0 +1,1394 @@
+
+<!DOCTYPE html>
+<html><head>
+	<script src="jspsych-master/jspsych.js"></script>
+    <link rel="stylesheet" href="jspsych-master/css/jspsych.css"></link>
+
+    <script src = "jspsych-master/plugins/jspsych-instructions.js"></script>
+    <script src = "jspsych-master/plugins/jspsych-html-slider-response.js"></script>
+
+    <style> img { width: 300px; } </style> 
+    </head><body></body>
+
+<script>
+
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The emcee will introduce the poet', 'The poet will perform he']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The emcee will introduce the poet', 'The poet will perform he']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The poet will perform he', 'The emcee will introduce the poet']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The poet will perform he', 'The emcee will introduce the poet']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The poet will perform he', 'The emcee will introduce the poet']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The poet will perform he', 'The emcee will introduce the poet']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['Yes', 'No']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The emcee will introduce the poet', 'The poet will perform he']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The poet will perform he', 'The emcee will introduce the poet']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['Yes', 'No']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The emcee will introduce the poet', 'The poet will perform he']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The emcee will introduce the poet', 'The poet will perform he']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The emcee will introduce the poet', 'The poet will perform he']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['Yes', 'No']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['Yes', 'No']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['Yes', 'No']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The emcee will introduce the poet', 'The poet will perform he']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The emcee will introduce the poet', 'The poet will perform he']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The emcee will introduce the poet', 'The poet will perform he']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['Yes', 'No']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The emcee will introduce the poet', 'The poet will perform he']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['Yes', 'No']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The emcee will introduce the poet', 'The poet will perform he']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The emcee will introduce the poet', 'The poet will perform he']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['Yes', 'No']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The poet will perform he', 'The emcee will introduce the poet']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The poet will perform he', 'The emcee will introduce the poet']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The poet will perform he', 'The emcee will introduce the poet']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['Yes', 'No']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The poet will perform he', 'The emcee will introduce the poet']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The poet will perform he', 'The emcee will introduce the poet']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The emcee will introduce the poet', 'The poet will perform he']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The poet will perform he', 'The emcee will introduce the poet']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The poet will perform he', 'The emcee will introduce the poet']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The emcee will introduce the poet', 'The poet will perform he']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Will Mariko order a drink? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: What usually happens next? <p>',
+        labels: ['The emcee will introduce the poet', 'The poet will perform he']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Mariko!" said Sarah. "I am glad you could make it Sarah!" Mariko replied.']
+        } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+        var question4 = {
+        type: 'html-slider-response',
+        stimulus: '<p> Q: Do you expect that Mariko will also perform Mariko poem tonight? <p>',
+        labels: ['No', 'Yes']
+        } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Sarah said that she loved the poem.']
+        } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Sarah said their goodbyes and walked toward the door.']
+        } 
+
+  jsPsych.init({
+    timeline: [trial1, question1, trial2, question2, trial3, trial1, question1, trial2, question2, trial3, trial4, trial5, trial6, trial1, trial2, question2, trial3, trial4, trial5, trial6, trial1, trial2, question2, trial3, trial4, question4, trial5, trial6, trial1, trial2, trial3, trial4, trial5, trial6, trial1, question1, trial2, question2, trial3, trial4, trial5, trial6, trial1, question1, trial2, question2, trial3, trial4, question4, trial5, trial6, trial1, question1, trial2, question2, trial3, trial4, trial5, trial6, trial1, trial2, trial3, trial4, trial5, trial6, trial1, trial2, question2, trial3, trial4, question4, trial5, trial6, trial1, question1, trial2, trial3, trial4, question4, trial5, trial6, trial1, trial2, trial3, trial4, trial5, trial6, trial1, question1, trial2, question2, trial3, trial4, trial5, trial6, trial1, trial2, question2, trial3, trial4, question4, trial5, trial6, trial1, trial2, question2, trial3, trial4, question4, trial5, trial6, trial1, trial2, trial3, trial4, question4, trial5, trial6, trial1, question1, trial2, trial3, trial4, question4, trial5, trial6, trial1, question1, trial2, question2, trial3, trial4, trial5, trial6, trial1, trial2, trial3, trial4, trial5, trial6, trial1, question1, trial2, question2, trial3, trial4, question4, trial5, trial6, trial1, trial2, question2, trial3, trial4, question4, trial5, trial6, trial1, trial2, question2, trial3, trial4, trial5, trial6, trial1, question1, trial2, question2, trial3, trial4, trial5, trial6, trial1, question1, trial2, question2, trial3, trial4, trial5, trial6, trial1, question1, trial2, question2, trial3, trial4, question4, trial5, trial6, trial1, question1, trial2, question2, trial3, trial4, question4, trial5, trial6, trial1, trial2, question2, trial3, trial4, trial5, trial6, trial1, question1, trial2, trial3, trial4, question4, trial5, trial6, trial1, trial2, trial3, trial4, trial5, trial6, trial1, question1, trial2, trial3, trial4, trial5, trial6, trial1, question1, trial2, trial3, trial4, question4, trial5, trial6, trial1, question1, trial2, trial3, trial4, question4, trial5, trial6, trial1, trial2, question2, trial3, trial4, question4, trial5, trial6, trial1, trial2, question2, trial3, trial4, trial5, trial6, trial1, trial2, trial3, trial4, question4, trial5, trial6, trial1, question1, trial2, question2, trial3, trial4, question4, trial5, trial6, trial1, question1, trial2, trial3, trial4, trial5, trial6, trial1, trial2, trial3, trial4, trial5, trial6, trial1, trial2, question2, trial3, trial4, question4, trial5, trial6, trial1, trial2, question2, trial3, trial4, trial5, trial6, trial1, question1, trial2, question2, trial3, trial4, question4, trial5, trial6, trial1, question1, trial2, question2, trial3, trial4, trial5, trial6, trial1, trial2, trial3, trial4, question4, trial5, trial6, ],
+    on_finish: function() {
+      jsPsych.data.displayData();
+    },
+    default_iti: 250
+  });
+
+</script>

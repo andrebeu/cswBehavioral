@@ -1,0 +1,465 @@
+
+
+--params--
+
+qpr 1.0
+filler qpr 0.25
+cond False
+burnin 0
+
+
+--conditional node statistics--
+
+
+BEGIN
+-avg over rfcs: {'TERRIBLE': 0.48, 'TOLD': 0.52}
+-nominal: {'uncond': {NodeObj.TERRIBLE: 0.5, NodeObj.TOLD: 0.5}}
+-empirical: uncond	{'TERRIBLE': 0.58, 'TOLD': 0.42}
+
+TERRIBLE
+-avg over rfcs: {'NOTICE': 1.0}
+-nominal: {'uncond': {NodeObj.NOTICE: 1.0, NodeObj.HEARD: 0.0}}
+-empirical: uncond	{'NOTICE': 1.0}
+
+TOLD
+-avg over rfcs: {'HEARD': 1.0}
+-nominal: {'uncond': {NodeObj.NOTICE: 0.0, NodeObj.HEARD: 1.0}}
+-empirical: uncond	{'HEARD': 1.0}
+
+NOTICE
+-avg over rfcs: {'RADIO': 1.0}
+-nominal: {'uncond': {NodeObj.RADIO: 1.0, NodeObj.BAND: 0.0}}
+-empirical: uncond	{'RADIO': 1.0}
+
+HEARD
+-avg over rfcs: {'BAND': 1.0}
+-nominal: {'uncond': {NodeObj.RADIO: 0.0, NodeObj.BAND: 1.0}}
+-empirical: uncond	{'BAND': 1.0}
+
+RADIO
+-avg over rfcs: {'DANCE': 1.0}
+-nominal: {'uncond': {NodeObj.DANCE: 1.0, NodeObj.REVOLT: 0.0}}
+-empirical: uncond	{'DANCE': 1.0}
+
+BAND
+-avg over rfcs: {'REVOLT': 1.0}
+-nominal: {'uncond': {NodeObj.DANCE: 0.0, NodeObj.REVOLT: 1.0}}
+-empirical: uncond	{'REVOLT': 1.0}
+
+DANCE
+-avg over rfcs: {'COPS': 1.0}
+-nominal: {'uncond': {NodeObj.COPS: 1.0, NodeObj.BARISTA: 0.0}}
+-empirical: uncond	{'COPS': 1.0}
+
+REVOLT
+-avg over rfcs: {'BARISTA': 1.0}
+-nominal: {'uncond': {NodeObj.COPS: 0.0, NodeObj.BARISTA: 1.0}}
+-empirical: uncond	{'BARISTA': 1.0}
+
+BARISTA
+-avg over rfcs: {'FOODLEAVE': 1.0}
+-nominal: {'uncond': {NodeObj.TAKEOBJ: 0.0, NodeObj.FOODLEAVE: 1.0}}
+-empirical: uncond	{'FOODLEAVE': 1.0}
+
+COPS
+-avg over rfcs: {'TAKEOBJ': 1.0}
+-nominal: {'uncond': {NodeObj.TAKEOBJ: 1.0, NodeObj.FOODLEAVE: 0.0}}
+-empirical: uncond	{'TAKEOBJ': 1.0}
+
+FOODLEAVE
+-avg over rfcs: {'END': 1.0}
+-nominal: {'uncond': {NodeObj.END: 1.0}}
+-empirical: uncond	{'END': 1.0}
+
+TAKEOBJ
+-avg over rfcs: {'END': 1.0}
+-nominal: {'uncond': {NodeObj.END: 1.0}}
+-empirical: uncond	{'END': 1.0}
+
+
+--overall node statistics--
+
+-node visits: 
+{'BAND': 0.56
+'BARISTA': 0.56
+'BEGIN': 1.0
+'COPS': 0.44
+'DANCE': 0.44
+'FOODLEAVE': 0.56
+'HEARD': 0.56
+'NOTICE': 0.44
+'RADIO': 0.44
+'REVOLT': 0.56
+'TAKEOBJ': 0.44
+'TERRIBLE': 0.44
+'TOLD': 0.56}
+
+
+--unfilled sents from all nodes--
+
+One [location.time] [subject.name] walked into the [location.name]
+[subject.name] knew the [drink.name] was terrible here
+[subject.name] was told they had [basement.name] in the basement
+After ordering,  [subject.name] noticed [notice.this]
+While sitting down, [subject.name] overheard [overhear.this]
+Suddenly, the radio began broadcasting [radio.broadcast]
+That’s when the band began playing [music.title]
+This caused [subject.name] to dance [dance.name]
+[subject.name] was so revolted [subject.pronoun] [subjdeed.this]
+The barista had to intervene by [barista.deed] at [subject.name]
+The police came rushing in [cops.deed] [subject.name]
+[subject.name] just took [subject.pronoun2] [food.name] and left
+On [subject.pronoun2] way out, [subject.name] took the [taken.object]
+That is all that is remembered.
+
+
+--story samples--
+
+One strange evening Alice walked into the jungle brew house 
+Alice knew the red drink was terrible here
+After ordering,  Alice noticed a man with a face tattoo
+Suddenly, the radio began broadcasting really bad music
+This caused Alice to dance the circle dance
+The police came rushing in to join along Alice
+On her way out, Alice took the empty pitcher
+One fine morning Alice walked into the deep ocean cafe
+Alice was told they had stuffed crows in the basement
+While sitting down, Alice overheard someone yelling math equations
+That’s when the band began playing a guitar solo
+Alice was so revolted she yelled in seven languages
+The barista had to intervene by dumping a bucket of water at Alice
+Alice just took her apple crumble and left
+
+
+--question samples--
+
+['The barista had to intervene by throwing banana peels at Alice
+'The barista had to intervene by throwing banana peels at Bill']
+
+['The barista had to intervene by dumping a bucket of water at Bill
+'The barista had to intervene by dumping a bucket of water at Alice']
+
+['On his way out, Bill took the salt shaker
+'On her way out, Alice took the salt shaker']
+
+['Alice was so revolted she yelled in seven languages
+'Bill was so revolted he yelled in seven languages']
+
+['Bill just took his apple crumble and left
+'Alice just took her apple crumble and left']
+
+['Alice was so revolted she hid under the bar
+'Bill was so revolted he hid under the bar']
+
+['While sitting down, Alice overheard a bad pickup line
+'While sitting down, Bill overheard a bad pickup line']
+
+['While sitting down, Alice overheard a bad pickup line
+'While sitting down, Bill overheard someone yelling math equations']
+
+['The barista had to intervene by dumping a bucket of water at Alice
+'The barista had to intervene by dumping a bucket of water at Bill']
+
+['The barista had to intervene by throwing banana peels at Bill
+'The barista had to intervene by dumping a bucket of water at Alice']
+
+['After ordering,  Bill noticed a man with a face tattoo
+'After ordering,  Alice noticed a pirate with no sword']
+
+['On his way out, Bill took the empty pitcher
+'On her way out, Alice took the salt shaker']
+
+['Alice was so revolted she yelled in seven languages
+'Bill was so revolted he yelled in seven languages']
+
+['The barista had to intervene by dumping a bucket of water at Alice
+'The barista had to intervene by throwing banana peels at Bill']
+
+['While sitting down, Bill overheard someone yelling math equations
+'While sitting down, Alice overheard a bad pickup line']
+
+['The police came rushing in to join along Bill
+'The police came rushing in to spectate Alice']
+
+['On his way out, Bill took the empty pitcher
+'On her way out, Alice took the empty pitcher']
+
+['After ordering,  Bill noticed a man with a face tattoo
+'After ordering,  Alice noticed a man with a face tattoo']
+
+['The police came rushing in to spectate Bill
+'The police came rushing in to join along Alice']
+
+['The barista had to intervene by dumping a bucket of water at Alice
+'The barista had to intervene by dumping a bucket of water at Bill']
+
+['Alice just took her blueberry pie and left
+'Bill just took his blueberry pie and left']
+
+['This caused Bill to dance the circle dance
+'This caused Alice to dance the circle dance']
+
+['While sitting down, Bill overheard a bad pickup line
+'While sitting down, Alice overheard a bad pickup line']
+
+['While sitting down, Alice overheard a bad pickup line
+'While sitting down, Bill overheard someone yelling math equations']
+
+['Alice was so revolted she hid under the bar
+'Bill was so revolted he yelled in seven languages']
+
+['This caused Bill to dance the samba
+'This caused Alice to dance the circle dance']
+
+['On his way out, Bill took the empty pitcher
+'On her way out, Alice took the empty pitcher']
+
+['While sitting down, Alice overheard a bad pickup line
+'While sitting down, Bill overheard someone yelling math equations']
+
+['Alice was so revolted she yelled in seven languages
+'Bill was so revolted he hid under the bar']
+
+['On his way out, Bill took the empty pitcher
+'On her way out, Alice took the empty pitcher']
+
+['This caused Alice to dance the samba
+'This caused Bill to dance the samba']
+
+['On her way out, Alice took the empty pitcher
+'On his way out, Bill took the salt shaker']
+
+['Bill just took his apple crumble and left
+'Alice just took her blueberry pie and left']
+
+['While sitting down, Bill overheard someone yelling math equations
+'While sitting down, Alice overheard a bad pickup line']
+
+['While sitting down, Alice overheard a bad pickup line
+'While sitting down, Bill overheard a bad pickup line']
+
+['Alice was so revolted she yelled in seven languages
+'Bill was so revolted he yelled in seven languages']
+
+['The barista had to intervene by dumping a bucket of water at Alice
+'The barista had to intervene by dumping a bucket of water at Bill']
+
+['This caused Bill to dance the samba
+'This caused Alice to dance the circle dance']
+
+['Alice was so revolted she yelled in seven languages
+'Bill was so revolted he yelled in seven languages']
+
+['Alice just took her apple crumble and left
+'Bill just took his blueberry pie and left']
+
+['This caused Bill to dance the samba
+'This caused Alice to dance the circle dance']
+
+['On his way out, Bill took the empty pitcher
+'On her way out, Alice took the empty pitcher']
+
+['While sitting down, Bill overheard someone yelling math equations
+'While sitting down, Alice overheard a bad pickup line']
+
+['The police came rushing in to join along Bill
+'The police came rushing in to join along Alice']
+
+['While sitting down, Alice overheard someone yelling math equations
+'While sitting down, Bill overheard a bad pickup line']
+
+['Alice was so revolted she yelled in seven languages
+'Bill was so revolted he hid under the bar']
+
+['The barista had to intervene by dumping a bucket of water at Alice
+'The barista had to intervene by throwing banana peels at Bill']
+
+['The barista had to intervene by throwing banana peels at Bill
+'The barista had to intervene by dumping a bucket of water at Alice']
+
+['This caused Alice to dance the samba
+'This caused Bill to dance the samba']
+
+['The police came rushing in to join along Bill
+'The police came rushing in to join along Alice']
+
+['On his way out, Bill took the salt shaker
+'On her way out, Alice took the salt shaker']
+
+['Alice was so revolted she yelled in seven languages
+'Bill was so revolted he hid under the bar']
+
+['This caused Alice to dance the samba
+'This caused Bill to dance the samba']
+
+['On her way out, Alice took the empty pitcher
+'On his way out, Bill took the salt shaker']
+
+['Bill was so revolted he hid under the bar
+'Alice was so revolted she hid under the bar']
+
+['Alice just took her apple crumble and left
+'Bill just took his apple crumble and left']
+
+['While sitting down, Alice overheard a bad pickup line
+'While sitting down, Bill overheard someone yelling math equations']
+
+['This caused Alice to dance the circle dance
+'This caused Bill to dance the circle dance']
+
+['On her way out, Alice took the empty pitcher
+'On his way out, Bill took the empty pitcher']
+
+['After ordering,  Alice noticed a pirate with no sword
+'After ordering,  Bill noticed a pirate with no sword']
+
+['Alice just took her apple crumble and left
+'Bill just took his blueberry pie and left']
+
+['After ordering,  Bill noticed a pirate with no sword
+'After ordering,  Alice noticed a man with a face tattoo']
+
+['The police came rushing in to spectate Bill
+'The police came rushing in to join along Alice']
+
+['After ordering,  Alice noticed a man with a face tattoo
+'After ordering,  Bill noticed a pirate with no sword']
+
+['This caused Alice to dance the samba
+'This caused Bill to dance the circle dance']
+
+['On her way out, Alice took the empty pitcher
+'On his way out, Bill took the empty pitcher']
+
+['While sitting down, Bill overheard a bad pickup line
+'While sitting down, Alice overheard a bad pickup line']
+
+['Bill was so revolted he hid under the bar
+'Alice was so revolted she yelled in seven languages']
+
+['Alice was so revolted she hid under the bar
+'Bill was so revolted he yelled in seven languages']
+
+['After ordering,  Alice noticed a man with a face tattoo
+'After ordering,  Bill noticed a man with a face tattoo']
+
+['The police came rushing in to join along Alice
+'The police came rushing in to spectate Bill']
+
+['The barista had to intervene by dumping a bucket of water at Alice
+'The barista had to intervene by throwing banana peels at Bill']
+
+['The police came rushing in to join along Bill
+'The police came rushing in to spectate Alice']
+
+['This caused Bill to dance the circle dance
+'This caused Alice to dance the circle dance']
+
+['On his way out, Bill took the salt shaker
+'On her way out, Alice took the empty pitcher']
+
+['After ordering,  Alice noticed a pirate with no sword
+'After ordering,  Bill noticed a man with a face tattoo']
+
+['Alice just took her apple crumble and left
+'Bill just took his apple crumble and left']
+
+['After ordering,  Alice noticed a pirate with no sword
+'After ordering,  Bill noticed a pirate with no sword']
+
+['This caused Alice to dance the samba
+'This caused Bill to dance the samba']
+
+['After ordering,  Alice noticed a man with a face tattoo
+'After ordering,  Bill noticed a pirate with no sword']
+
+['This caused Alice to dance the circle dance
+'This caused Bill to dance the circle dance']
+
+['The police came rushing in to spectate Alice
+'The police came rushing in to spectate Bill']
+
+['On her way out, Alice took the empty pitcher
+'On his way out, Bill took the empty pitcher']
+
+['Alice was so revolted she yelled in seven languages
+'Bill was so revolted he hid under the bar']
+
+['Alice just took her apple crumble and left
+'Bill just took his apple crumble and left']
+
+['On his way out, Bill took the empty pitcher
+'On her way out, Alice took the empty pitcher']
+
+['On her way out, Alice took the salt shaker
+'On his way out, Bill took the empty pitcher']
+
+['On her way out, Alice took the salt shaker
+'On his way out, Bill took the empty pitcher']
+
+['The police came rushing in to spectate Alice
+'The police came rushing in to spectate Bill']
+
+['While sitting down, Bill overheard someone yelling math equations
+'While sitting down, Alice overheard someone yelling math equations']
+
+['While sitting down, Alice overheard a bad pickup line
+'While sitting down, Bill overheard someone yelling math equations']
+
+['Alice was so revolted she yelled in seven languages
+'Bill was so revolted he hid under the bar']
+
+['The barista had to intervene by dumping a bucket of water at Alice
+'The barista had to intervene by dumping a bucket of water at Bill']
+
+['Alice just took her apple crumble and left
+'Bill just took his blueberry pie and left']
+
+['Bill was so revolted he hid under the bar
+'Alice was so revolted she hid under the bar']
+
+['The barista had to intervene by throwing banana peels at Bill
+'The barista had to intervene by dumping a bucket of water at Alice']
+
+['While sitting down, Bill overheard someone yelling math equations
+'While sitting down, Alice overheard someone yelling math equations']
+
+['Bill was so revolted he hid under the bar
+'Alice was so revolted she yelled in seven languages']
+
+['Bill just took his apple crumble and left
+'Alice just took her apple crumble and left']
+
+['On her way out, Alice took the salt shaker
+'On his way out, Bill took the salt shaker']
+
+['Bill was so revolted he hid under the bar
+'Alice was so revolted she yelled in seven languages']
+
+['While sitting down, Alice overheard someone yelling math equations
+'While sitting down, Bill overheard someone yelling math equations']
+
+['Alice was so revolted she hid under the bar
+'Bill was so revolted he yelled in seven languages']
+
+['Alice was so revolted she yelled in seven languages
+'Bill was so revolted he hid under the bar']
+
+['Bill just took his blueberry pie and left
+'Alice just took her blueberry pie and left']
+
+['On his way out, Bill took the empty pitcher
+'On her way out, Alice took the salt shaker']
+
+['While sitting down, Alice overheard a bad pickup line
+'While sitting down, Bill overheard someone yelling math equations']
+
+['Alice was so revolted she hid under the bar
+'Bill was so revolted he hid under the bar']
+
+['While sitting down, Alice overheard someone yelling math equations
+'While sitting down, Bill overheard a bad pickup line']
+
+['The barista had to intervene by dumping a bucket of water at Alice
+'The barista had to intervene by throwing banana peels at Bill']
+

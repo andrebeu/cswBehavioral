@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html><head>
+    <script src="jspsych-master/jspsych.js"></script>
+    <link rel="stylesheet" href="jspsych-master/css/jspsych.css"></link>
+
+    <script src = "jspsych-master/plugins/jspsych-instructions.js"></script>
+    <script src = "jspsych-master/plugins/jspsych-html-slider-response.js"></script>
+
+    <style> img { width: 300px; } </style> 
+    </head><body></body>
+
+<script>
+
+				var intro1 = {
+			type: 'instructions',
+			pages: ['** After reading, press spacebar. ** ']
+			}
+				var intro2 = {
+			type: 'instructions',
+			pages: ['There are two parts to this experiment.']
+			} 
+				var intro3 = {
+			type: 'instructions',
+			pages: ['First you will read a series of stories, a sentence at a time.']
+			}
+				var intro4 = {
+			type: 'instructions',
+			pages: ['As you read, pay attention to the sequence of events, because eventually you will begin to be asked to predict what happens next in the story.']
+			} 
+				var intro5 = {
+			type: 'instructions',
+			pages: [' ** once ready, press spacebar to begin the first story ** ']
+			} 
+
+			var s_0_BEGIN = {
+			type: 'instructions',
+			pages: ['Ben angrily walked into the coffee shop.']
+			} 
+			var s_1_Cutline = {
+			type: 'instructions',
+			pages: ['Without hesitating he cut Nick, the first person in line.']
+			} 
+			var s_2_Stepinfront = {
+			type: 'instructions',
+			pages: ['Nick promptly stepped back in front of Ben.']
+			} 
+			var s_3_Subjectstares = {
+			type: 'instructions',
+			pages: ['Ben turned to Nick and gave him a very mean look.']
+			} 
+			var s_4_Sayrelax = {
+			type: 'instructions',
+			pages: ['Nick simply said to Ben, \"Hey! Relax.\"']
+			} 
+			var s_5_Creamsplash = {
+			type: 'instructions',
+			pages: ['Ben picked up a small cup of cream and splashed it in Nick\'s face.']
+			} 
+			var s_6_Callpoliceman = {
+			type: 'instructions',
+			pages: ['Olivia, the police officer, ordered Ben to leave before anyone pressed charges.']
+			} 
+			var s_7_Hatecoffee = {
+			type: 'instructions',
+			pages: ['Ben stormed out of the coffee shop yelling \"I hate coffee!\"']
+			} 
+			var s_8_END = {
+			type: 'instructions',
+			pages: ['The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy.']
+			} 
+            var ITI_9 = {
+              type: 'instructions',
+              pages: [' ** press space bar for the next story ** ']
+              } 
+			var s_10_BEGIN = {
+			type: 'instructions',
+			pages: ['Silvia angrily walked into the coffee shop.']
+			} 
+			var s_11_Cutline = {
+			type: 'instructions',
+			pages: ['Without hesitating she cut Nick, the first person in line.']
+			} 
+			var s_12_Stepinfront = {
+			type: 'instructions',
+			pages: ['Nick promptly stepped back in front of Silvia.']
+			} 
+			var s_13_Ignore = {
+			type: 'instructions',
+			pages: ['Silvia ignored him and proceeded to order a coffee.']
+			} 
+			var s_14_Xstare = {
+			type: 'instructions',
+			pages: ['Nick stared with rage into Silvia\'s eyes.']
+			} 
+			var s_15_Creamsplash = {
+			type: 'instructions',
+			pages: ['Silvia picked up a small cup of cream and splashed it in Nick\'s face.']
+			} 
+			var s_16_Callpoliceman = {
+			type: 'instructions',
+			pages: ['Olivia, the police officer, ordered Silvia to leave before anyone pressed charges.']
+			} 
+			var s_17_Lovejuice = {
+			type: 'instructions',
+			pages: ['Silvia turned and ran out yelling \"Juice is better, anyway!\"']
+			} 
+			var s_18_END = {
+			type: 'instructions',
+			pages: ['The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy.']
+			} 
+            var ITI_19 = {
+              type: 'instructions',
+              pages: [' ** press space bar for the next story ** ']
+              } 
+function saveTextToFile(textstr, filename) {
+    var blobToSave = new Blob([textstr], {
+      type: 'text/plain'
+    });
+    var blobURL = "";
+    if (typeof window.webkitURL !== 'undefined') {
+      blobURL = window.webkitURL.createObjectURL(blobToSave);
+    } else {
+      blobURL = window.URL.createObjectURL(blobToSave);
+    }
+
+    var display_element = jsPsych.getDisplayElement();
+
+    display_element.insertAdjacentHTML('beforeend','<a id="jspsych-download-as-text-link" style="display:none;" download="'+filename+'" href="'+blobURL+'">click to download</a>');
+    document.getElementById('jspsych-download-as-text-link').click();
+  }
+  
+
+  jsPsych.init({
+    timeline: [intro1,intro2,intro3,intro4,intro5,s_0_BEGIN,s_1_Cutline,s_2_Stepinfront,s_3_Subjectstares,s_4_Sayrelax,s_5_Creamsplash,s_6_Callpoliceman,s_7_Hatecoffee,s_8_END,ITI_9,s_10_BEGIN,s_11_Cutline,s_12_Stepinfront,s_13_Ignore,s_14_Xstare,s_15_Creamsplash,s_16_Callpoliceman,s_17_Lovejuice,s_18_END,ITI_19,],
+    on_finish: function() {
+      jsPsych.data.displayData();
+      var data_string;
+      data_string = jsPsych.data.get().csv()
+      saveTextToFile(data_string, 'sliderdata-sid_S1.csv')
+    },
+    default_iti: 250
+  });
+
+</script>

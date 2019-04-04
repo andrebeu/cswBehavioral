@@ -1,0 +1,397 @@
+
+
+--params--
+
+qpr 1.0
+filler qpr 0.25
+cond True
+burnin 0
+
+
+--conditional node statistics--
+
+
+BEGIN
+-avg over rfcs: {'NODE11': 0.38, 'NODE12': 0.62}
+-nominal: {'location.latent.true': {NodeObj.NODE11: 0.5, NodeObj.NODE12: 0.5}, 'location.latent.false': {NodeObj.NODE11: 0.5, NodeObj.NODE12: 0.5}}
+-empirical: location.latent.true	{'NODE11': 0.49, 'NODE12': 0.51}
+-empirical: location.latent.false	{'NODE11': 0.58, 'NODE12': 0.42}
+
+NODE11
+-avg over rfcs: {'NODE21': 0.41, 'NODE22': 0.59}
+-nominal: {'location.latent.true': {NodeObj.NODE21: 1.0, NodeObj.NODE22: 0.0}, 'location.latent.false': {NodeObj.NODE21: 0.0, NodeObj.NODE22: 1.0}}
+-empirical: location.latent.true	{'NODE21': 1.0}
+-empirical: location.latent.false	{'NODE22': 1.0}
+
+NODE12
+-avg over rfcs: {'NODE21': 0.49, 'NODE22': 0.51}
+-nominal: {'location.latent.true': {NodeObj.NODE21: 0.0, NodeObj.NODE22: 1.0}, 'location.latent.false': {NodeObj.NODE21: 1.0, NodeObj.NODE22: 0.0}}
+-empirical: location.latent.true	{'NODE22': 1.0}
+-empirical: location.latent.false	{'NODE21': 1.0}
+
+NODE21
+-avg over rfcs: {'NODE31': 0.5, 'NODE32': 0.5}
+-nominal: {'location.latent.true': {NodeObj.NODE31: 1.0, NodeObj.NODE32: 0.0}, 'location.latent.false': {NodeObj.NODE31: 0.0, NodeObj.NODE32: 1.0}}
+-empirical: location.latent.true	{'NODE31': 1.0}
+-empirical: location.latent.false	{'NODE32': 1.0}
+
+NODE22
+-avg over rfcs: {'NODE31': 0.44, 'NODE32': 0.56}
+-nominal: {'location.latent.true': {NodeObj.NODE31: 0.0, NodeObj.NODE32: 1.0}, 'location.latent.false': {NodeObj.NODE31: 1.0, NodeObj.NODE32: 0.0}}
+-empirical: location.latent.true	{'NODE32': 1.0}
+-empirical: location.latent.false	{'NODE31': 1.0}
+
+NODE31
+-avg over rfcs: {'END': 1.0}
+-nominal: {'location.latent.true': {NodeObj.END: 1.0}, 'location.latent.false': {NodeObj.END: 1.0}}
+-empirical: location.latent.true	{'END': 1.0}
+-empirical: location.latent.false	{'END': 1.0}
+
+NODE32
+-avg over rfcs: {'END': 1.0}
+-nominal: {'location.latent.true': {NodeObj.END: 1.0}, 'location.latent.false': {NodeObj.END: 1.0}}
+-empirical: location.latent.true	{'END': 1.0}
+-empirical: location.latent.false	{'END': 1.0}
+
+
+--overall node statistics--
+
+-node visits: 
+{'BEGIN': 1.0
+'END': 1.0
+'NODE11': 0.44
+'NODE12': 0.56
+'NODE21': 0.6
+'NODE22': 0.4
+'NODE31': 0.44
+'NODE32': 0.56}
+
+
+--unfilled sents from all nodes--
+
+One [location.time], [subject.name] walked into the [location.name]
+Today, [subject.name] waited in line patiently.
+[subject.name] was impatient, and decided to cut the line.
+While ordering tea, [subject.name] noticed the barista’s new mustache.
+Before ordering cake, [subject.name] took a quarter from the tip jar.
+[subject.name] then sat by the window, and read a book for hours.
+After ordering, [subject.name] stole a salt shaker and left.
+That is all that is remembered.
+
+
+--story samples--
+
+One strange evening, Willie walked into the jungle brew house 
+Today, Willie waited in line patiently.
+Before ordering cake, Willie took a quarter from the tip jar.
+Willie then sat by the window, and read a book for hours.
+That is all that is remembered.
+One strange evening, Philip walked into the jungle brew house 
+Today, Philip waited in line patiently.
+Before ordering cake, Philip took a quarter from the tip jar.
+Philip then sat by the window, and read a book for hours.
+That is all that is remembered.
+
+
+--question samples--
+
+['Before ordering cake, Donald took a quarter from the tip jar.
+'While ordering tea, Donald noticed the barista’s new mustache.']
+
+['Donald then sat by the window, and read a book for hours.
+'After ordering, Donald stole a salt shaker and left.']
+
+['While ordering tea, Emily noticed the barista’s new mustache.
+'While ordering tea, Jane noticed the barista’s new mustache.']
+
+['After ordering, Emily stole a salt shaker and left.
+'Emily then sat by the window, and read a book for hours.']
+
+['While ordering tea, Nicholas noticed the barista’s new mustache.
+'Before ordering cake, Nicholas took a quarter from the tip jar.']
+
+['Nicholas then sat by the window, and read a book for hours.
+'After ordering, Nicholas stole a salt shaker and left.']
+
+['Before ordering cake, Jennifer took a quarter from the tip jar.
+'Before ordering cake, Steven took a quarter from the tip jar.']
+
+['After ordering, Jennifer stole a salt shaker and left.
+'After ordering, Andrea stole a salt shaker and left.']
+
+['Before ordering cake, Katherine took a quarter from the tip jar.
+'While ordering tea, Katherine noticed the barista’s new mustache.']
+
+['Katherine then sat by the window, and read a book for hours.
+'After ordering, Katherine stole a salt shaker and left.']
+
+['Before ordering cake, Stephen took a quarter from the tip jar.
+'While ordering tea, Stephen noticed the barista’s new mustache.']
+
+['Stephen then sat by the window, and read a book for hours.
+'After ordering, Stephen stole a salt shaker and left.']
+
+['Before ordering cake, Janice took a quarter from the tip jar.
+'Before ordering cake, Jessica took a quarter from the tip jar.']
+
+['After ordering, Janice stole a salt shaker and left.
+'Janice then sat by the window, and read a book for hours.']
+
+['Before ordering cake, Teresa took a quarter from the tip jar.
+'Before ordering cake, Larry took a quarter from the tip jar.']
+
+['After ordering, Teresa stole a salt shaker and left.
+'Teresa then sat by the window, and read a book for hours.']
+
+['While ordering tea, Jessica noticed the barista’s new mustache.
+'Before ordering cake, Jessica took a quarter from the tip jar.']
+
+['After ordering, Jessica stole a salt shaker and left.
+'After ordering, Ryan stole a salt shaker and left.']
+
+['While ordering tea, Gary noticed the barista’s new mustache.
+'Before ordering cake, Gary took a quarter from the tip jar.']
+
+['Gary then sat by the window, and read a book for hours.
+'After ordering, Gary stole a salt shaker and left.']
+
+['Before ordering cake, Heather took a quarter from the tip jar.
+'Before ordering cake, Ronald took a quarter from the tip jar.']
+
+['After ordering, Heather stole a salt shaker and left.
+'Heather then sat by the window, and read a book for hours.']
+
+['While ordering tea, Willie noticed the barista’s new mustache.
+'Before ordering cake, Willie took a quarter from the tip jar.']
+
+['After ordering, Willie stole a salt shaker and left.
+'After ordering, Brian stole a salt shaker and left.']
+
+['While ordering tea, Megan noticed the barista’s new mustache.
+'Before ordering cake, Megan took a quarter from the tip jar.']
+
+['After ordering, Megan stole a salt shaker and left.
+'After ordering, Debra stole a salt shaker and left.']
+
+['While ordering tea, Doris noticed the barista’s new mustache.
+'Before ordering cake, Doris took a quarter from the tip jar.']
+
+['After ordering, Doris stole a salt shaker and left.
+'After ordering, Elizabeth stole a salt shaker and left.']
+
+['While ordering tea, Evelyn noticed the barista’s new mustache.
+'Before ordering cake, Evelyn took a quarter from the tip jar.']
+
+['Evelyn then sat by the window, and read a book for hours.
+'After ordering, Evelyn stole a salt shaker and left.']
+
+['Before ordering cake, Bryan took a quarter from the tip jar.
+'While ordering tea, Bryan noticed the barista’s new mustache.']
+
+['Bryan then sat by the window, and read a book for hours.
+'Jane then sat by the window, and read a book for hours.']
+
+['While ordering tea, Gabriel noticed the barista’s new mustache.
+'Before ordering cake, Gabriel took a quarter from the tip jar.']
+
+['After ordering, Gabriel stole a salt shaker and left.
+'After ordering, Bobby stole a salt shaker and left.']
+
+['While ordering tea, Ann noticed the barista’s new mustache.
+'Before ordering cake, Ann took a quarter from the tip jar.']
+
+['Ann then sat by the window, and read a book for hours.
+'After ordering, Ann stole a salt shaker and left.']
+
+['While ordering tea, Billy noticed the barista’s new mustache.
+'Before ordering cake, Billy took a quarter from the tip jar.']
+
+['Billy then sat by the window, and read a book for hours.
+'After ordering, Billy stole a salt shaker and left.']
+
+['While ordering tea, Philip noticed the barista’s new mustache.
+'Before ordering cake, Philip took a quarter from the tip jar.']
+
+['After ordering, Philip stole a salt shaker and left.
+'Philip then sat by the window, and read a book for hours.']
+
+['While ordering tea, Marilyn noticed the barista’s new mustache.
+'Before ordering cake, Marilyn took a quarter from the tip jar.']
+
+['Marilyn then sat by the window, and read a book for hours.
+'After ordering, Marilyn stole a salt shaker and left.']
+
+['While ordering tea, Evelyn noticed the barista’s new mustache.
+'While ordering tea, Dorothy noticed the barista’s new mustache.']
+
+['After ordering, Evelyn stole a salt shaker and left.
+'After ordering, Kathryn stole a salt shaker and left.']
+
+['Before ordering cake, Virginia took a quarter from the tip jar.
+'While ordering tea, Virginia noticed the barista’s new mustache.']
+
+['After ordering, Virginia stole a salt shaker and left.
+'Virginia then sat by the window, and read a book for hours.']
+
+['Before ordering cake, Jeffrey took a quarter from the tip jar.
+'While ordering tea, Jeffrey noticed the barista’s new mustache.']
+
+['Jeffrey then sat by the window, and read a book for hours.
+'After ordering, Jeffrey stole a salt shaker and left.']
+
+['While ordering tea, Lisa noticed the barista’s new mustache.
+'While ordering tea, Brian noticed the barista’s new mustache.']
+
+['Lisa then sat by the window, and read a book for hours.
+'After ordering, Lisa stole a salt shaker and left.']
+
+['While ordering tea, Samuel noticed the barista’s new mustache.
+'Before ordering cake, Samuel took a quarter from the tip jar.']
+
+['After ordering, Samuel stole a salt shaker and left.
+'Samuel then sat by the window, and read a book for hours.']
+
+['Before ordering cake, Karen took a quarter from the tip jar.
+'While ordering tea, Karen noticed the barista’s new mustache.']
+
+['After ordering, Karen stole a salt shaker and left.
+'Karen then sat by the window, and read a book for hours.']
+
+['Before ordering cake, Andrew took a quarter from the tip jar.
+'While ordering tea, Andrew noticed the barista’s new mustache.']
+
+['Andrew then sat by the window, and read a book for hours.
+'After ordering, Andrew stole a salt shaker and left.']
+
+['Before ordering cake, Kevin took a quarter from the tip jar.
+'Before ordering cake, James took a quarter from the tip jar.']
+
+['Kevin then sat by the window, and read a book for hours.
+'Angela then sat by the window, and read a book for hours.']
+
+['While ordering tea, Cheryl noticed the barista’s new mustache.
+'While ordering tea, Joyce noticed the barista’s new mustache.']
+
+['After ordering, Cheryl stole a salt shaker and left.
+'Cheryl then sat by the window, and read a book for hours.']
+
+['Before ordering cake, Randy took a quarter from the tip jar.
+'While ordering tea, Randy noticed the barista’s new mustache.']
+
+['After ordering, Randy stole a salt shaker and left.
+'After ordering, Sharon stole a salt shaker and left.']
+
+['While ordering tea, Brandon noticed the barista’s new mustache.
+'Before ordering cake, Brandon took a quarter from the tip jar.']
+
+['Brandon then sat by the window, and read a book for hours.
+'Jose then sat by the window, and read a book for hours.']
+
+['Before ordering cake, Megan took a quarter from the tip jar.
+'While ordering tea, Megan noticed the barista’s new mustache.']
+
+['Megan then sat by the window, and read a book for hours.
+'Charles then sat by the window, and read a book for hours.']
+
+['Before ordering cake, Harry took a quarter from the tip jar.
+'While ordering tea, Harry noticed the barista’s new mustache.']
+
+['Harry then sat by the window, and read a book for hours.
+'After ordering, Harry stole a salt shaker and left.']
+
+['While ordering tea, Grace noticed the barista’s new mustache.
+'While ordering tea, Marilyn noticed the barista’s new mustache.']
+
+['After ordering, Grace stole a salt shaker and left.
+'Grace then sat by the window, and read a book for hours.']
+
+['While ordering tea, Doris noticed the barista’s new mustache.
+'Before ordering cake, Doris took a quarter from the tip jar.']
+
+['Doris then sat by the window, and read a book for hours.
+'After ordering, Doris stole a salt shaker and left.']
+
+['While ordering tea, Steven noticed the barista’s new mustache.
+'Before ordering cake, Steven took a quarter from the tip jar.']
+
+['Steven then sat by the window, and read a book for hours.
+'After ordering, Steven stole a salt shaker and left.']
+
+['While ordering tea, Jennifer noticed the barista’s new mustache.
+'Before ordering cake, Jennifer took a quarter from the tip jar.']
+
+['After ordering, Jennifer stole a salt shaker and left.
+'After ordering, Mary stole a salt shaker and left.']
+
+['While ordering tea, Patricia noticed the barista’s new mustache.
+'Before ordering cake, Patricia took a quarter from the tip jar.']
+
+['Patricia then sat by the window, and read a book for hours.
+'After ordering, Patricia stole a salt shaker and left.']
+
+['Before ordering cake, Ethan took a quarter from the tip jar.
+'While ordering tea, Ethan noticed the barista’s new mustache.']
+
+['Ethan then sat by the window, and read a book for hours.
+'After ordering, Ethan stole a salt shaker and left.']
+
+['Before ordering cake, Denise took a quarter from the tip jar.
+'While ordering tea, Denise noticed the barista’s new mustache.']
+
+['After ordering, Denise stole a salt shaker and left.
+'After ordering, Eric stole a salt shaker and left.']
+
+['While ordering tea, Victoria noticed the barista’s new mustache.
+'Before ordering cake, Victoria took a quarter from the tip jar.']
+
+['Victoria then sat by the window, and read a book for hours.
+'After ordering, Victoria stole a salt shaker and left.']
+
+['Before ordering cake, Christian took a quarter from the tip jar.
+'Before ordering cake, Philip took a quarter from the tip jar.']
+
+['After ordering, Christian stole a salt shaker and left.
+'Christian then sat by the window, and read a book for hours.']
+
+['Before ordering cake, Olivia took a quarter from the tip jar.
+'While ordering tea, Olivia noticed the barista’s new mustache.']
+
+['Olivia then sat by the window, and read a book for hours.
+'After ordering, Olivia stole a salt shaker and left.']
+
+['While ordering tea, Logan noticed the barista’s new mustache.
+'Before ordering cake, Logan took a quarter from the tip jar.']
+
+['Logan then sat by the window, and read a book for hours.
+'Lisa then sat by the window, and read a book for hours.']
+
+['Before ordering cake, Matthew took a quarter from the tip jar.
+'Before ordering cake, Helen took a quarter from the tip jar.']
+
+['Matthew then sat by the window, and read a book for hours.
+'After ordering, Matthew stole a salt shaker and left.']
+
+['Before ordering cake, Alexander took a quarter from the tip jar.
+'While ordering tea, Alexander noticed the barista’s new mustache.']
+
+['Alexander then sat by the window, and read a book for hours.
+'After ordering, Alexander stole a salt shaker and left.']
+
+['While ordering tea, Kyle noticed the barista’s new mustache.
+'Before ordering cake, Kyle took a quarter from the tip jar.']
+
+['After ordering, Kyle stole a salt shaker and left.
+'Kyle then sat by the window, and read a book for hours.']
+
+['Before ordering cake, Lawrence took a quarter from the tip jar.
+'While ordering tea, Lawrence noticed the barista’s new mustache.']
+
+['Lawrence then sat by the window, and read a book for hours.
+'After ordering, Lawrence stole a salt shaker and left.']
+
+['Before ordering cake, John took a quarter from the tip jar.
+'While ordering tea, John noticed the barista’s new mustache.']
+
+['John then sat by the window, and read a book for hours.
+'Michelle then sat by the window, and read a book for hours.']
+

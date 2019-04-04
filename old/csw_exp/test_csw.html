@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html><head>
+	<script src="jspsych-master/jspsych.js"></script>
+    <link rel="stylesheet" href="jspsych-master/css/jspsych.css"></link>
+
+    <script src = "jspsych-master/plugins/jspsych-instructions.js"></script>
+    <script src = "jspsych-master/plugins/jspsych-html-slider-response.js"></script>
+
+    <style> img { width: 300px; } </style> 
+    </head><body></body>
+
+<script>
+
+        var trial0 = {
+        type: 'instructions',
+        pages: ['Ben walked into the coffee shop angrily after having dropped his keys in a storm drain.']
+        }  
+        var question0 = {
+        type: 'html-slider-response',
+        stimulus: '<p> what might happen next? <p>',
+        labels: [' Walk_to_front', ' Walk_to_back']}  
+        var trial1 = {
+        type: 'instructions',
+        pages: ['He walked to the back of the line and stood impatiently, watching the first person in line, Nick, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.']
+        }  
+        var question1 = {
+        type: 'html-slider-response',
+        stimulus: '<p> what might happen next? <p>',
+        labels: [' Say_excuse_me', ' Step_in_front']}  
+        var trial2 = {
+        type: 'instructions',
+        pages: ['Nick was not having it that day, and he promptly stepped back in front of Ben.']
+        }  
+        var question2 = {
+        type: 'html-slider-response',
+        stimulus: '<p> what might AGENT do next? <p>',
+        labels: [' Shove', ' Subject_stares']}  
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Ben turned to Nick and gave him a very mean look.']
+        }  
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Nick, refusing to engage with him, turned to the barista and said, ‘I was first in line!”']
+        }  
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Ben saw a small cup of cream on the counter, picked it up, and splashed it in Nick’s face. Everyone in line gasped. Nick stood there gaping, cream dripping from his chin.']
+        }  
+        var question5 = {
+        type: 'html-slider-response',
+        stimulus: '<p> what might AGENT do next? <p>',
+        labels: [' Barista_orders', ' Call_policeman']}  
+        var trial6 = {
+        type: 'instructions',
+        pages: ['The barista called over to a policeman standing in line, and she ordered Ben to leave before anyone pressed charges.']
+        }  
+        var question6 = {
+        type: 'html-slider-response',
+        stimulus: '<p> what might happen next? <p>',
+        labels: [' Love_juice', ' Hate_coffee']} 
+  jsPsych.init({
+    timeline: [trial0,question0,trial1,question1,trial2,question2,trial3,trial4,trial5,question5,trial6,question6],
+    on_finish: function() {
+      jsPsych.data.displayData();
+    },
+    default_iti: 250
+  });
+
+</script>

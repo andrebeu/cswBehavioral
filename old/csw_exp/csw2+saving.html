@@ -1,0 +1,1839 @@
+
+<!DOCTYPE html>
+<html><head>
+    <script src="jspsych-master/jspsych.js"></script>
+    <link rel="stylesheet" href="jspsych-master/css/jspsych.css"></link>
+
+    <script src = "jspsych-master/plugins/jspsych-instructions.js"></script>
+    <script src = "jspsych-master/plugins/jspsych-html-slider-response.js"></script>
+
+    <style> img { width: 300px; } </style> 
+    </head><body></body>
+
+<script>
+
+        var trial1 = {
+        type: 'instructions',
+        pages: ['Ben walked into the coffee shop angrily after having dropped his keys in a storm drain.']
+        } 
+        var trial2 = {
+        type: 'instructions',
+        pages: ['He walked to the back of the line and stood impatiently, watching the first person in line, Nick, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.']
+        } 
+	      var question2 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Ben was not having it that day, and he promptly stepped back in front of Nick.', 'Nick was not having it that day, and he promptly stepped back in front of Ben.']
+	      } 
+        var trial3 = {
+        type: 'instructions',
+        pages: ['Nick was not having it that day, and he promptly stepped back in front of Ben.']
+        } 
+        var trial4 = {
+        type: 'instructions',
+        pages: ['Ben proceeded to give a slight shove to Nick.']
+        } 
+	      var question4 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Nick, refusing to engage with him, turned to the barista and said, \"I was first in line!\"', 'Nick stared back at Ben, as though daring him with his eyes to do something.Nick refusing to engage with Ben, turned to the barista and said, \"I was first in line!\"']
+	      } 
+        var trial5 = {
+        type: 'instructions',
+        pages: ['Nick, refusing to engage with him, turned to the barista and said, \"I was first in line!\"']
+        } 
+	      var question5 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Nick saw a small cup of cream on the counter, picked it up, and splashed it in Ben\'s face. Everyone in line gasped. Ben stood there gaping, cream dripping from his chin.', 'Ben saw a small cup of cream on the counter, picked it up, and splashed it in Nick\'s face. Everyone in line gasped. Nick stood there gaping, cream dripping from his chin.']
+	      } 
+        var trial6 = {
+        type: 'instructions',
+        pages: ['Ben saw a small cup of cream on the counter, picked it up, and splashed it in Nick\'s face. Everyone in line gasped. Nick stood there gaping, cream dripping from his chin.']
+        } 
+        var trial7 = {
+        type: 'instructions',
+        pages: ['The barista called over to a policeman standing in line, and she ordered Ben to leave before anyone pressed charges.']
+        } 
+	      var question7 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Ben stared at Nick one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Nick stared at Ben one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+	      } 
+        var trial8 = {
+        type: 'instructions',
+        pages: ['Ben stared at Nick one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+        } 
+        var trial9 = {
+        type: 'instructions',
+        pages: ['Silvia walked into the coffee shop angrily after having realized that she had left her phone on the bus.']
+        } 
+        var trial10 = {
+        type: 'instructions',
+        pages: ['She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Nick, the first person in line.']
+        } 
+	      var question10 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Nick was astonished and said, \"Excuse me?!\'', 'Nick was not having it that day, and he promptly stepped back in front of Silvia.']
+	      } 
+        var trial11 = {
+        type: 'instructions',
+        pages: ['Nick was not having it that day, and he promptly stepped back in front of Silvia.']
+        } 
+	      var question11 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia turned to Nick and gave him a very mean look.', 'Silvia ignored him and proceeded to tell the barista that she would like a coffee.']
+	      } 
+        var trial12 = {
+        type: 'instructions',
+        pages: ['Silvia ignored him and proceeded to tell the barista that she would like a coffee.']
+        } 
+	      var question12 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['In retaliation, Nick pushed Silvia.', 'Nick stared back at Silvia, as though daring her with his eyes to do something.Nick refusing to engage with Silvia, turned to the barista and said, \"I was first in line!\"']
+	      } 
+        var trial13 = {
+        type: 'instructions',
+        pages: ['Nick stared back at Silvia, as though daring her with his eyes to do something.Nick refusing to engage with Silvia, turned to the barista and said, \"I was first in line!\"']
+        } 
+	      var question13 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Nick\'s head. Everyone in line gasped. Nick, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.', 'Nick saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Silvia\'s head. Everyone in line gasped. Silvia, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+	      } 
+        var trial14 = {
+        type: 'instructions',
+        pages: ['Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Nick\'s head. Everyone in line gasped. Nick, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+        } 
+	      var question14 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['The barista ran out from behind the counter and ordered Silvia to leave.', 'The barista called over to a policeman standing in line, and she ordered Silvia to leave before anyone pressed charges.']
+	      } 
+        var trial15 = {
+        type: 'instructions',
+        pages: ['The barista called over to a policeman standing in line, and she ordered Silvia to leave before anyone pressed charges.']
+        } 
+	      var question15 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia stared at Nick one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Nick stared at Silvia one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+	      } 
+        var trial16 = {
+        type: 'instructions',
+        pages: ['Silvia stared at Nick one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+        } 
+	      var question16 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying \"There was no need to worry. The baristas are trained in kung fu.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying \"There was no need to worry. The baristas are trained in kung fu.\"']
+	      } 
+        var trial17 = {
+        type: 'instructions',
+        pages: ['Silvia walked into the coffee shop angrily after having realized that she had left her phone on the bus.']
+        } 
+	      var question17 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Ben, the first person in line.', 'She walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.']
+	      } 
+        var trial18 = {
+        type: 'instructions',
+        pages: ['She walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.']
+        } 
+	      var question18 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Ben was not having it that day, and he promptly stepped back in front of Silvia.', 'Silvia was not having it that day, and she promptly stepped back in front of Ben.']
+	      } 
+        var trial19 = {
+        type: 'instructions',
+        pages: ['Ben was not having it that day, and he promptly stepped back in front of Silvia.']
+        } 
+	      var question19 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia turned to Ben and gave him a very mean look.', 'Ben turned to Silvia and gave her a very mean look.']
+	      } 
+        var trial20 = {
+        type: 'instructions',
+        pages: ['Silvia turned to Ben and gave him a very mean look.']
+        } 
+        var trial21 = {
+        type: 'instructions',
+        pages: ['In retaliation, Ben pushed Silvia.']
+        } 
+	      var question21 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia saw a small cup of cream on the counter, picked it up, and splashed it in Ben\'s face. Everyone in line gasped. Ben stood there gaping, cream dripping from his chin.', 'Ben saw a small cup of cream on the counter, picked it up, and splashed it in Silvia\'s face. Everyone in line gasped. Silvia stood there gaping, cream dripping from her chin.']
+	      } 
+        var trial22 = {
+        type: 'instructions',
+        pages: ['Silvia saw a small cup of cream on the counter, picked it up, and splashed it in Ben\'s face. Everyone in line gasped. Ben stood there gaping, cream dripping from his chin.']
+        } 
+	      var question22 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['The barista ran out from behind the counter and ordered Silvia to leave.', 'The barista called over to a policeman standing in line, and he ordered Silvia to leave before anyone pressed charges.']
+	      } 
+        var trial23 = {
+        type: 'instructions',
+        pages: ['The barista called over to a policeman standing in line, and he ordered Silvia to leave before anyone pressed charges.']
+        } 
+	      var question23 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia stared at Ben one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Silvia gave Ben one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+	      } 
+        var trial24 = {
+        type: 'instructions',
+        pages: ['Silvia stared at Ben one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+        } 
+	      var question24 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying \"Im so sorry you had to experience a coffee crime.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying \"Im so sorry you had to experience a coffee crime.\"']
+	      } 
+        var trial25 = {
+        type: 'instructions',
+        pages: ['Olivia walked into the coffee shop angrily after having learned that her flight to the Bahamas was cancelled due to inclement weather.']
+        } 
+	      var question25 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['She walked to the back of the line and stood impatiently, watching the first person in line, Jesse, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.', 'She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Jesse, the first person in line.']
+	      } 
+        var trial26 = {
+        type: 'instructions',
+        pages: ['She walked to the back of the line and stood impatiently, watching the first person in line, Jesse, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.']
+        } 
+	      var question26 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Jesse was astonished and said, \"Excuse me?!\'', 'Jesse was not having it that day, and he promptly stepped back in front of Olivia.']
+	      } 
+        var trial27 = {
+        type: 'instructions',
+        pages: ['Jesse was not having it that day, and he promptly stepped back in front of Olivia.']
+        } 
+        var trial28 = {
+        type: 'instructions',
+        pages: ['Olivia proceeded to give a slight shove to Jesse.']
+        } 
+	      var question28 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Jesse, refusing to engage with her, turned to the barista and said, \"I was first in line!\"', 'Olivia, refusing to engage with him, turned to the barista and said, \"I was first in line!\"']
+	      } 
+        var trial29 = {
+        type: 'instructions',
+        pages: ['Jesse, refusing to engage with her, turned to the barista and said, \"I was first in line!\"']
+        } 
+	      var question29 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Olivia saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Jesse\'s head. Everyone in line gasped. Jesse, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.', 'Olivia saw a small cup of cream on the counter, picked it up, and splashed it in Jesse\'s face. Everyone in line gasped. Jesse stood there gaping, cream dripping from his chin.']
+	      } 
+        var trial30 = {
+        type: 'instructions',
+        pages: ['Olivia saw a small cup of cream on the counter, picked it up, and splashed it in Jesse\'s face. Everyone in line gasped. Jesse stood there gaping, cream dripping from his chin.']
+        } 
+	      var question30 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['The barista called over to a policeman standing in line, and she ordered Olivia to leave before anyone pressed charges.', 'The barista ran out from behind the counter and ordered Olivia to leave.']
+	      } 
+        var trial31 = {
+        type: 'instructions',
+        pages: ['The barista ran out from behind the counter and ordered Olivia to leave.']
+        } 
+	      var question31 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Olivia gave Jesse one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"', 'Olivia stared at Jesse one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+	      } 
+        var trial32 = {
+        type: 'instructions',
+        pages: ['Olivia gave Jesse one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+        } 
+	      var question32 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Olivia a bunch of napkins and gave her a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Jesse a bunch of napkins and gave him a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"']
+	      } 
+        var trial33 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+	      var question33 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['She walked to the counter and decided on a latte.', 'She found an empty chair next to Will. "Great to see you Mariko!" said Will. "I am glad you could make it Will!" Mariko replied.']
+	      } 
+        var trial34 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Will. "Great to see you Mariko!" said Will. "I am glad you could make it Will!" Mariko replied.']
+        } 
+        var trial35 = {
+        type: 'instructions',
+        pages: ['Olivia stepped up to the microphone and read the poem that she had written: "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons." The crowd snapped their fingers politely.']
+        } 
+	      var question35 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Will said that he loved the poem.', 'Mariko had also written a poem, but decided that she was not in the mood to share it today.']
+	      } 
+        var trial36 = {
+        type: 'instructions',
+        pages: ['Mariko had also written a poem, but decided that she was not in the mood to share it today.']
+        } 
+	      var question36 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['After all the poets had performed, Mariko and Will said their goodbyes and walked toward the door.', 'After all the poets had performed, Mariko and Olivia said their goodbyes and walked toward the door.']
+	      } 
+        var trial37 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Will said their goodbyes and walked toward the door.']
+        } 
+	      var question37 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Will made a mental note to come back again next week.', 'Mariko made a mental note to come back again next week.']
+	      } 
+        var trial38 = {
+        type: 'instructions',
+        pages: ['Pradeep walked into the coffee shop on poetry night.']
+        } 
+	      var question38 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He found an empty chair next to Mariko. "I am glad you could make it Pradeep!" said Mariko. "Hey Mariko!" Pradeep replied.', 'He walked to the counter and decided on a tea.']
+	      } 
+        var trial39 = {
+        type: 'instructions',
+        pages: ['He found an empty chair next to Mariko. "I am glad you could make it Pradeep!" said Mariko. "Hey Mariko!" Pradeep replied.']
+        } 
+        var trial40 = {
+        type: 'instructions',
+        pages: ['Olivia, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Will.']
+        } 
+	      var question40 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Mariko stepped up to the microphone and read the poem that she had written: "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." The crowd snapped their fingers politely.', 'Will stepped up to the microphone and read the poem that he had written: "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air." The crowd snapped their fingers politely.']
+	      } 
+        var trial41 = {
+        type: 'instructions',
+        pages: ['Will stepped up to the microphone and read the poem that he had written: "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air." The crowd snapped their fingers politely.']
+        } 
+        var trial42 = {
+        type: 'instructions',
+        pages: ['Pradeep then took at turn at the microphone. "Twas brillig, and the slithy toves did gyre and gimble in the wabe: all mimsy were the borogoves, and the mome raths outgrab." When he sat back down, Mariko said that she loved the poem.']
+        } 
+	      var question42 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['After all the poets had performed, Mariko and Will said their goodbyes and walked toward the door.', 'After all the poets had performed, Pradeep and Mariko said their goodbyes and walked toward the door.']
+	      } 
+        var trial43 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Pradeep and Mariko said their goodbyes and walked toward the door.']
+        } 
+	      var question43 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Will made a mental note to come back again next week.', 'Pradeep made a mental note to come back again next week.']
+	      } 
+        var trial44 = {
+        type: 'instructions',
+        pages: ['Will walked into the coffee shop on poetry night.']
+        } 
+        var trial45 = {
+        type: 'instructions',
+        pages: ['He found an empty chair next to Julian. "It has been too long Will!" said Julian. "Great to see you Julian!" Will replied.']
+        } 
+	      var question45 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Mariko stepped up to the microphone and read the poem that she had written: "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." The crowd snapped their fingers politely.', 'Pradeep, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Mariko.']
+	      } 
+        var trial46 = {
+        type: 'instructions',
+        pages: ['Pradeep, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Mariko.']
+        } 
+	      var question46 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.', 'Mariko stepped up to the microphone and read the poem that she had written: "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." The crowd snapped their fingers politely.']
+	      } 
+        var trial47 = {
+        type: 'instructions',
+        pages: ['Mariko stepped up to the microphone and read the poem that she had written: "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." The crowd snapped their fingers politely.']
+        } 
+	      var question47 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Will then took at turn at the microphone. "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air." When he sat back down, Julian said that he loved the poem.', 'Will had also written a poem, but decided that he was not in the mood to share it today.']
+	      } 
+        var trial48 = {
+        type: 'instructions',
+        pages: ['Will then took at turn at the microphone. "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air." When he sat back down, Julian said that he loved the poem.']
+        } 
+	      var question48 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['After all the poets had performed, Julian and Will said their goodbyes and walked toward the door.', 'After all the poets had performed, Will and Julian said their goodbyes and walked toward the door.']
+	      } 
+        var trial49 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Will and Julian said their goodbyes and walked toward the door.']
+        } 
+	      var question49 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['On the way out, Will ordered a mousse to take home. The barista took one from the refrigerator and wrapped it up to go.', 'Will made a mental note to come back again next week.']
+	      } 
+        var trial50 = {
+        type: 'instructions',
+        pages: ['On the way out, Will ordered a mousse to take home. The barista took one from the refrigerator and wrapped it up to go.']
+        } 
+	      var question50 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Will made a mental note to come back again next week.', 'Pradeep made a mental note to come back again next week.']
+	      } 
+        var trial51 = {
+        type: 'instructions',
+        pages: ['Olivia walked into the coffee shop on poetry night.']
+        } 
+	      var question51 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['She walked to the counter and decided on a tea.', 'She found an empty chair next to Sarah. "Oh hi there Olivia!" said Sarah. "Howdy Sarah!" Olivia replied.']
+	      } 
+        var trial52 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Sarah. "Oh hi there Olivia!" said Sarah. "Howdy Sarah!" Olivia replied.']
+        } 
+	      var question52 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Pradeep, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.', 'Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+	      } 
+        var trial53 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+	      var question53 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Olivia had also written a poem, but decided that she was not in the mood to share it today.', 'Olivia then took at turn at the microphone. "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons." When she sat back down, Sarah said that she loved the poem.']
+	      } 
+        var trial54 = {
+        type: 'instructions',
+        pages: ['Olivia then took at turn at the microphone. "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons." When she sat back down, Sarah said that she loved the poem.']
+        } 
+	      var question54 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['After all the poets had performed, Olivia and Sarah said their goodbyes and walked toward the door.', 'After all the poets had performed, Sarah and Julian said their goodbyes and walked toward the door.']
+	      } 
+        var trial55 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Olivia and Sarah said their goodbyes and walked toward the door.']
+        } 
+	      var question55 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['On the way out, Julian ordered a cake to take home. The barista took one from the display case and wrapped it up to go.', 'On the way out, Olivia ordered a cake to take home. The barista took one from the display case and wrapped it up to go.']
+	      } 
+        var trial56 = {
+        type: 'instructions',
+        pages: ['On the way out, Olivia ordered a cake to take home. The barista took one from the display case and wrapped it up to go.']
+        } 
+	      var question56 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Julian made a mental note to come back again next week.', 'Olivia made a mental note to come back again next week.']
+	      } 
+        var trial57 = {
+        type: 'instructions',
+        pages: ['Nick walked into the coffee shop angrily after having gotten a parking ticket.']
+        } 
+	      var question57 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Ben, the first person in line.', 'He walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.']
+	      } 
+        var trial58 = {
+        type: 'instructions',
+        pages: ['He walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.']
+        } 
+        var trial59 = {
+        type: 'instructions',
+        pages: ['Ben was not having it that day, and he promptly stepped back in front of Nick.']
+        } 
+	      var question59 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Ben turned to Nick and gave him a very mean look.', 'Nick turned to Ben and gave him a very mean look.']
+	      } 
+        var trial60 = {
+        type: 'instructions',
+        pages: ['Nick turned to Ben and gave him a very mean look.']
+        } 
+	      var question60 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['In retaliation, Ben pushed Nick.', 'Ben stared back at Nick, as though daring him with his eyes to do something.Ben refusing to engage with Nick, turned to the barista and said, \"I was first in line!\"']
+	      } 
+        var trial61 = {
+        type: 'instructions',
+        pages: ['In retaliation, Ben pushed Nick.']
+        } 
+	      var question61 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Nick saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Ben\'s head. Everyone in line gasped. Ben, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.', 'Ben saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Nick\'s head. Everyone in line gasped. Nick, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+	      } 
+        var trial62 = {
+        type: 'instructions',
+        pages: ['Nick saw a cake sitting like ammo next to the cash register, snatched it, and crumbled it above Ben\'s head. Everyone in line gasped. Ben, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+        } 
+	      var question62 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['The barista called over to a policeman standing in line, and he ordered Ben to leave before anyone pressed charges.', 'The barista called over to a policeman standing in line, and he ordered Nick to leave before anyone pressed charges.']
+	      } 
+        var trial63 = {
+        type: 'instructions',
+        pages: ['The barista called over to a policeman standing in line, and he ordered Nick to leave before anyone pressed charges.']
+        } 
+	      var question63 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Nick stared at Ben one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Nick gave Ben one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+	      } 
+        var trial64 = {
+        type: 'instructions',
+        pages: ['Nick stared at Ben one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+        } 
+	      var question64 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying \"Some people will do anything for the coffee fix.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying \"Some people will do anything for the coffee fix.\"']
+	      } 
+        var trial65 = {
+        type: 'instructions',
+        pages: ['Ben walked into the coffee shop angrily after having dropped his keys in a storm drain.']
+        } 
+        var trial66 = {
+        type: 'instructions',
+        pages: ['He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Vera, the first person in line.']
+        } 
+        var trial67 = {
+        type: 'instructions',
+        pages: ['Vera was not having it that day, and she promptly stepped back in front of Ben.']
+        } 
+	      var question67 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Ben proceeded to give a slight shove to Vera.', 'Ben turned to Vera and gave her a very mean look.']
+	      } 
+        var trial68 = {
+        type: 'instructions',
+        pages: ['Ben turned to Vera and gave her a very mean look.']
+        } 
+        var trial69 = {
+        type: 'instructions',
+        pages: ['In retaliation, Vera pushed Ben.']
+        } 
+	      var question69 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Ben saw a small cup of cream on the counter, picked it up, and splashed it in Vera\'s face. Everyone in line gasped. Vera stood there gaping, cream dripping from her chin.', 'Ben saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Vera\'s head. Everyone in line gasped. Vera, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+	      } 
+        var trial70 = {
+        type: 'instructions',
+        pages: ['Ben saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Vera\'s head. Everyone in line gasped. Vera, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+        } 
+	      var question70 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['The barista called over to a policeman standing in line, and she ordered Vera to leave before anyone pressed charges.', 'The barista called over to a policeman standing in line, and she ordered Ben to leave before anyone pressed charges.']
+	      } 
+        var trial71 = {
+        type: 'instructions',
+        pages: ['The barista called over to a policeman standing in line, and she ordered Ben to leave before anyone pressed charges.']
+        } 
+	      var question71 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Ben gave Vera one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"', 'Ben stared at Vera one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+	      } 
+        var trial72 = {
+        type: 'instructions',
+        pages: ['Ben stared at Vera one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+        } 
+	      var question72 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying \"I think some caffeine would\'ve helped that one.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying \"I think some caffeine would\'ve helped that one.\"']
+	      } 
+        var trial73 = {
+        type: 'instructions',
+        pages: ['Vera walked into the coffee shop angrily after having found her calculus problem set ripped to shreds in her dog\'s cage.']
+        } 
+	      var question73 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['She walked to the back of the line and stood impatiently, watching the first person in line, Nick, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.', 'She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Nick, the first person in line.']
+	      } 
+        var trial74 = {
+        type: 'instructions',
+        pages: ['She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Nick, the first person in line.']
+        } 
+	      var question74 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Vera was not having it that day, and she promptly stepped back in front of Nick.', 'Nick was not having it that day, and he promptly stepped back in front of Vera.']
+	      } 
+        var trial75 = {
+        type: 'instructions',
+        pages: ['Nick was not having it that day, and he promptly stepped back in front of Vera.']
+        } 
+	      var question75 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Vera proceeded to give a slight shove to Nick.', 'Vera ignored him and proceeded to tell the barista that she would like a coffee.']
+	      } 
+        var trial76 = {
+        type: 'instructions',
+        pages: ['Vera ignored him and proceeded to tell the barista that she would like a coffee.']
+        } 
+	      var question76 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Nick stared back at Vera, as though daring her with his eyes to do something.Nick refusing to engage with Vera, turned to the barista and said, \"I was first in line!\"', 'Nick, refusing to engage with her, turned to the barista and said, \"I was first in line!\"']
+	      } 
+        var trial77 = {
+        type: 'instructions',
+        pages: ['Nick stared back at Vera, as though daring her with his eyes to do something.Nick refusing to engage with Vera, turned to the barista and said, \"I was first in line!\"']
+        } 
+        var trial78 = {
+        type: 'instructions',
+        pages: ['Vera saw a small cup of cream on the counter, picked it up, and splashed it in Nick\'s face. Everyone in line gasped. Nick stood there gaping, cream dripping from his chin.']
+        } 
+	      var question78 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['The barista called over to a policeman standing in line, and she ordered Nick to leave before anyone pressed charges.', 'The barista called over to a policeman standing in line, and she ordered Vera to leave before anyone pressed charges.']
+	      } 
+        var trial79 = {
+        type: 'instructions',
+        pages: ['The barista called over to a policeman standing in line, and she ordered Vera to leave before anyone pressed charges.']
+        } 
+	      var question79 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Nick stared at Vera one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Vera stared at Nick one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+	      } 
+        var trial80 = {
+        type: 'instructions',
+        pages: ['Vera stared at Nick one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+        } 
+	      var question80 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying \"Its not everyday you meet a coffee criminal.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying \"Its not everyday you meet a coffee criminal.\"']
+	      } 
+        var trial81 = {
+        type: 'instructions',
+        pages: ['Nick walked into the coffee shop angrily after having gotten a parking ticket.']
+        } 
+	      var question81 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He walked to the back of the line and stood impatiently, watching the first person in line, Vera, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut her.', 'He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Vera, the first person in line.']
+	      } 
+        var trial82 = {
+        type: 'instructions',
+        pages: ['He walked to the back of the line and stood impatiently, watching the first person in line, Vera, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut her.']
+        } 
+	      var question82 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Vera was not having it that day, and she promptly stepped back in front of Nick.', 'Vera was astonished and said, \"Excuse me?!\'']
+	      } 
+        var trial83 = {
+        type: 'instructions',
+        pages: ['Vera was not having it that day, and she promptly stepped back in front of Nick.']
+        } 
+	      var question83 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Nick proceeded to give a slight shove to Vera.', 'Nick turned to Vera and gave her a very mean look.']
+	      } 
+        var trial84 = {
+        type: 'instructions',
+        pages: ['Nick turned to Vera and gave her a very mean look.']
+        } 
+	      var question84 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Nick stared back at Vera, as though daring her with his eyes to do something.Nick refusing to engage with Vera, turned to the barista and said, \"I was first in line!\"', 'Vera stared back at Nick, as though daring him with her eyes to do something.Vera refusing to engage with Nick, turned to the barista and said, \"I was first in line!\"']
+	      } 
+        var trial85 = {
+        type: 'instructions',
+        pages: ['Vera stared back at Nick, as though daring him with her eyes to do something.Vera refusing to engage with Nick, turned to the barista and said, \"I was first in line!\"']
+        } 
+	      var question85 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Nick saw a small cup of cream on the counter, picked it up, and splashed it in Vera\'s face. Everyone in line gasped. Vera stood there gaping, cream dripping from her chin.', 'Vera saw a small cup of cream on the counter, picked it up, and splashed it in Nick\'s face. Everyone in line gasped. Nick stood there gaping, cream dripping from his chin.']
+	      } 
+        var trial86 = {
+        type: 'instructions',
+        pages: ['Nick saw a small cup of cream on the counter, picked it up, and splashed it in Vera\'s face. Everyone in line gasped. Vera stood there gaping, cream dripping from her chin.']
+        } 
+        var trial87 = {
+        type: 'instructions',
+        pages: ['The barista ran out from behind the counter and ordered Nick to leave.']
+        } 
+	      var question87 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Nick gave Vera one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"', 'Nick stared at Vera one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+	      } 
+        var trial88 = {
+        type: 'instructions',
+        pages: ['Nick gave Vera one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+        } 
+        var trial89 = {
+        type: 'instructions',
+        pages: ['Olivia walked into the coffee shop on poetry night.']
+        } 
+	      var question89 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['She found an empty chair next to Pradeep. "Hey Olivia!" said Pradeep. "Howdy Pradeep!" Olivia replied.', 'She walked to the counter and decided on a tea.']
+	      } 
+        var trial90 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Pradeep. "Hey Olivia!" said Pradeep. "Howdy Pradeep!" Olivia replied.']
+        } 
+	      var question90 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.', 'Will, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+	      } 
+        var trial91 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+	      var question91 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Olivia then took at turn at the microphone. "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons." When she sat back down, Pradeep said that he loved the poem.', 'Olivia had also written a poem, but decided that she was not in the mood to share it today.']
+	      } 
+        var trial92 = {
+        type: 'instructions',
+        pages: ['Olivia had also written a poem, but decided that she was not in the mood to share it today.']
+        } 
+	      var question92 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['After all the poets had performed, Julian and Olivia said their goodbyes and walked toward the door.', 'After all the poets had performed, Olivia and Pradeep said their goodbyes and walked toward the door.']
+	      } 
+        var trial93 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Olivia and Pradeep said their goodbyes and walked toward the door.']
+        } 
+	      var question93 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['On the way out, Julian ordered a mousse to take home. The barista took one from the refrigerator and wrapped it up to go.', 'On the way out, Olivia ordered a mousse to take home. The barista took one from the refrigerator and wrapped it up to go.']
+	      } 
+        var trial94 = {
+        type: 'instructions',
+        pages: ['On the way out, Olivia ordered a mousse to take home. The barista took one from the refrigerator and wrapped it up to go.']
+        } 
+	      var question94 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Pradeep made a mental note to come back again next week.', 'Olivia made a mental note to come back again next week.']
+	      } 
+        var trial95 = {
+        type: 'instructions',
+        pages: ['Julian walked into the coffee shop on poetry night.']
+        } 
+	      var question95 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He found an empty chair next to Olivia. "Howdy Julian!" said Olivia. "It has been too long Olivia!" Julian replied.', 'He walked to the counter and decided on a coffee.']
+	      } 
+        var trial96 = {
+        type: 'instructions',
+        pages: ['He found an empty chair next to Olivia. "Howdy Julian!" said Olivia. "It has been too long Olivia!" Julian replied.']
+        } 
+	      var question96 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Mariko, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Sarah.', 'Sarah stepped up to the microphone and read the poem that she had written: "You may write me down in history with your bitter, twisted lies, you may trod me in the very dirt but still, like dust, I will rise." The crowd snapped their fingers politely.']
+	      } 
+        var trial97 = {
+        type: 'instructions',
+        pages: ['Mariko, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Sarah.']
+        } 
+	      var question97 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Sarah stepped up to the microphone and read the poem that she had written: "You may write me down in history with your bitter, twisted lies, you may trod me in the very dirt but still, like dust, I will rise." The crowd snapped their fingers politely.', 'Mariko stepped up to the microphone and read the poem that she had written: "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." The crowd snapped their fingers politely.']
+	      } 
+        var trial98 = {
+        type: 'instructions',
+        pages: ['Sarah stepped up to the microphone and read the poem that she had written: "You may write me down in history with your bitter, twisted lies, you may trod me in the very dirt but still, like dust, I will rise." The crowd snapped their fingers politely.']
+        } 
+	      var question98 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Julian had also written a poem, but decided that he was not in the mood to share it today.', 'Julian then took at turn at the microphone. "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." When he sat back down, Olivia said that she loved the poem.']
+	      } 
+        var trial99 = {
+        type: 'instructions',
+        pages: ['Julian then took at turn at the microphone. "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." When he sat back down, Olivia said that she loved the poem.']
+        } 
+	      var question99 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['After all the poets had performed, Olivia and Mariko said their goodbyes and walked toward the door.', 'After all the poets had performed, Julian and Olivia said their goodbyes and walked toward the door.']
+	      } 
+        var trial100 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Julian and Olivia said their goodbyes and walked toward the door.']
+        } 
+	      var question100 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Mariko made a mental note to come back again next week.', 'Julian made a mental note to come back again next week.']
+	      } 
+        var trial101 = {
+        type: 'instructions',
+        pages: ['Julian walked into the coffee shop on poetry night.']
+        } 
+	      var question101 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He found an empty chair next to Pradeep. "Hey Julian!" said Pradeep. "It has been too long Pradeep!" Julian replied.', 'He walked to the counter and decided on a coffee.']
+	      } 
+        var trial102 = {
+        type: 'instructions',
+        pages: ['He found an empty chair next to Pradeep. "Hey Julian!" said Pradeep. "It has been too long Pradeep!" Julian replied.']
+        } 
+        var trial103 = {
+        type: 'instructions',
+        pages: ['Olivia stepped up to the microphone and read the poem that she had written: "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons." The crowd snapped their fingers politely.']
+        } 
+	      var question103 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Julian then took at turn at the microphone. "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." When he sat back down, Pradeep said that he loved the poem.', 'Olivia then took at turn at the microphone. "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons." When she sat back down, Pradeep said that he loved the poem.']
+	      } 
+        var trial104 = {
+        type: 'instructions',
+        pages: ['Julian then took at turn at the microphone. "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." When he sat back down, Pradeep said that he loved the poem.']
+        } 
+	      var question104 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['After all the poets had performed, Pradeep and Julian said their goodbyes and walked toward the door.', 'After all the poets had performed, Julian and Pradeep said their goodbyes and walked toward the door.']
+	      } 
+        var trial105 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Julian and Pradeep said their goodbyes and walked toward the door.']
+        } 
+        var trial106 = {
+        type: 'instructions',
+        pages: ['Pradeep walked into the coffee shop on poetry night.']
+        } 
+	      var question106 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He walked to the counter and decided on a tea.', 'He found an empty chair next to Olivia. "Howdy Pradeep!" said Olivia. "Hey Olivia!" Pradeep replied.']
+	      } 
+        var trial107 = {
+        type: 'instructions',
+        pages: ['He found an empty chair next to Olivia. "Howdy Pradeep!" said Olivia. "Hey Olivia!" Pradeep replied.']
+        } 
+	      var question107 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Sarah, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Will.', 'Will stepped up to the microphone and read the poem that he had written: "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air." The crowd snapped their fingers politely.']
+	      } 
+        var trial108 = {
+        type: 'instructions',
+        pages: ['Sarah, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Will.']
+        } 
+	      var question108 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Will stepped up to the microphone and read the poem that he had written: "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air." The crowd snapped their fingers politely.', 'Pradeep stepped up to the microphone and read the poem that he had written: "Twas brillig, and the slithy toves did gyre and gimble in the wabe: all mimsy were the borogoves, and the mome raths outgrab." The crowd snapped their fingers politely.']
+	      } 
+        var trial109 = {
+        type: 'instructions',
+        pages: ['Will stepped up to the microphone and read the poem that he had written: "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air." The crowd snapped their fingers politely.']
+        } 
+        var trial110 = {
+        type: 'instructions',
+        pages: ['Pradeep then took at turn at the microphone. "Twas brillig, and the slithy toves did gyre and gimble in the wabe: all mimsy were the borogoves, and the mome raths outgrab." When he sat back down, Olivia said that she loved the poem.']
+        } 
+	      var question110 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['After all the poets had performed, Will and Olivia said their goodbyes and walked toward the door.', 'After all the poets had performed, Pradeep and Olivia said their goodbyes and walked toward the door.']
+	      } 
+        var trial111 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Pradeep and Olivia said their goodbyes and walked toward the door.']
+        } 
+	      var question111 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Pradeep made a mental note to come back again next week.', 'Olivia made a mental note to come back again next week.']
+	      } 
+        var trial112 = {
+        type: 'instructions',
+        pages: ['Ben walked into the coffee shop angrily after having dropped his keys in a storm drain.']
+        } 
+	      var question112 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He walked to the back of the line and stood impatiently, watching the first person in line, Olivia, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut her.', 'He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Olivia, the first person in line.']
+	      } 
+        var trial113 = {
+        type: 'instructions',
+        pages: ['He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Olivia, the first person in line.']
+        } 
+        var trial114 = {
+        type: 'instructions',
+        pages: ['Olivia was not having it that day, and she promptly stepped back in front of Ben.']
+        } 
+	      var question114 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Ben proceeded to give a slight shove to Olivia.', 'Ben ignored her and proceeded to tell the barista that he would like a mocha.']
+	      } 
+        var trial115 = {
+        type: 'instructions',
+        pages: ['Ben proceeded to give a slight shove to Olivia.']
+        } 
+	      var question115 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['In retaliation, Olivia pushed Ben.', 'Olivia, refusing to engage with him, turned to the barista and said, \"I was first in line!\"']
+	      } 
+        var trial116 = {
+        type: 'instructions',
+        pages: ['In retaliation, Olivia pushed Ben.']
+        } 
+	      var question116 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Ben saw a small cup of cream on the counter, picked it up, and splashed it in Olivia\'s face. Everyone in line gasped. Olivia stood there gaping, cream dripping from her chin.', 'Ben saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Olivia\'s head. Everyone in line gasped. Olivia, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+	      } 
+        var trial117 = {
+        type: 'instructions',
+        pages: ['Ben saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Olivia\'s head. Everyone in line gasped. Olivia, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+        } 
+	      var question117 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['The barista called over to a policeman standing in line, and he ordered Ben to leave before anyone pressed charges.', 'The barista called over to a policeman standing in line, and he ordered Olivia to leave before anyone pressed charges.']
+	      } 
+        var trial118 = {
+        type: 'instructions',
+        pages: ['The barista called over to a policeman standing in line, and he ordered Ben to leave before anyone pressed charges.']
+        } 
+	      var question118 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Ben gave Olivia one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"', 'Ben stared at Olivia one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+	      } 
+        var trial119 = {
+        type: 'instructions',
+        pages: ['Ben gave Olivia one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+        } 
+        var trial120 = {
+        type: 'instructions',
+        pages: ['Olivia walked into the coffee shop angrily after having learned that her flight to the Bahamas was cancelled due to inclement weather.']
+        } 
+	      var question120 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Silvia, the first person in line.', 'She walked to the back of the line and stood impatiently, watching the first person in line, Silvia, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut her.']
+	      } 
+        var trial121 = {
+        type: 'instructions',
+        pages: ['She walked to the back of the line and stood impatiently, watching the first person in line, Silvia, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut her.']
+        } 
+	      var question121 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia was not having it that day, and she promptly stepped back in front of Olivia.', 'Silvia was astonished and said, \"Excuse me?!\'']
+	      } 
+        var trial122 = {
+        type: 'instructions',
+        pages: ['Silvia was not having it that day, and she promptly stepped back in front of Olivia.']
+        } 
+        var trial123 = {
+        type: 'instructions',
+        pages: ['Olivia proceeded to give a slight shove to Silvia.']
+        } 
+	      var question123 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia stared back at Olivia, as though daring her with her eyes to do something.Silvia refusing to engage with Olivia, turned to the barista and said, \"I was first in line!\"', 'Silvia, refusing to engage with her, turned to the barista and said, \"I was first in line!\"']
+	      } 
+        var trial124 = {
+        type: 'instructions',
+        pages: ['Silvia, refusing to engage with her, turned to the barista and said, \"I was first in line!\"']
+        } 
+	      var question124 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Olivia saw a small cup of cream on the counter, picked it up, and splashed it in Silvia\'s face. Everyone in line gasped. Silvia stood there gaping, cream dripping from her chin.', 'Olivia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Silvia\'s head. Everyone in line gasped. Silvia, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+	      } 
+        var trial125 = {
+        type: 'instructions',
+        pages: ['Olivia saw a small cup of cream on the counter, picked it up, and splashed it in Silvia\'s face. Everyone in line gasped. Silvia stood there gaping, cream dripping from her chin.']
+        } 
+	      var question125 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['The barista called over to a policeman standing in line, and he ordered Silvia to leave before anyone pressed charges.', 'The barista called over to a policeman standing in line, and he ordered Olivia to leave before anyone pressed charges.']
+	      } 
+        var trial126 = {
+        type: 'instructions',
+        pages: ['The barista called over to a policeman standing in line, and he ordered Olivia to leave before anyone pressed charges.']
+        } 
+	      var question126 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Olivia stared at Silvia one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Olivia gave Silvia one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+	      } 
+        var trial127 = {
+        type: 'instructions',
+        pages: ['Olivia gave Silvia one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+        } 
+	      var question127 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Olivia a bunch of napkins and gave her a free drink out of sympathy, saying \"Its not everyday you meet a coffee criminal.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying \"Its not everyday you meet a coffee criminal.\"']
+	      } 
+        var trial128 = {
+        type: 'instructions',
+        pages: ['Silvia walked into the coffee shop angrily after having realized that she had left her phone on the bus.']
+        } 
+	      var question128 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Ben, the first person in line.', 'She walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.']
+	      } 
+        var trial129 = {
+        type: 'instructions',
+        pages: ['She walked to the back of the line and stood impatiently, watching the first person in line, Ben, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.']
+        } 
+        var trial130 = {
+        type: 'instructions',
+        pages: ['Ben was not having it that day, and he promptly stepped back in front of Silvia.']
+        } 
+	      var question130 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia ignored him and proceeded to tell the barista that she would like a coffee.', 'Silvia turned to Ben and gave him a very mean look.']
+	      } 
+        var trial131 = {
+        type: 'instructions',
+        pages: ['Silvia turned to Ben and gave him a very mean look.']
+        } 
+	      var question131 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Ben, refusing to engage with her, turned to the barista and said, \"I was first in line!\"', 'In retaliation, Ben pushed Silvia.']
+	      } 
+        var trial132 = {
+        type: 'instructions',
+        pages: ['In retaliation, Ben pushed Silvia.']
+        } 
+	      var question132 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Ben saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Silvia\'s head. Everyone in line gasped. Silvia, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.', 'Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Ben\'s head. Everyone in line gasped. Ben, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+	      } 
+        var trial133 = {
+        type: 'instructions',
+        pages: ['Silvia saw a muffin sitting like ammo next to the cash register, snatched it, and crumbled it above Ben\'s head. Everyone in line gasped. Ben, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+        } 
+	      var question133 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['The barista ran out from behind the counter and ordered Silvia to leave.', 'The barista called over to a policeman standing in line, and he ordered Silvia to leave before anyone pressed charges.']
+	      } 
+        var trial134 = {
+        type: 'instructions',
+        pages: ['The barista ran out from behind the counter and ordered Silvia to leave.']
+        } 
+	      var question134 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia gave Ben one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"', 'Silvia stared at Ben one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+	      } 
+        var trial135 = {
+        type: 'instructions',
+        pages: ['Silvia gave Ben one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+        } 
+	      var question135 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Ben a bunch of napkins and gave him a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"']
+	      } 
+        var trial136 = {
+        type: 'instructions',
+        pages: ['Olivia walked into the coffee shop angrily after having learned that her flight to the Bahamas was cancelled due to inclement weather.']
+        } 
+	      var question136 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['She walked to the back of the line and stood impatiently, watching the first person in line, Jesse, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut him.', 'She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Jesse, the first person in line.']
+	      } 
+        var trial137 = {
+        type: 'instructions',
+        pages: ['She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Jesse, the first person in line.']
+        } 
+	      var question137 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Jesse was not having it that day, and he promptly stepped back in front of Olivia.', 'Jesse was astonished and said, \"Excuse me?!\'']
+	      } 
+        var trial138 = {
+        type: 'instructions',
+        pages: ['Jesse was not having it that day, and he promptly stepped back in front of Olivia.']
+        } 
+	      var question138 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Olivia proceeded to give a slight shove to Jesse.', 'Olivia ignored him and proceeded to tell the barista that she would like a mocha.']
+	      } 
+        var trial139 = {
+        type: 'instructions',
+        pages: ['Olivia ignored him and proceeded to tell the barista that she would like a mocha.']
+        } 
+	      var question139 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['In retaliation, Jesse pushed Olivia.', 'In retaliation, Olivia pushed Jesse.']
+	      } 
+        var trial140 = {
+        type: 'instructions',
+        pages: ['In retaliation, Jesse pushed Olivia.']
+        } 
+	      var question140 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Olivia saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Jesse\'s head. Everyone in line gasped. Jesse, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.', 'Jesse saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Olivia\'s head. Everyone in line gasped. Olivia, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+	      } 
+        var trial141 = {
+        type: 'instructions',
+        pages: ['Olivia saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Jesse\'s head. Everyone in line gasped. Jesse, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+        } 
+	      var question141 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['The barista called over to a policeman standing in line, and he ordered Olivia to leave before anyone pressed charges.', 'The barista ran out from behind the counter and ordered Olivia to leave.']
+	      } 
+        var trial142 = {
+        type: 'instructions',
+        pages: ['The barista ran out from behind the counter and ordered Olivia to leave.']
+        } 
+        var trial143 = {
+        type: 'instructions',
+        pages: ['Olivia stared at Jesse one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+        } 
+	      var question143 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Olivia a bunch of napkins and gave her a free drink out of sympathy, saying \"There was no need to worry. The baristas are trained in kung fu.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Jesse a bunch of napkins and gave him a free drink out of sympathy, saying \"There was no need to worry. The baristas are trained in kung fu.\"']
+	      } 
+        var trial144 = {
+        type: 'instructions',
+        pages: ['Julian walked into the coffee shop on poetry night.']
+        } 
+	      var question144 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He found an empty chair next to Will. "Great to see you Julian!" said Will. "It has been too long Will!" Julian replied.', 'He walked to the counter and decided on a coffee.']
+	      } 
+        var trial145 = {
+        type: 'instructions',
+        pages: ['He found an empty chair next to Will. "Great to see you Julian!" said Will. "It has been too long Will!" Julian replied.']
+        } 
+	      var question145 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Olivia stepped up to the microphone and read the poem that she had written: "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons." The crowd snapped their fingers politely.', 'Mariko, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Olivia.']
+	      } 
+        var trial146 = {
+        type: 'instructions',
+        pages: ['Olivia stepped up to the microphone and read the poem that she had written: "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons." The crowd snapped their fingers politely.']
+        } 
+	      var question146 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Julian then took at turn at the microphone. "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." When he sat back down, Will said that he loved the poem.', 'Julian had also written a poem, but decided that he was not in the mood to share it today.']
+	      } 
+        var trial147 = {
+        type: 'instructions',
+        pages: ['Julian had also written a poem, but decided that he was not in the mood to share it today.']
+        } 
+        var trial148 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Julian and Will said their goodbyes and walked toward the door.']
+        } 
+	      var question148 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['On the way out, Olivia ordered a mousse to take home. The barista took one from the refrigerator and wrapped it up to go.', 'On the way out, Julian ordered a mousse to take home. The barista took one from the refrigerator and wrapped it up to go.']
+	      } 
+        var trial149 = {
+        type: 'instructions',
+        pages: ['On the way out, Julian ordered a mousse to take home. The barista took one from the refrigerator and wrapped it up to go.']
+        } 
+	      var question149 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Julian made a mental note to come back again next week.', 'Olivia made a mental note to come back again next week.']
+	      } 
+        var trial150 = {
+        type: 'instructions',
+        pages: ['Mariko walked into the coffee shop on poetry night.']
+        } 
+	      var question150 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['She found an empty chair next to Olivia. "Howdy Mariko!" said Olivia. "I am glad you could make it Olivia!" Mariko replied.', 'She walked to the counter and decided on a coffee.']
+	      } 
+        var trial151 = {
+        type: 'instructions',
+        pages: ['She found an empty chair next to Olivia. "Howdy Mariko!" said Olivia. "I am glad you could make it Olivia!" Mariko replied.']
+        } 
+	      var question151 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Sarah, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Will.', 'Will stepped up to the microphone and read the poem that he had written: "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air." The crowd snapped their fingers politely.']
+	      } 
+        var trial152 = {
+        type: 'instructions',
+        pages: ['Will stepped up to the microphone and read the poem that he had written: "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air." The crowd snapped their fingers politely.']
+        } 
+        var trial153 = {
+        type: 'instructions',
+        pages: ['Mariko then took at turn at the microphone. "He was my North, my South, my East and my West, my working week and my Sunday rest, my noon, my midnight, my talk, my song; I thought that love would last forever, I was wrong." When she sat back down, Olivia said that she loved the poem.']
+        } 
+	      var question153 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['After all the poets had performed, Mariko and Olivia said their goodbyes and walked toward the door.', 'After all the poets had performed, Olivia and Mariko said their goodbyes and walked toward the door.']
+	      } 
+        var trial154 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Mariko and Olivia said their goodbyes and walked toward the door.']
+        } 
+	      var question154 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Will made a mental note to come back again next week.', 'Mariko made a mental note to come back again next week.']
+	      } 
+        var trial155 = {
+        type: 'instructions',
+        pages: ['Julian walked into the coffee shop on poetry night.']
+        } 
+	      var question155 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He found an empty chair next to Olivia. "Howdy Julian!" said Olivia. "It has been too long Olivia!" Julian replied.', 'He walked to the counter and decided on a coffee.']
+	      } 
+        var trial156 = {
+        type: 'instructions',
+        pages: ['He found an empty chair next to Olivia. "Howdy Julian!" said Olivia. "It has been too long Olivia!" Julian replied.']
+        } 
+	      var question156 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Sarah, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Will.', 'Will stepped up to the microphone and read the poem that he had written: "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air." The crowd snapped their fingers politely.']
+	      } 
+        var trial157 = {
+        type: 'instructions',
+        pages: ['Sarah, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Will.']
+        } 
+        var trial158 = {
+        type: 'instructions',
+        pages: ['Will stepped up to the microphone and read the poem that he had written: "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air." The crowd snapped their fingers politely.']
+        } 
+        var trial159 = {
+        type: 'instructions',
+        pages: ['Julian then took at turn at the microphone. "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." When he sat back down, Olivia said that she loved the poem.']
+        } 
+        var trial160 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Julian and Olivia said their goodbyes and walked toward the door.']
+        } 
+	      var question160 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Julian made a mental note to come back again next week.', 'Olivia made a mental note to come back again next week.']
+	      } 
+        var trial161 = {
+        type: 'instructions',
+        pages: ['Pradeep walked into the coffee shop on poetry night.']
+        } 
+	      var question161 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He walked to the counter and decided on a coffee.', 'He found an empty chair next to Olivia. "Howdy Pradeep!" said Olivia. "Hey Olivia!" Pradeep replied.']
+	      } 
+        var trial162 = {
+        type: 'instructions',
+        pages: ['He found an empty chair next to Olivia. "Howdy Pradeep!" said Olivia. "Hey Olivia!" Pradeep replied.']
+        } 
+	      var question162 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.', 'Will, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+	      } 
+        var trial163 = {
+        type: 'instructions',
+        pages: ['Will, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Julian.']
+        } 
+	      var question163 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.', 'Will stepped up to the microphone and read the poem that he had written: "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air." The crowd snapped their fingers politely.']
+	      } 
+        var trial164 = {
+        type: 'instructions',
+        pages: ['Julian stepped up to the microphone and read the poem that he had written: "I wandered lonely as a cloud that floats on high over vales and hills, when all at once I saw a crowd, A host, of golden daffodils." The crowd snapped their fingers politely.']
+        } 
+	      var question164 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Pradeep then took at turn at the microphone. "Twas brillig, and the slithy toves did gyre and gimble in the wabe: all mimsy were the borogoves, and the mome raths outgrab." When he sat back down, Olivia said that she loved the poem.', 'Pradeep had also written a poem, but decided that he was not in the mood to share it today.']
+	      } 
+        var trial165 = {
+        type: 'instructions',
+        pages: ['Pradeep then took at turn at the microphone. "Twas brillig, and the slithy toves did gyre and gimble in the wabe: all mimsy were the borogoves, and the mome raths outgrab." When he sat back down, Olivia said that she loved the poem.']
+        } 
+	      var question165 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['After all the poets had performed, Will and Pradeep said their goodbyes and walked toward the door.', 'After all the poets had performed, Pradeep and Olivia said their goodbyes and walked toward the door.']
+	      } 
+        var trial166 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Pradeep and Olivia said their goodbyes and walked toward the door.']
+        } 
+	      var question166 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Pradeep made a mental note to come back again next week.', 'Julian made a mental note to come back again next week.']
+	      } 
+        var trial167 = {
+        type: 'instructions',
+        pages: ['Vera walked into the coffee shop angrily after having found her calculus problem set ripped to shreds in her dog\'s cage.']
+        } 
+	      var question167 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['She walked to the back of the line and stood impatiently, watching the first person in line, Silvia, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut her.', 'She saw that there was a long line to order, so she impatiently walked to the front of the line and cut Silvia, the first person in line.']
+	      } 
+        var trial168 = {
+        type: 'instructions',
+        pages: ['She walked to the back of the line and stood impatiently, watching the first person in line, Silvia, staring idly at the menu. Suddenly she decided to walk to the front of the line and cut her.']
+        } 
+	      var question168 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia was astonished and said, \"Excuse me?!\'', 'Vera was astonished and said, \"Excuse me?!\'']
+	      } 
+        var trial169 = {
+        type: 'instructions',
+        pages: ['Silvia was astonished and said, \"Excuse me?!\'']
+        } 
+	      var question169 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia turned to Vera and gave her a very mean look.', 'Vera turned to Silvia and gave her a very mean look.']
+	      } 
+        var trial170 = {
+        type: 'instructions',
+        pages: ['Vera turned to Silvia and gave her a very mean look.']
+        } 
+	      var question170 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia, refusing to engage with her, turned to the barista and said, \"I was first in line!\"', 'Vera, refusing to engage with her, turned to the barista and said, \"I was first in line!\"']
+	      } 
+        var trial171 = {
+        type: 'instructions',
+        pages: ['Silvia, refusing to engage with her, turned to the barista and said, \"I was first in line!\"']
+        } 
+	      var question171 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia saw a small cup of cream on the counter, picked it up, and splashed it in Vera\'s face. Everyone in line gasped. Vera stood there gaping, cream dripping from her chin.', 'Vera saw a small cup of cream on the counter, picked it up, and splashed it in Silvia\'s face. Everyone in line gasped. Silvia stood there gaping, cream dripping from her chin.']
+	      } 
+        var trial172 = {
+        type: 'instructions',
+        pages: ['Vera saw a small cup of cream on the counter, picked it up, and splashed it in Silvia\'s face. Everyone in line gasped. Silvia stood there gaping, cream dripping from her chin.']
+        } 
+	      var question172 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['The barista called over to a policeman standing in line, and he ordered Vera to leave before anyone pressed charges.', 'The barista called over to a policeman standing in line, and he ordered Silvia to leave before anyone pressed charges.']
+	      } 
+        var trial173 = {
+        type: 'instructions',
+        pages: ['The barista called over to a policeman standing in line, and he ordered Vera to leave before anyone pressed charges.']
+        } 
+	      var question173 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Vera gave Silvia one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"', 'Vera stared at Silvia one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+	      } 
+        var trial174 = {
+        type: 'instructions',
+        pages: ['Vera stared at Silvia one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+        } 
+	      var question174 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Vera a bunch of napkins and gave her a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying \"The nectar of the gods makes people do crazy things.\"']
+	      } 
+        var trial175 = {
+        type: 'instructions',
+        pages: ['Nick walked into the coffee shop angrily after having gotten a parking ticket.']
+        } 
+	      var question175 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Jesse, the first person in line.', 'He walked to the back of the line and stood impatiently, watching the first person in line, Jesse, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut him.']
+	      } 
+        var trial176 = {
+        type: 'instructions',
+        pages: ['He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Jesse, the first person in line.']
+        } 
+	      var question176 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Jesse was not having it that day, and he promptly stepped back in front of Nick.', 'Jesse was astonished and said, \"Excuse me?!\'']
+	      } 
+        var trial177 = {
+        type: 'instructions',
+        pages: ['Jesse was not having it that day, and he promptly stepped back in front of Nick.']
+        } 
+        var trial178 = {
+        type: 'instructions',
+        pages: ['Nick ignored him and proceeded to tell the barista that he would like a latte.']
+        } 
+	      var question178 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['In retaliation, Jesse pushed Nick.', 'In retaliation, Nick pushed Jesse.']
+	      } 
+        var trial179 = {
+        type: 'instructions',
+        pages: ['In retaliation, Jesse pushed Nick.']
+        } 
+        var trial180 = {
+        type: 'instructions',
+        pages: ['Nick saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Jesse\'s head. Everyone in line gasped. Jesse, in shock, didn\'t move as crumbs tumbled down his ears and shoulders.']
+        } 
+	      var question180 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['The barista called over to a policeman standing in line, and he ordered Nick to leave before anyone pressed charges.', 'The barista ran out from behind the counter and ordered Nick to leave.']
+	      } 
+        var trial181 = {
+        type: 'instructions',
+        pages: ['The barista called over to a policeman standing in line, and he ordered Nick to leave before anyone pressed charges.']
+        } 
+	      var question181 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Nick stared at Jesse one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Jesse stared at Nick one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+	      } 
+        var trial182 = {
+        type: 'instructions',
+        pages: ['Nick stared at Jesse one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+        } 
+	      var question182 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying \"I think some caffeine would\'ve helped that one.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Jesse a bunch of napkins and gave him a free drink out of sympathy, saying \"I think some caffeine would\'ve helped that one.\"']
+	      } 
+        var trial183 = {
+        type: 'instructions',
+        pages: ['Nick walked into the coffee shop angrily after having gotten a parking ticket.']
+        } 
+	      var question183 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Silvia, the first person in line.', 'He walked to the back of the line and stood impatiently, watching the first person in line, Silvia, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut her.']
+	      } 
+        var trial184 = {
+        type: 'instructions',
+        pages: ['He walked to the back of the line and stood impatiently, watching the first person in line, Silvia, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut her.']
+        } 
+	      var question184 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia was astonished and said, \"Excuse me?!\'', 'Silvia was not having it that day, and she promptly stepped back in front of Nick.']
+	      } 
+        var trial185 = {
+        type: 'instructions',
+        pages: ['Silvia was not having it that day, and she promptly stepped back in front of Nick.']
+        } 
+	      var question185 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia ignored him and proceeded to tell the barista that she would like a latte.', 'Nick ignored her and proceeded to tell the barista that he would like a latte.']
+	      } 
+        var trial186 = {
+        type: 'instructions',
+        pages: ['Nick ignored her and proceeded to tell the barista that he would like a latte.']
+        } 
+	      var question186 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia, refusing to engage with him, turned to the barista and said, \"I was first in line!\"', 'Silvia stared back at Nick, as though daring him with her eyes to do something.Silvia refusing to engage with Nick, turned to the barista and said, \"I was first in line!\"']
+	      } 
+        var trial187 = {
+        type: 'instructions',
+        pages: ['Silvia, refusing to engage with him, turned to the barista and said, \"I was first in line!\"']
+        } 
+	      var question187 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Nick saw a small cup of cream on the counter, picked it up, and splashed it in Silvia\'s face. Everyone in line gasped. Silvia stood there gaping, cream dripping from her chin.', 'Nick saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Silvia\'s head. Everyone in line gasped. Silvia, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+	      } 
+        var trial188 = {
+        type: 'instructions',
+        pages: ['Nick saw a lemonsquare sitting like ammo next to the cash register, snatched it, and crumbled it above Silvia\'s head. Everyone in line gasped. Silvia, in shock, didn\'t move as crumbs tumbled down her ears and shoulders.']
+        } 
+	      var question188 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['The barista called over to a policeman standing in line, and she ordered Nick to leave before anyone pressed charges.', 'The barista ran out from behind the counter and ordered Nick to leave.']
+	      } 
+        var trial189 = {
+        type: 'instructions',
+        pages: ['The barista ran out from behind the counter and ordered Nick to leave.']
+        } 
+	      var question189 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Nick gave Silvia one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"', 'Nick stared at Silvia one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+	      } 
+        var trial190 = {
+        type: 'instructions',
+        pages: ['Nick stared at Silvia one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"']
+        } 
+	      var question190 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Nick a bunch of napkins and gave him a free drink out of sympathy, saying \"There was no need to worry. The baristas are trained in kung fu.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying \"There was no need to worry. The baristas are trained in kung fu.\"']
+	      } 
+        var trial191 = {
+        type: 'instructions',
+        pages: ['Jesse walked into the coffee shop angrily after having gotten into a fight with his mom.']
+        } 
+	      var question191 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He walked to the back of the line and stood impatiently, watching the first person in line, Silvia, staring idly at the menu. Suddenly he decided to walk to the front of the line and cut her.', 'He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Silvia, the first person in line.']
+	      } 
+        var trial192 = {
+        type: 'instructions',
+        pages: ['He saw that there was a long line to order, so he impatiently walked to the front of the line and cut Silvia, the first person in line.']
+        } 
+	      var question192 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Jesse was astonished and said, \"Excuse me?!\'', 'Silvia was astonished and said, \"Excuse me?!\'']
+	      } 
+        var trial193 = {
+        type: 'instructions',
+        pages: ['Silvia was astonished and said, \"Excuse me?!\'']
+        } 
+	      var question193 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Jesse ignored her and proceeded to tell the barista that he would like a coffee.', 'Silvia ignored him and proceeded to tell the barista that she would like a coffee.']
+	      } 
+        var trial194 = {
+        type: 'instructions',
+        pages: ['Jesse ignored her and proceeded to tell the barista that he would like a coffee.']
+        } 
+	      var question194 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia stared back at Jesse, as though daring him with her eyes to do something.Silvia refusing to engage with Jesse, turned to the barista and said, \"I was first in line!\"', 'Jesse stared back at Silvia, as though daring her with his eyes to do something.Jesse refusing to engage with Silvia, turned to the barista and said, \"I was first in line!\"']
+	      } 
+        var trial195 = {
+        type: 'instructions',
+        pages: ['Silvia stared back at Jesse, as though daring him with her eyes to do something.Silvia refusing to engage with Jesse, turned to the barista and said, \"I was first in line!\"']
+        } 
+	      var question195 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Silvia saw a small cup of cream on the counter, picked it up, and splashed it in Jesse\'s face. Everyone in line gasped. Jesse stood there gaping, cream dripping from his chin.', 'Jesse saw a small cup of cream on the counter, picked it up, and splashed it in Silvia\'s face. Everyone in line gasped. Silvia stood there gaping, cream dripping from her chin.']
+	      } 
+        var trial196 = {
+        type: 'instructions',
+        pages: ['Jesse saw a small cup of cream on the counter, picked it up, and splashed it in Silvia\'s face. Everyone in line gasped. Silvia stood there gaping, cream dripping from her chin.']
+        } 
+        var trial197 = {
+        type: 'instructions',
+        pages: ['The barista called over to a policeman standing in line, and she ordered Jesse to leave before anyone pressed charges.']
+        } 
+	      var question197 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Jesse stared at Silvia one last time, then stormed out of the coffee shop, yelling, \"I hate coffee!\"', 'Jesse gave Silvia one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+	      } 
+        var trial198 = {
+        type: 'instructions',
+        pages: ['Jesse gave Silvia one last stare, turned, and ran out yelling, \"Juice is better, anyway!\"']
+        } 
+	      var question198 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Jesse a bunch of napkins and gave him a free drink out of sympathy, saying \"Some people will do anything for the coffee fix.\"', 'Everyone at the coffee shop turned to each other wondering if that had really just happened. The barista handed Silvia a bunch of napkins and gave her a free drink out of sympathy, saying \"Some people will do anything for the coffee fix.\"']
+	      } 
+        var trial199 = {
+        type: 'instructions',
+        pages: ['Will walked into the coffee shop on poetry night.']
+        } 
+	      var question199 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He walked to the counter and decided on a tea.', 'He found an empty chair next to Sarah. "Oh hi there Will!" said Sarah. "Great to see you Sarah!" Will replied.']
+	      } 
+        var trial200 = {
+        type: 'instructions',
+        pages: ['He found an empty chair next to Sarah. "Oh hi there Will!" said Sarah. "Great to see you Sarah!" Will replied.']
+        } 
+	      var question200 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Julian, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Olivia.', 'Olivia stepped up to the microphone and read the poem that she had written: "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons." The crowd snapped their fingers politely.']
+	      } 
+        var trial201 = {
+        type: 'instructions',
+        pages: ['Olivia stepped up to the microphone and read the poem that she had written: "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons." The crowd snapped their fingers politely.']
+        } 
+        var trial202 = {
+        type: 'instructions',
+        pages: ['Will then took at turn at the microphone. "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air." When he sat back down, Sarah said that she loved the poem.']
+        } 
+	      var question202 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['After all the poets had performed, Will and Olivia said their goodbyes and walked toward the door.', 'After all the poets had performed, Will and Sarah said their goodbyes and walked toward the door.']
+	      } 
+        var trial203 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Will and Sarah said their goodbyes and walked toward the door.']
+        } 
+	      var question203 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['On the way out, Will ordered a sorbet to take home. The barista took one from the freezer and wrapped it up to go.', 'On the way out, Sarah ordered a sorbet to take home. The barista took one from the freezer and wrapped it up to go.']
+	      } 
+        var trial204 = {
+        type: 'instructions',
+        pages: ['On the way out, Will ordered a sorbet to take home. The barista took one from the freezer and wrapped it up to go.']
+        } 
+        var trial205 = {
+        type: 'instructions',
+        pages: ['Will walked into the coffee shop on poetry night.']
+        } 
+	      var question205 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He walked to the counter and decided on a coffee.', 'He found an empty chair next to Mariko. "I am glad you could make it Will!" said Mariko. "Great to see you Mariko!" Will replied.']
+	      } 
+        var trial206 = {
+        type: 'instructions',
+        pages: ['He found an empty chair next to Mariko. "I am glad you could make it Will!" said Mariko. "Great to see you Mariko!" Will replied.']
+        } 
+        var trial207 = {
+        type: 'instructions',
+        pages: ['Olivia stepped up to the microphone and read the poem that she had written: "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons." The crowd snapped their fingers politely.']
+        } 
+        var trial208 = {
+        type: 'instructions',
+        pages: ['Will then took at turn at the microphone. "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air." When he sat back down, Mariko said that she loved the poem.']
+        } 
+	      var question208 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['After all the poets had performed, Will and Mariko said their goodbyes and walked toward the door.', 'After all the poets had performed, Will and Olivia said their goodbyes and walked toward the door.']
+	      } 
+        var trial209 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Will and Mariko said their goodbyes and walked toward the door.']
+        } 
+	      var question209 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['On the way out, Olivia ordered a sorbet to take home. The barista took one from the freezer and wrapped it up to go.', 'On the way out, Will ordered a sorbet to take home. The barista took one from the freezer and wrapped it up to go.']
+	      } 
+        var trial210 = {
+        type: 'instructions',
+        pages: ['On the way out, Will ordered a sorbet to take home. The barista took one from the freezer and wrapped it up to go.']
+        } 
+	      var question210 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Olivia made a mental note to come back again next week.', 'Will made a mental note to come back again next week.']
+	      } 
+        var trial211 = {
+        type: 'instructions',
+        pages: ['Pradeep walked into the coffee shop on poetry night.']
+        } 
+	      var question211 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He found an empty chair next to Sarah. "Oh hi there Pradeep!" said Sarah. "Hey Sarah!" Pradeep replied.', 'He walked to the counter and decided on a tea.']
+	      } 
+        var trial212 = {
+        type: 'instructions',
+        pages: ['He found an empty chair next to Sarah. "Oh hi there Pradeep!" said Sarah. "Hey Sarah!" Pradeep replied.']
+        } 
+	      var question212 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Olivia stepped up to the microphone and read the poem that she had written: "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons." The crowd snapped their fingers politely.', 'Julian, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Olivia.']
+	      } 
+        var trial213 = {
+        type: 'instructions',
+        pages: ['Olivia stepped up to the microphone and read the poem that she had written: "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons." The crowd snapped their fingers politely.']
+        } 
+	      var question213 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Pradeep had also written a poem, but decided that he was not in the mood to share it today.', 'Pradeep then took at turn at the microphone. "Twas brillig, and the slithy toves did gyre and gimble in the wabe: all mimsy were the borogoves, and the mome raths outgrab." When he sat back down, Sarah said that she loved the poem.']
+	      } 
+        var trial214 = {
+        type: 'instructions',
+        pages: ['Pradeep then took at turn at the microphone. "Twas brillig, and the slithy toves did gyre and gimble in the wabe: all mimsy were the borogoves, and the mome raths outgrab." When he sat back down, Sarah said that she loved the poem.']
+        } 
+	      var question214 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['After all the poets had performed, Pradeep and Sarah said their goodbyes and walked toward the door.', 'After all the poets had performed, Pradeep and Olivia said their goodbyes and walked toward the door.']
+	      } 
+        var trial215 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Pradeep and Sarah said their goodbyes and walked toward the door.']
+        } 
+	      var question215 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Olivia made a mental note to come back again next week.', 'Pradeep made a mental note to come back again next week.']
+	      } 
+        var trial216 = {
+        type: 'instructions',
+        pages: ['Will walked into the coffee shop on poetry night.']
+        } 
+	      var question216 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['He walked to the counter and decided on a coffee.', 'He found an empty chair next to Pradeep. "Hey Will!" said Pradeep. "Great to see you Pradeep!" Will replied.']
+	      } 
+        var trial217 = {
+        type: 'instructions',
+        pages: ['He found an empty chair next to Pradeep. "Hey Will!" said Pradeep. "Great to see you Pradeep!" Will replied.']
+        } 
+	      var question217 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Mariko, who was the emcee for tonight, walked to the front of the room and introduced the first poet, Olivia.', 'Olivia stepped up to the microphone and read the poem that she had written: "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons." The crowd snapped their fingers politely.']
+	      } 
+        var trial218 = {
+        type: 'instructions',
+        pages: ['Olivia stepped up to the microphone and read the poem that she had written: "For I have known them all already, known them all: have known the evenings, mornings, afternoons; I have measured out my life with coffee spoons." The crowd snapped their fingers politely.']
+        } 
+        var trial219 = {
+        type: 'instructions',
+        pages: ['Will then took at turn at the microphone. "Love at the lips was touch, as sweet as I could bear, and once that seemed too much, I lived on air." When he sat back down, Pradeep said that he loved the poem.']
+        } 
+	      var question219 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['After all the poets had performed, Will and Pradeep said their goodbyes and walked toward the door.', 'After all the poets had performed, Pradeep and Will said their goodbyes and walked toward the door.']
+	      } 
+        var trial220 = {
+        type: 'instructions',
+        pages: ['After all the poets had performed, Will and Pradeep said their goodbyes and walked toward the door.']
+        } 
+	      var question220 = {
+	      type: 'html-slider-response',
+	      stimulus: '<p> What happens next? <p>',
+	      labels: ['Will made a mental note to come back again next week.', 'Olivia made a mental note to come back again next week.']
+	      } 
+
+function saveTextToFile(textstr, filename) {
+    var blobToSave = new Blob([textstr], {
+      type: 'text/plain'
+    });
+    var blobURL = "";
+    if (typeof window.webkitURL !== 'undefined') {
+      blobURL = window.webkitURL.createObjectURL(blobToSave);
+    } else {
+      blobURL = window.URL.createObjectURL(blobToSave);
+    }
+
+    var display_element = jsPsych.getDisplayElement();
+
+    display_element.insertAdjacentHTML('beforeend','<a id="jspsych-download-as-text-link" style="display:none;" download="'+filename+'" href="'+blobURL+'">click to download</a>');
+    document.getElementById('jspsych-download-as-text-link').click();
+  }
+
+  jsPsych.init({
+    timeline: [trial1,question2],
+    on_finish: function() {
+      // jsPsych.data.localSave('JSPSYCmydata.csv', 'csv');
+      // jsPsych.data_collection.localSave.localSave('csv', 'JSPSYCmydata.csv');
+      jsPsych.data.displayData('json');
+      var data_string;
+      // var allData = jsPsych.data.DataCollection();
+      // allData = DataCollection(data);
+      data_string = jsPsych.data.get().csv()
+      saveTextToFile(data_string, 'DATACSW.csv')
+
+      // var all_data = jsPsych.data.get();
+      // console.log(all_data.csv());
+    },
+    default_iti: 250,
+    
+  });
+
+  
+
+</script>

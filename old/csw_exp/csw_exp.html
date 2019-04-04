@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="jspsych-master/jspsych.js"></script>
+    <link rel="stylesheet" href="jspsych-master/css/jspsych.css"></link>
+
+    <script src = "jspsych-master/plugins/jspsych-instructions.js"></script>
+    <script src = "jspsych-master/plugins/jspsych-html-slider-response.js"></script>
+
+    <style>
+      img { width: 300px; }
+    </style>
+  </head>
+  <body></body>
+<script>
+
+
+
+  var question = {
+    type: 'html-slider-response',
+    stimulus: '<p> question? <p>',
+    labels: ['0%', '100%']
+  }
+  
+  var intro = {
+  	type: 'instructions',
+  	pages: ['press right arrow',
+  			'Welcome to the experiment']
+  }
+  var begin = {
+  	type: 'instructions',
+  	pages: ['story begins',
+  			'unfolds',"<div id=id1> a </div>"]
+  }
+  var end = {
+  	type: 'instructions',
+  	pages: ['bye!']
+  }
+
+  jsPsych.init({
+    timeline: [intro, begin, question, end],
+    on_finish: function() {
+      jsPsych.data.displayData();
+    },
+	default_iti: 250
+  });
+
+</script>
+
+<div id="id2">
+
+	<button type="button" onclick="myfun()" > B </button>
+	
+</div>
+
+
+<script type="text/javascript">
+  
+  var read_story = function() { 
+  	// document.getElementById("id2").innerHTML = "a"
+  	return "AbC"
+  }
+
+  var read_story2 = function() { 
+  	document.getElementById("id2").innerHTML = "b"
+  	// return "AbC"
+  }
+
+  var myfun = function() {
+  	var t = read_story()
+  	document.getElementById("id2").innerHTML = 'strong' + t
+  }
+	// read = new XMLHttpRequest();
+ //    read.open('GET', 'story.txt', false);
+ //    read.send();
+    // document.getElementById(elem_id).innerHTML = read.responseText;
+    // return "abc"
+  // }
+
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

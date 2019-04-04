@@ -1,0 +1,1 @@
+s_0_BEGIN,s_1_Cutline,s_2_Stepinfront,s_3_Subjectstares,s_4_Sayrelax,s_5_Creamsplash,s_6_Callpoliceman,s_7_Hatecoffee,s_8_END,ITI_9,s_10_BEGIN,s_11_Cutline,s_12_Stepinfront,s_13_Ignore,s_14_Xstare,s_15_Creamsplash,s_16_Callpoliceman,s_17_Lovejuice,s_18_END,ITI_19,

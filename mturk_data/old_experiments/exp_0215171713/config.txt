@@ -1,0 +1,31 @@
+[HIT Configuration]
+title = Coffee Shop World - Narrative Experiment
+description = You will read stories, a sentence at a time, and be asked to predict what happens next in the story. 
+amt_keywords = Memory, Psychology, experiment
+lifetime = 24
+approve_requirement = 95
+ad_group = jspsych simple experiment example
+psiturk_keywords = Memory, Statistical-learning
+browser_exclude_rule = MSIE, mobile, tablet
+
+[Database Parameters]
+database_url = sqlite:///participants.db
+table_name = data_0215
+
+[Server Parameters]
+host = 0.0.0.0
+port = 9000
+cutoff_time = 120
+logfile = server.log
+loglevel = 2
+debug = true
+threads = auto
+secret_key = 'change this'
+
+[Task Parameters]
+experiment_code_version = 0215
+num_conds = 45
+num_counters = 1
+
+[Shell Parameters]
+launch_in_sandbox_mode = true
